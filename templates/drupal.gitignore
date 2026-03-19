@@ -1,0 +1,25 @@
+# Drupal core files
+sites/*/files
+sites/*/private
+sites/*/settings.php
+sites/*/default/settings.php
+sites/*/default/files
+# Drupal contrib
+sites/all/modules/contrib/
+sites/all/themes/contrib/
+# Generated CSS
+*.css
+# Generated JS
+sites/default/files/js/
+/vendor/
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+web/sites/default/settings.php
+web/sites/default/files/
+web/sites/default/settings.local.php
+web/sites/default/services.yml
+private/
+config/sync/*.yml
+!config/sync/
