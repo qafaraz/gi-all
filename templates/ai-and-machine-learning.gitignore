@@ -1,0 +1,18 @@
+*.onnx
+*.pb
+*.tflite
+*.h5
+*.model
+*.weights
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+/datasets/
+/models/
+# LangChain
+.langchain.db
