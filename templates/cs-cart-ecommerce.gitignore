@@ -1,0 +1,5 @@
+var/
+design/themes/*/css/*.css
+design/themes/*/css/*.css.map
+images/
+config.local.php
