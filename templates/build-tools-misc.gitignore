@@ -1,0 +1,19 @@
+# Bazel
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-*/
+# Buck
+buck-out/
+.buckd/
+# ESLint cache
+.eslintcache
+# Stylelint cache
+.stylelintcache
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+# Node REPL history
+.node_repl_history
