@@ -1,0 +1,7 @@
+*.userprefs
+*.usertasks
+.vs/
+obj/
+bin/
+packages/
+TestResult.xml
