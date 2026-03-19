@@ -1,0 +1,156 @@
+# Sentry
+.sentryclirc
+# Stripe
+.stripe/
+# Supabase
+supabase/.branches/
+supabase/.temp/
+# Auth0
+.auth0/
+# Doppler
+.doppler/
+# 1Password
+op.env
+# Fig
+.fig/
+# Warp terminal
+.warp/
+# Codeium
+.codeium/
+# Tabnine
+.tabnine/
+# AWS Amplify
+amplify/\#current-cloud-backend/
+amplify/.config/local-*
+amplify/backend/amplify-meta.json
+amplify/backend/.temp/
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+**.sample
+#current-cloud-backend/
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+debug/
+**/*.rs.bk
+*.pdb
+# MSVC debug info
+*.idb
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+.dat*
+.repl_history
+build-iPhoneOS/
+build-iPhoneSimulator/
+vendor/Pods/
+.rvmrc
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+*.rsuser
+mono_crash.*
+Generated\ Files/
+[Bb]uild[Ll]og.*
+nunit-*.xml
+BenchmarkDotNet.Artifacts/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+ScaffoldingReadMe.txt
+StyleCopReport.xml
+*.[Cc]ache
+!?*.[Cc]ache/
+~$*
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.publishsettings
+orleans.codegen.cs
+Generated_Code/
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+.paket/paket.exe
+paket-files/
+.fake/
+.cr/personal
+*.tss
+*.jmconfig
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
+OpenCover/
+ASALocalRun/
+*.binlog
+*.nvuser
+.mfractor/
+.localhistory/
+.vshistory/
+healthchecksdb
+MigrationBackup/
+FodyWeavers.xsd
+*.vbp
+*.dsw
+*.dsp
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+*.mdf
+*.ldf
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+go.work
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+*.ctxt
+.mtj.tmp/
+
+
+# ───────────────────────────────────────
+# ───────────────────────────────────────
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+*.jks
+*.keystore
+google-services.json
+*.hprof
+gen-external-apklibs
+.signing/
+proguard/
+/*/build/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+.navigation/
+
+
+# ═══════════════════════════════════════════════════════════
+#   MISSING FROM BOTH — COMPREHENSIVE EXTRAS
+#   Everything not covered above, added manually
