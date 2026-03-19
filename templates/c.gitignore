@@ -1,0 +1,31 @@
+# Kernel Module Compile Results
+*.mod
+*.mod.c
+*.symvers
+modules.order
+.tmp_versions/
+Module.markers
+Module.symvers
+Modules.symvers
+# Prerequisites
+*.d
+# Compiled Object files
+*.slo
+# Precompiled Headers
+*.gch
+*.pch
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+# Fortran module files
+*.smod
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+# Executables
+*.exe
+*.out
+*.app
