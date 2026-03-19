@@ -1,0 +1,6 @@
+/system/ee/
+/system/user/cache/*
+/system/user/templates/*
+!system/user/templates/
+/system/user/logs/*
+!system/user/logs/
