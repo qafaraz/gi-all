@@ -1,0 +1,7 @@
+*_dats.c
+*_sats.c
+*_dats.h
+*_sats.h
+*.o
+*.so
+*.a
