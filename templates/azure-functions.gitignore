@@ -1,0 +1,7 @@
+bin/
+obj/
+appsettings.json
+local.settings.json
+.azure/
+*.pubxml
+*.user
