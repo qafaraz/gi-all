@@ -1,0 +1,5 @@
+app/tmp/
+app/webroot/files/
+app/webroot/img/
+app/Config/database.php
+app/Config/core.php
