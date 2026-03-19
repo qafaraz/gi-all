@@ -1,0 +1,6 @@
+ext/
+*.o
+*.h
+compile/
+*.c
+build/
