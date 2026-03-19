@@ -1,0 +1,6 @@
+typo3_src/
+typo3/
+typo3temp/
+typo3conf/ext/
+fileadmin/
+uploads/
