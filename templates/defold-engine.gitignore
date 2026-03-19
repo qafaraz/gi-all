@@ -1,0 +1,6 @@
+.internal/
+build/
+*.arcd
+*.arci
+*.dmanifest
+*.tmp
