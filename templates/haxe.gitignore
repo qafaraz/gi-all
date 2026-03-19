@@ -1,0 +1,6 @@
+export/
+*.n
+*.swf
+*.swc
+.haxelib/
+dump/
