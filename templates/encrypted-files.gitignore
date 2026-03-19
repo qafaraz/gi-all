@@ -1,0 +1,5 @@
+*.enc
+*.encrypted
+*.gpg
+*.asc
+*.pgp
