@@ -1,0 +1,8 @@
+.merlin
+*.cmo
+*.cma
+*.cmi
+*.cmx
+*.cmxa
+_build/
+_opam/
