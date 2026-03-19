@@ -1,0 +1,11 @@
+pom.xml.asc
+/lib/
+/classes/
+/checkouts/
+profiles.clj
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
