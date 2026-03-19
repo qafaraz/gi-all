@@ -1,0 +1,6 @@
+/cookbooks/
+*.gem
+Berksfile.lock
+.bundle/
+.chef/
+chefignore
