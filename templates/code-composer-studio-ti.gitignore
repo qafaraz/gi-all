@@ -1,0 +1,7 @@
+.settings/
+.ccsproject
+.cproject
+Debug/
+Release/
+*.out
+*.map
