@@ -1,0 +1,5 @@
+lib/.precomp/
+.precomp/
+.precomp
+!META6.json
+*.bak
