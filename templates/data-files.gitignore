@@ -1,0 +1,7 @@
+*.csv
+*.tsv
+*.dat
+*.data
+*.db
+*.sqlite
+*.sqlite3
