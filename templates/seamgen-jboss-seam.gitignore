@@ -1,0 +1,5 @@
+bootstrap/
+exploded-archives/
+# Generated files
+src/main/webapp/WEB-INF/classes/
+resources/WEB-INF/classes/
