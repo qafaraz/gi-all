@@ -1,0 +1,4 @@
+build/
+.west/
+modules/
+twister-out/
