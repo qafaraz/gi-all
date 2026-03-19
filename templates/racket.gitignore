@@ -1,0 +1,6 @@
+compiled/
+*.zo
+*.dep
+*.rkt~
+*.rktd
+/doc/
