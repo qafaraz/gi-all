@@ -1,0 +1,26 @@
+# Delphi project files
+*.dcu
+*.dpu
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.deskop
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+*.cbk
+*ModelSupport_*
+__history/
+__recovery/
+*.~*
