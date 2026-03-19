@@ -1,0 +1,8 @@
+dist/
+dist-ssr/
+build/
+out/
+target/
+[Bb]in/
+[Oo]bj/
+public/build/
