@@ -1,0 +1,18 @@
+# Quartus II files
+db/
+incremental_db/
+output_files/
+*.qws
+*.bak
+*.done
+*.pin
+*.summary
+*.smsg
+*.jdi
+*.pof
+*.sof
+simulation/
+*.rpt
+*.gpak
+greybox_tmp/
+hc_output/
