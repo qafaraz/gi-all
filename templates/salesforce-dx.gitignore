@@ -1,0 +1,5 @@
+.sf/
+.sfdx/
+*.zip
+*.oas
+**/staticresources/**
