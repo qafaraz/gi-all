@@ -1,0 +1,5 @@
+*.lock
+spec/fixtures/modules/
+pkg/
+Puppetfile.lock
+.bundle/
