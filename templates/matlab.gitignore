@@ -1,0 +1,12 @@
+*.m~
+*.asv
+*.autosave
+*.mex*
+octave-workspace
+*.slxc
+slprj/
+sccprj/
+codegen/
+R201*/
+R202*/
+R203*/
