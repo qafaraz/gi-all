@@ -1,0 +1,6 @@
+assets/
+silverstripe-cache/
+vendor/
+.env
+*.log
+_config.php
