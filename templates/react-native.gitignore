@@ -1,0 +1,21 @@
+node_modules/
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+# iOS
+ios/Pods/
+ios/build/
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+# Misc
+.buck/
+buck-out/
+**/__tests__/__snapshots__/
