@@ -1,0 +1,15 @@
+# Jenkins home
+workspace/
+jobs/
+plugins/
+secrets/
+nodes/
+users/
+.cache
+war/
+fingerprints/
+logs/
+*.xml
+!config.xml
+!*.init.groovy.d/
+!*.init.groovy.d/**
