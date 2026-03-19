@@ -1,0 +1,5 @@
+# Adobe ColdFusion
+/CFIDE/
+/WEB-INF/cfclasses/
+*.cfm.bak
+*.cfc.bak
