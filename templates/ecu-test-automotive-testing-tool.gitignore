@@ -1,0 +1,6 @@
+Logs/
+*.fiu
+*.prz
+*.tbc
+*.tbc.bak
+TestReportDir/
