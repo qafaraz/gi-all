@@ -1,0 +1,19 @@
+# Qt build artifacts
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*-build-*
+*.autosave
+*.qmlproject.qtds
+*.so.*
+# Qt Creator
+*.creator.user
+*.creator.user.*
+CMakeLists.txt.user*
