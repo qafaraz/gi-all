@@ -1,0 +1,7 @@
+*.rpyb
+game/cache/
+game/saves/
+tmp/
+renpy/
+*.rpyc
+*.rpymc
