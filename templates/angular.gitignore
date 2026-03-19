@@ -1,0 +1,9 @@
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+/node_modules/
+.angular/cache
+*.js
+!src/**/*.js
+!src/**/*.spec.js
