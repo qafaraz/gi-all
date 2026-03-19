@@ -1,0 +1,20 @@
+# Adobe Bridge cache
+Thumbs.db
+*.eps
+*.ai
+*.psd
+# Illustrator
+*.ai~
+# InDesign
+*.indd~
+*.lnk
+# Photoshop
+*.psb
+# After Effects
+*.aep~
+# Premiere
+*.prproj~
+# Audition
+*.sesx
+# Adobe XD
+*.xd
