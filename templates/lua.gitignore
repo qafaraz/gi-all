@@ -1,0 +1,6 @@
+luac.out
+*.luac
+.luarocks/
+# Compiled Lua
+# Love2D
+*.love
