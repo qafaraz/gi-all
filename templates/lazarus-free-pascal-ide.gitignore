@@ -1,0 +1,13 @@
+*.compiled
+*.bak
+*.ppu
+*.ppl
+*.o
+*.a
+*.or
+lib/
+*.res
+backup/
+*.dbg
+*.lrs
+*.lrt
