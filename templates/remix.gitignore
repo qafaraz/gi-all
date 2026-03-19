@@ -1,0 +1,6 @@
+/build/
+/public/build/
+.cache/
+# Remix + Cloudflare
+functions/[[path]].js
+functions/[[path]].js.map
