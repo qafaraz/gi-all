@@ -1,0 +1,4 @@
+.adt/
+.settings/
+.project
+*.bak
