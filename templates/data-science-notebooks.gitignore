@@ -1,0 +1,12 @@
+*.parquet
+*.arrow
+*.feather
+*.h5ad
+*.loom
+*.zarr/
+data/raw/
+data/processed/
+data/external/
+data/interim/
+models/
+reports/figures/
