@@ -1,0 +1,6 @@
+work/
+transcript
+vsim.wlf
+*.vstf
+*.vcd
+*.vcd.gz
