@@ -1,0 +1,7 @@
+*.orig
+*.rej
+*.patch
+ORIG_HEAD
+MERGE_HEAD
+CHERRY_PICK_HEAD
+REVERT_HEAD
