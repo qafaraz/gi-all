@@ -1,0 +1,8 @@
+SystemFiles/
+*.nb.bak
+.MathematicaHints
+
+# ════════════════════════════════════════════════════════════
+#   FINAL COMPLETE SWEEP — ALL MISSING TEMPLATES
+#   Every template not yet present above. CC0-1.0
+Documentation/
