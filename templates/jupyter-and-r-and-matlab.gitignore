@@ -1,0 +1,23 @@
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+.jupyter/
+.config/ipython/
+*.nbconvert.ipynb
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+# MATLAB
+*.mex*
+*.mexw32
+*.mexw64
+*.mexa64
+*.mat
+*.asv
+*.autosave
+octave-workspace
