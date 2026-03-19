@@ -1,0 +1,3 @@
+*.wasm
+pkg/
+wasm_bindgen_test_runner/
