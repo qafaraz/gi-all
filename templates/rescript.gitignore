@@ -1,0 +1,5 @@
+.merlin
+*.bs.js
+lib/bs/
+lib/ocaml/
+.bsb.lock
