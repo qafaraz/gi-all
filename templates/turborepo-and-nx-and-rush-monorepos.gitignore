@@ -1,0 +1,6 @@
+.turbo/
+.nx/cache
+.nx/workspace-data
+rush-logs/
+common/temp/
+common/deploy/
