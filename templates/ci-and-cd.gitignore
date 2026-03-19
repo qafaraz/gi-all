@@ -1,0 +1,5 @@
+.act/
+.circleci/config.local.yml
+.github/workflows/*.local.yml
+junit-*.xml
+test-report.xml
