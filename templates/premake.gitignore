@@ -1,0 +1,7 @@
+Makefile
+*.make
+*.xcodeproj/
+*.sln
+*.suo
+*.userprefs
+*.csproj
