@@ -1,0 +1,8 @@
+/vendor/
+composer.phar
+.php_cs.cache
+.phpcs.cache
+/public/hot
+/public/storage
+/storage/*.key
+/bootstrap/cache/
