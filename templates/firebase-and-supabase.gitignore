@@ -1,0 +1,4 @@
+.firebase/
+firebase-debug.log
+.firebaserc
+.supabase/
