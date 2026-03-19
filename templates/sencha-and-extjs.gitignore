@@ -1,0 +1,5 @@
+build/
+.sencha/
+sass/.sass-cache/
+classic/sass/.sass-cache/
+modern/sass/.sass-cache/
