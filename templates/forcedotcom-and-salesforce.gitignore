@@ -1,0 +1,13 @@
+*.auradoc
+*.css
+*.design
+*.evt
+*.hlsconfig
+*.md
+*.resource
+*.site
+*.tokens
+*.xml
+!package.xml
+!**/aura/**
+!**/lwc/**
