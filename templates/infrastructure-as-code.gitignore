@@ -1,0 +1,9 @@
+# Pulumi
+.pulumi/
+# CloudFormation
+*.template.yaml.out
+# CDK
+cdk.out/
+cdk.context.json
+# Serverless
+.serverless/
