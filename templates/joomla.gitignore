@@ -1,0 +1,9 @@
+configuration.php
+/administrator/cache/*
+/administrator/logs/*
+/cache/*
+/images/stories
+/log/*
+/logs/*
+/tmp/*
+!.gitkeep
