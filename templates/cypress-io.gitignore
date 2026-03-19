@@ -1,0 +1,4 @@
+cypress/screenshots/
+cypress/videos/
+cypress/fixtures/*.json
+.cypress-cache/
