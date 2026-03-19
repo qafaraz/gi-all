@@ -1,0 +1,9 @@
+/application/config/database.php
+/application/config/app.php
+/application/files/cache/*
+/application/files/tmp/*
+/application/config/site.php
+concrete/
+updates/
+/application/files/incoming/
+/application/files/thumbnails/
