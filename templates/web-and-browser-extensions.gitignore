@@ -1,0 +1,3 @@
+*.crx
+*.xpi
+web-ext-artifacts/
