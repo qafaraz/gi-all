@@ -1,0 +1,4 @@
+# CircuitPython build artifacts
+build-*/
+*.mpy
+*.pyc
