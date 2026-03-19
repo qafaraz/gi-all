@@ -1,0 +1,4 @@
+*.scriv/
+*.scrivx
+*.bak/
+*.lock
