@@ -1,0 +1,19 @@
+# GameMaker
+/*.yyz
+/options/windows/icons/
+/options/linux/splash/
+# RPG Maker
+*.rgss3a
+# Construct 3
+*.c3p
+# Twine
+*.twee
+# GameMaker Studio
+# Defold
+*.arcd
+*.arci
+*.dmanifest
+# Godot (extra)
+*.import
+# Roblox (extra)
+*.rbxlx.lock
