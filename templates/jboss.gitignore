@@ -1,0 +1,4 @@
+/jboss-as/
+/deploy/
+*.war
+*.ear
