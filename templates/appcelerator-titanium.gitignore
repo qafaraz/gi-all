@@ -1,0 +1,4 @@
+build/
+.titanium/
+Resources/iphone/
+Resources/android/
