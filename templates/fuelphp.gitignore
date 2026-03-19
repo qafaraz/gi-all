@@ -1,0 +1,9 @@
+fuel/app/cache/*
+fuel/app/logs/*
+fuel/app/tmp/*
+!fuel/app/cache/index.html
+!fuel/app/logs/index.html
+!fuel/app/tmp/index.html
+fuel/app/cache/
+fuel/app/logs/
+fuel/app/tmp/
