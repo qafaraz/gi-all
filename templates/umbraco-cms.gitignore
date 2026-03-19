@@ -1,0 +1,7 @@
+App_Data/umbraco.config
+App_Data/Logs/
+App_Data/cache/
+App_Data/preview/
+Media/
+Umbraco/Js/
+Umbraco/Css/
