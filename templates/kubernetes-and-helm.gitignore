@@ -1,0 +1,7 @@
+.kube/
+kubeconfig
+*.kubeconfig
+# Helm
+charts/
+Chart.lock
+values.local.yaml
