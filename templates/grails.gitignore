@@ -1,0 +1,9 @@
+/target/
+/web-app/WEB-INF/classes/
+/web-app/WEB-INF/lib/
+stacktrace.log
+*.war
+web-app/plugins/
+plugins/
+/web-app/WEB-INF/spring/resources.xml
+application.properties
