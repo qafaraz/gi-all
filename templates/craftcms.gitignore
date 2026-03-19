@@ -1,0 +1,6 @@
+/vendor/
+/node_modules/
+/storage/
+/.env
+/web/cpresources/
+/config/license.key
