@@ -1,0 +1,9 @@
+# PowerShell modules
+*.psd1.bak
+*.psm1.bak
+*.ps1xml
+# Test results
+TestResults/
+# Build output
+bin/
+obj/
