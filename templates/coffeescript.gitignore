@@ -1,0 +1,5 @@
+# Compiled JS
+*.js
+!gulpfile.js
+!Gruntfile.js
+!Gruntfile.coffee
