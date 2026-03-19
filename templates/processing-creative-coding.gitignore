@@ -1,0 +1,7 @@
+applet/
+application.linux32/
+application.linux64/
+application.linuxarm/
+application.macosx/
+application.windows32/
+application.windows64/
