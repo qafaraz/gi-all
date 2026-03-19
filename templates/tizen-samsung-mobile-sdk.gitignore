@@ -1,0 +1,3 @@
+*.tpk
+.sign/
+.buildResult/
