@@ -1,0 +1,7 @@
+target/
+*.war
+*.ear
+*.class
+work/
+# Tomcat logs
+logs/
