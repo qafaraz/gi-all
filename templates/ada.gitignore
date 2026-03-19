@@ -1,0 +1,5 @@
+# Object files
+*.o
+*.ali
+# Libraries
+lib/
