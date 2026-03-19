@@ -1,0 +1,7 @@
+/jboss-as/
+/deploy/*.war
+/deploy/*.ear
+server/default/data/
+server/default/log/
+server/default/tmp/
+server/default/work/
