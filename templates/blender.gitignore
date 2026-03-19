@@ -1,0 +1,6 @@
+*.blend1
+*.blend2
+# Saved renders
+/renders/
+# Blender temp files
+/tmp/
