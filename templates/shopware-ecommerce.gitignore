@@ -1,0 +1,13 @@
+/public/media/
+/public/thumbnail/
+/public/generated/
+/files/
+/var/log/
+/var/cache/
+/vendor/
+/custom/plugins/*/vendor/
+/custom/apps/*/vendor/
+.env
+.env.local
+.env.*.local
+/public/bundles/
