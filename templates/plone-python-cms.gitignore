@@ -1,0 +1,16 @@
+eggs/
+develop-eggs/
+downloads/
+var/
+parts/
+.installed.cfg
+bin/
+lib/
+lib64/
+include/
+man/
+lib/python*/
+pyvenv.cfg
+.Python
+.mr.developer.cfg
+!src/
