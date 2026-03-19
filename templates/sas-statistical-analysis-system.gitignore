@@ -1,0 +1,6 @@
+*.sas7bdat
+*.sas7bcat
+!*.sas
+.saslogs/
+sasuser.v94/
+saswork/
