@@ -1,0 +1,7 @@
+Compiled/
+*.bak
+*.debug.egg
+*.exe
+*.crm
+*.spr
+*.ags
