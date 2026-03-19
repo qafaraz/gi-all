@@ -1,0 +1,8 @@
+*.aliases
+*.lvlps
+*.lvproj.bak
+*.lvclass.bak
+*.lvlib.bak
+*.tsv
+labview object cache/
+lvanlys/
