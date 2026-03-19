@@ -1,0 +1,8 @@
+war/WEB-INF/classes/
+war/WEB-INF/lib/
+war/WEB-INF/deploy/
+war/
+target/
+gwt-unitCache/
+.gwt-tmp/
+www-test/
