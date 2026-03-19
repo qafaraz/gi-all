@@ -1,0 +1,4 @@
+data/
+dist/
+*.egg-info/
+.gearbox-cache/
