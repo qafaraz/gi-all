@@ -1,0 +1,4 @@
+vendor/
+data/cache/
+data/logs/
+data/tmp/
