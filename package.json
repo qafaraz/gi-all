@@ -1,0 +1,56 @@
+{
+  "name": "gi-all",
+  "version": "1.0.0",
+  "description": "The only modular, category-based .gitignore generator you'll ever need.",
+  "homepage": "https://github.com/qafaraz/gi-all",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qafaraz/gi-all.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qafaraz/gi-all/issues"
+  },
+  "author": {
+    "name": "Qafar",
+    "url": "https://github.com/qafaraz"
+  },
+  "license": "MIT",
+  "bin": {
+    "gi-all": "./bin/cli.js"
+  },
+  "main": "src/cli.js",
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/cli.js",
+    "dev": "node src/cli.js",
+    "lint": "node -e \"console.log('Add your linter of choice here')\""
+  },
+  "keywords": [
+    "gitignore",
+    "git",
+    "ignore",
+    "template",
+    "templates",
+    "modular",
+    "category-based",
+    "cli",
+    "gitignore-template",
+    "gitignore-generator",
+    "developer-tools",
+    "gi-all"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "preferGlobal": false,
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^9.2.11"
+  }
+}
