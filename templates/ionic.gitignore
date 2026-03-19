@@ -1,0 +1,5 @@
+www/
+.sourcemaps/
+platforms/
+plugins/
+.ionic/
