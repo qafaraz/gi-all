@@ -1,0 +1,4 @@
+.quasar/
+/dist/
+/src-cordova/
+/src-electron/dist/
