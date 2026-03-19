@@ -1,0 +1,11 @@
+.dart_tool/
+.packages
+pubspec.lock
+.pub-cache/
+.pub/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+.flutter-plugins
+.flutter-plugins-dependencies
