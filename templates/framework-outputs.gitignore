@@ -1,0 +1,16 @@
+.next/
+.nuxt/
+.svelte-kit/
+.nitro/
+.output/
+.docusaurus/
+.gatsby/
+.astro/
+.vercel
+.netlify
+.serverless/
+.next-boost/
+.angular/cache
+.parcel-cache/
+.turbo/
+.wireit/
