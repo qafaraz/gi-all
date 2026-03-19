@@ -1,0 +1,12 @@
+# Atmel Studio generated files
+Debug/
+Release/
+*.atsln.user
+*.componentinfo.xml
+*.cproj
+*.cproj.user
+ipch/
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
