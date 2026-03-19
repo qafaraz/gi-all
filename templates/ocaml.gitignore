@@ -1,0 +1,14 @@
+*.cmo
+*.cma
+*.cmi
+*.cmx
+*.cmxa
+*.cmxs
+*.cmt
+*.cmti
+*.annot
+_build/
+_opam/
+.merlin
+*.byte
+*.native
