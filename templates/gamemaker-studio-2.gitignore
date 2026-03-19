@@ -1,0 +1,5 @@
+*.yyz
+/options/windows/icons/
+/options/linux/splash/
+.cache/
+Logs/
