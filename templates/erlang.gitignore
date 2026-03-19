@@ -1,0 +1,11 @@
+.eunit/
+*.plt
+ebin/
+.rebar3
+_build/
+_checkouts/
+deps/
+erl_crash.dump
+rel/example_project
+.concrete/DEV_MODE
+rebar3.crashdump
