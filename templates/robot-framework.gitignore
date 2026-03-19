@@ -1,0 +1,6 @@
+output.xml
+log.html
+report.html
+selenium-screenshots/
+geckodriver.log
+chromedriver.log
