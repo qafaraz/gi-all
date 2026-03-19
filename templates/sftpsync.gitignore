@@ -1,0 +1,3 @@
+.ftpsync.settings
+sftp-config.json
+sftp-config-alt*.json
