@@ -1,0 +1,11 @@
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-*/
+buck-out/
+.buckd/
+.buckconfig.local
+.buckversion
+.pants.d/
+dist/
+.pids/
