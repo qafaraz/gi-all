@@ -1,0 +1,6 @@
+docker-compose.override.yml
+.docker/
+*.log
+.env
+docker-compose.local.yml
+*.dockerignore.local
