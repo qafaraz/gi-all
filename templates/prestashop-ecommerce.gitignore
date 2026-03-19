@@ -1,0 +1,10 @@
+app/config/parameters.php
+cache/
+log/
+img/tmp/
+upload/
+vendor/
+themes/*/assets/cache/
+themes/*/assets/css/
+themes/*/assets/js/
+admin*/autoupgrade/
