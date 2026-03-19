@@ -1,0 +1,6 @@
+data/
+plugins/
+provisioning/dashboards/*.json
+grafana/data/
+prometheus/data/
+loki/data/
