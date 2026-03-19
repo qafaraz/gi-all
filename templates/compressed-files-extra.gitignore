@@ -1,0 +1,6 @@
+*.xpi
+*.deb
+*.rpm
+*.pkg
+*.pkg.tar.xz
+*.apk
