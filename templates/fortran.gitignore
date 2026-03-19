@@ -1,0 +1,7 @@
+*.mod
+*.smod
+*.i
+*.i90
+*.o
+*.f90.bak
+fort.*
