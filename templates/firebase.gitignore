@@ -1,0 +1,5 @@
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+.firebaserc
+.runtimeconfig.json
