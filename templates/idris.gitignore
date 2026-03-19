@@ -1,0 +1,6 @@
+*.ibc
+*.idrepl
+.idris/
+build/
+*.ttc
+*.ttm
