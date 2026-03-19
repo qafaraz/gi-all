@@ -1,0 +1,32 @@
+*.d
+*.gch
+*.pch
+*.slo
+*.lo
+*.dylib
+*.so.*
+*.i*86
+*.x86_64
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+# Autotools
+Makefile.in
+aclocal.m4
+autom4te.cache/
+configure
+depcomp
+install-sh
+ltmain.sh
+missing
+# Fortran
+*.mod
+*.smod
