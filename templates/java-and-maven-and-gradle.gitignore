@@ -1,0 +1,31 @@
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+hs_err_pid*
+replay_pid*
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+# Gradle
+.gradle/
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+*.dex
+*.apk
+*.aar
+*.ap_
+*.aab
+.cxx/
+capture/
+output.json
