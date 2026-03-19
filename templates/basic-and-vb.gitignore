@@ -1,0 +1,8 @@
+# Visual Basic
+*.vbw
+*.vb~
+# FreeBASIC
+*.o
+*.bi.bak
+# QB64
+tempinfo/
