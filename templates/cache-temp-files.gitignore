@@ -1,0 +1,16 @@
+.cache/
+.cache-loader/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.old
+*.new
+*.swp
+*.swo
+*.swn
+*~
+*.tsbuildinfo
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
