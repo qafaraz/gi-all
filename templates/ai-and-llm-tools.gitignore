@@ -1,0 +1,14 @@
+.langchain.db
+langchain.db
+.chroma/
+chroma/
+qdrant_storage/
+.pinecone/
+.weaviate/
+vector_stores/
+embeddings_cache/
+*.gguf
+*.ggml
+*.bin
+llama.cpp/models/
+ollama/models/
