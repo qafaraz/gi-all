@@ -1,0 +1,6 @@
+dump.rdb
+appendonly.aof
+nodes.conf
+*.rdb
+nodes-*.conf
+redis.pid
