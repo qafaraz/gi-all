@@ -1,0 +1,7 @@
+.gcloud/
+gcloud/
+*.json
+!package.json
+!composer.json
+!tsconfig.json
+service-account.json
