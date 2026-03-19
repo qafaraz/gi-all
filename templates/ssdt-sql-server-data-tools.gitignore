@@ -1,0 +1,6 @@
+*.user
+*.dbmdl
+*.jfm
+SchemaCompareResult.scmp
+*.publish.xml
+*.sqlsuo
