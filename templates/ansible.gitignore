@@ -1,0 +1,8 @@
+*.retry
+.vault_pass
+vault_password_file
+inventory/
+!inventory/hosts.example
+# Retry files
+# Collections
+/collections/
