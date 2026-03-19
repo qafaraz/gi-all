@@ -1,0 +1,9 @@
+*.bit
+*.svf
+*.xsvf
+*.jed
+*.exo
+*.svd
+openocd.cfg
+*.uf2
+*.elf.map
