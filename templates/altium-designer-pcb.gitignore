@@ -1,0 +1,6 @@
+**/__Previews/
+**/History/*
+Project\ Logs*/
+Project\ Outputs*/
+*.PcbDoc.htm
+**/*.ldb
