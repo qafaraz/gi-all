@@ -1,0 +1,7 @@
+/tmp/
+# DVC cache
+.dvc/cache
+.dvc/tmp
+.dvc/plots
+# DVC lock file (should be committed for reproducibility)
+# dvc.lock
