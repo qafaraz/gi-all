@@ -1,0 +1,4 @@
+*.moc
+*.order
+buildModelica/
+.openmodelica/
