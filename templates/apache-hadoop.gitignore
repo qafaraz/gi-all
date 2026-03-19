@@ -1,0 +1,9 @@
+# Hadoop
+target/
+*.class
+*.jar
+# Hive
+metastore_db/
+derby.log
+# HDFS
+*.crc
