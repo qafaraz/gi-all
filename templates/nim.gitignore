@@ -1,0 +1,7 @@
+nimcache/
+*.exe
+*.dll
+*.dylib
+*.so
+nimblepath/
+*.nimble.lock
