@@ -1,0 +1,7 @@
+*.exe~
+go.sum
+go.work.sum
+vendor/
+*.exe
+*.test
+*.out
