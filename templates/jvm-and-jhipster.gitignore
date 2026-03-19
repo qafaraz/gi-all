@@ -1,0 +1,7 @@
+target/
+node/
+node_modules/
+*.war
+*.class
+.jhipster/*.json
+.yo-rc.json
