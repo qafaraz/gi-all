@@ -1,0 +1,10 @@
+*.class
+.history
+.lib/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.worksheet/
+.bsp/
+project/project/
