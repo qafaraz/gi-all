@@ -1,0 +1,5 @@
+uploads/
+storage/*.key
+storage/framework/views/*.php
+storage/framework/cache/data/*
+storage/sessions/*
