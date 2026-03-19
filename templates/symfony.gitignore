@@ -1,0 +1,7 @@
+/var/
+/vendor/
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/config/secrets/prod/prod.decrypt.private.pem
