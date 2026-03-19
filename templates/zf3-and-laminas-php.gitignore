@@ -1,0 +1,4 @@
+config/autoload/doctrine.local.php
+config/autoload/*.local.php
+data/cache/
+vendor/
