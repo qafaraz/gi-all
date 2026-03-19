@@ -1,0 +1,75 @@
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.vscode-test/
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, GoLand, Rider, etc.)
+.idea/
+.idea_modules/
+*.iws
+*.iml
+*.ipr
+.history/
+.kotlin/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.settings/
+.classpath
+.factorypath
+.buildpath
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.userprefs
+*.userosscache
+*.sln.docstates
+_ReSharper*/
+.vs/
+
+# Vim / Neovim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+.cask/
+.projectile
+.dir-locals.el
+
+# Cursor IDE
+.cursor/
+
+# Zed
+.zed/
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
