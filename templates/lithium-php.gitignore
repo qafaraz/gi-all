@@ -1,0 +1,4 @@
+app/resources/tmp/cache/*
+app/resources/tmp/logs/*
+app/resources/tmp/tests/*
+app/webroot/cache/
