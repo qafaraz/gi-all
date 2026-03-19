@@ -1,0 +1,5 @@
+Cache/
+Output/
+Source/packages.lock.json
+Packages/
+.vs/
