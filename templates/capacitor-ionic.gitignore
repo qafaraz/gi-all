@@ -1,0 +1,6 @@
+/ios/App/Pods/
+/ios/App/App.xcworkspace/
+www/
+/android/
+/ios/
+.capacitor/
