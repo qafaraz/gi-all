@@ -1,0 +1,12 @@
+# Adobe Animate / Flash
+*.swf
+*.swc
+*.flv
+*.fla
+*.as
+bin-debug/
+bin-release/
+AIR/
+AIRMobile/
+AIRMobileSimulator/
+*.air
