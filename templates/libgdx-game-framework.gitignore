@@ -1,0 +1,12 @@
+.gradle/
+local.properties
+*.iml
+*.class
+bin/
+gen/
+android/bin/
+android/gen/
+ios/.comlinkdb
+html/target/
+desktop/bin/
+desktop/target/
