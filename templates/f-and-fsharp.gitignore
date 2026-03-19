@@ -1,0 +1,5 @@
+*.fsproj.user
+.fake/
+paket-files/
+.paket/paket.exe
+packages/
