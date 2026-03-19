@@ -1,0 +1,15 @@
+# 1C:Enterprise
+*.cf
+*.cfu
+*.epf
+*.erf
+*.ert
+bin/
+obj/
+# 1C-Bitrix CMS
+bitrix/modules/
+bitrix/cache/
+bitrix/managed_cache/
+bitrix/stack_cache/
+upload/
+/local/
