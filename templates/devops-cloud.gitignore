@@ -1,0 +1,23 @@
+.docker/
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+*.tfplan
+.vagrant/
+docker-compose.override.yml
+.kube/config
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.ebextensions/
+.aws/
+.gcloud/
+.azure/
+.terragrunt-cache/
+# Ansible
+*.retry
+# Helm
+charts/
