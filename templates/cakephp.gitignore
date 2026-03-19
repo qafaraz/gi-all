@@ -1,0 +1,24 @@
+/app/tmp/*
+!/app/tmp/cache
+!/app/tmp/logs
+!/app/tmp/sessions
+!/app/tmp/tests
+/app/tmp/cache/models/*
+!/app/tmp/cache/models/empty
+/app/tmp/cache/persistent/*
+!/app/tmp/cache/persistent/empty
+/app/tmp/cache/views/*
+!/app/tmp/cache/views/empty
+/app/tmp/sessions/*
+!/app/tmp/sessions/empty
+/app/tmp/tests/*
+!/app/tmp/tests/empty
+/app/tmp/logs/*
+!/app/tmp/logs/empty
+/config/.env
+# CakePHP 2.x
+/app/tmp/
+/app/Config/database.php
+# CakePHP 3.x
+/logs/
+/tmp/
