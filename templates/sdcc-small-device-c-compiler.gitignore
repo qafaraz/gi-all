@@ -1,0 +1,14 @@
+*.asm
+*.lst
+*.rst
+*.sym
+*.rel
+*.mem
+*.lnk
+*.map
+*.noi
+*.ihx
+*.adb
+*.aomf
+*.IHX
+*.cdb
