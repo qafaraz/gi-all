@@ -1,0 +1,5 @@
+secring.*
+*.asc
+*.gpg
+*.pgp
+pubring.*
