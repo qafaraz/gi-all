@@ -1,0 +1,5 @@
+AppData/
+wwwroot/globalassets/
+wwwroot/siteassets/
+**/modules/_protected/
+**/licensedmodules/
