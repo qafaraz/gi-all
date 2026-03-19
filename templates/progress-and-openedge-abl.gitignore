@@ -1,0 +1,6 @@
+*.r
+*.rcode
+.oeide_properties
+.OpenEdgeProjectProperties
+build/
+*.bak
