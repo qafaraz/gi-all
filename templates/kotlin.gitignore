@@ -1,0 +1,15 @@
+# Compiled code
+*.class
+.idea/
+.kotlin/
+*.iml
+# Local configuration file
+local.properties
+# Build results
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
