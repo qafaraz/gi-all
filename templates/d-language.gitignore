@@ -1,0 +1,16 @@
+*.o
+*.obj
+docs.json
+__dummy.html
+docs/
+/man/
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.map
+*.lst
+*.dep
+/generated/
+.dub/
+dub.selections.json
