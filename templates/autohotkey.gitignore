@@ -1,0 +1,5 @@
+# AutoHotkey compiled scripts
+*.exe
+# Script backups
+*.bak
+*.ahk.bak
