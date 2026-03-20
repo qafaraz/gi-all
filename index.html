@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="gi-all is a modular .gitignore generator with 500+ templates, dynamic indexing, and built-in secret protection.">
+    <title>gi-all — The only .gitignore generator you'll ever need</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#top" class="logo"><span>&gt; gi-all</span><span class="cursor" aria-hidden="true"></span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#templates">Templates</a>
+                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="section hero reveal">
+            <div class="container hero-grid">
+                <div class="terminal" aria-label="Terminal simulation">
+                    <div class="terminal-head"><span class="dot red"></span><span class="dot yellow"></span><span
+                            class="dot green"></span></div>
+                    <div class="terminal-body" id="typewriter" aria-live="polite"></div>
+                </div>
+                <h1>The only .gitignore generator you'll ever need.</h1>
+                <p>500+ templates. Zero leaked secrets. One command.</p>
+                <div class="cta-row">
+                    <button class="btn primary mono" data-copy="npx gi-all" id="heroCopy">$ npx gi-all</button>
+                    <a class="btn" href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">View on
+                        GitHub</a>
+                </div>
+                <div class="badges">
+                    <img src="https://img.shields.io/npm/v/gi-all?style=for-the-badge&color=00ff88&labelColor=111111"
+                        alt="npm version badge">
+                    <img src="https://img.shields.io/github/stars/qafaraz/gi-all?style=for-the-badge&color=00ccff&labelColor=111111"
+                        alt="GitHub stars badge">
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="features">
+            <div class="container">
+                <h2 class="section-title">Why gi-all?</h2>
+                <div class="accent-line"></div>
+                <div class="feature-grid">
+                    <article class="card">
+                        <div class="icon">🧩</div>
+                        <h3>Modular by Design</h3>
+                        <p>Every technology lives in its own template. Pick only what you need.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🗃️</div>
+                        <h3>500+ Templates</h3>
+                        <p>From React to Unity to Kubernetes — if you use it, we have it.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🛡️</div>
+                        <h3>Zero Secret Leaks</h3>
+                        <p>.env files, private keys, and certificates are hardcoded as protected. Always.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🧪</div>
+                        <h3>Smart Deduplication</h3>
+                        <p>Merges all your selected templates and removes every duplicate rule.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">⚡</div>
+                        <h3>Dynamic Indexing</h3>
+                        <p>CLI scans templates at runtime. Every file is auto-discovered. No hardcoding.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🔀</div>
+                        <h3>Conflict Resolution</h3>
+                        <p>Existing .gitignore? Choose to Merge, Overwrite, or Cancel. You're in control.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">From Zero to .gitignore in Seconds</h2>
+                <p class="section-sub">A simple interactive flow keeps your ignore rules clean, safe, and focused.</p>
+                <div class="timeline">
+                    <article class="step">
+                        <div class="step-num">01</div>
+                        <h3>Run the command</h3>
+                        <p>Start in your project root and launch the CLI.<br><span class="inline-code">npx gi-all</span>
+                        </p>
+                    </article>
+                    <article class="step">
+                        <div class="step-num">02</div>
+                        <h3>Pick your categories</h3>
+                        <p>Choose from Frontend, Backend, Mobile, DevOps &amp; Cloud, IDE &amp; Editor, Database, Game
+                            &amp; 3D, Data &amp; Science.</p>
+                    </article>
+                    <article class="step">
+                        <div class="step-num">03</div>
+                        <h3>Select your technologies</h3>
+                        <p>Pick the exact tools you use. React? Docker? Unity? All of them.</p>
+                    </article>
+                    <article class="step">
+                        <div class="step-num">04</div>
+                        <h3>Done.</h3>
+                        <p>A clean, deduplicated .gitignore lands in your project root. Secrets protected. No noise. No
+                            manual merging.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="install">
+            <div class="container">
+                <h2 class="section-title">Install in One Command</h2>
+                <div class="install-wrap">
+                    <div class="tabs" id="tabs">
+                        <button class="tab-btn active" data-tab="npm">npm</button>
+                        <button class="tab-btn" data-tab="yarn">yarn</button>
+                        <button class="tab-btn" data-tab="pnpm">pnpm</button>
+                        <button class="tab-btn" data-tab="bun">bun</button>
+                        <div class="tab-underline" id="tabUnderline"></div>
+                    </div>
+                    <div class="code-panel active" data-panel="npm">
+                        <div class="code-block"><span>npx gi-all
+                                or
+                                npm install -g gi-all</span><button class="copy-btn"
+                                data-copy="npx gi-all&#10;or&#10;npm install -g gi-all"
+                                aria-label="Copy npm commands"></button></div>
+                    </div>
+                    <div class="code-panel" data-panel="yarn">
+                        <div class="code-block"><span>yarn dlx gi-all
+                                or
+                                yarn global add gi-all</span><button class="copy-btn"
+                                data-copy="yarn dlx gi-all&#10;or&#10;yarn global add gi-all"
+                                aria-label="Copy yarn commands"></button></div>
+                    </div>
+                    <div class="code-panel" data-panel="pnpm">
+                        <div class="code-block"><span>pnpm dlx gi-all
+                                or
+                                pnpm install -g gi-all</span><button class="copy-btn"
+                                data-copy="pnpm dlx gi-all&#10;or&#10;pnpm install -g gi-all"
+                                aria-label="Copy pnpm commands"></button></div>
+                    </div>
+                    <div class="code-panel" data-panel="bun">
+                        <div class="code-block"><span>bunx gi-all
+                                or
+                                bun add -g gi-all</span><button class="copy-btn"
+                                data-copy="bunx gi-all&#10;or&#10;bun add -g gi-all"
+                                aria-label="Copy bun commands"></button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="templates">
+            <div class="container">
+                <h2 class="section-title">A Template for Everything</h2>
+                <div class="stats-grid">
+                    <article class="stat">
+                        <div class="stat-value" data-count="500" data-suffix="+">0</div>
+                        <div class="stat-label">Templates</div>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-value" data-count="9">0</div>
+                        <div class="stat-label">Categories</div>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-value" data-count="0">0</div>
+                        <div class="stat-label">Secrets leaked</div>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-value" data-count="1">0</div>
+                        <div class="stat-label">Command needed</div>
+                    </article>
+                </div>
+                <div class="tag-cloud">
+                    <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Angular</span><span
+                        class="tag">Vue</span><span class="tag">Svelte</span>
+                    <span class="tag">Astro</span><span class="tag">Flutter</span><span class="tag">Unity</span><span
+                        class="tag">Docker</span><span class="tag">Kubernetes</span>
+                    <span class="tag">Terraform</span><span class="tag">Node.js</span><span
+                        class="tag">Django</span><span class="tag">Laravel</span><span class="tag">Spring</span>
+                    <span class="tag">Rails</span><span class="tag">Android</span><span class="tag">iOS</span><span
+                        class="tag">VS Code</span><span class="tag">JetBrains</span>
+                    <span class="tag">Vim</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span
+                        class="tag">Redis</span><span class="tag">Godot</span>
+                    <span class="tag">Unreal</span><span class="tag">FastAPI</span><span class="tag">NestJS</span><span
+                        class="tag">Webpack</span><span class="tag">Vite</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#top" class="logo"><span>&gt; gi-all</span></a>
+                <div style="color:#8f8f8f;font-size:.9rem;">Modular .gitignore generation for modern stacks.</div>
+            </div>
+            <div class="footer-center">
+                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.npmjs.com/package/gi-all" target="_blank" rel="noopener">npm</a>
+                <a href="https://github.com/qafaraz/gi-all/issues" target="_blank" rel="noopener">Issues</a>
+                <a href="https://github.com/qafaraz/gi-all/blob/main/README.md" target="_blank"
+                    rel="noopener">Contributing</a>
+            </div>
+            <div class="footer-right">MIT License · Made by <a href="https://github.com/qafaraz" target="_blank"
+                    rel="noopener">Qafar</a></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">Copied!</div>
+
+    <script src="assets/js/main.js"></script>
+
+    <!--
+    DEPLOYMENT INSTRUCTIONS:
+    1. Save this file as index.html in your repo root (or /docs folder)
+    2. Go to GitHub repo → Settings → Pages
+    3. Source: Deploy from branch
+    4. Branch: main (or master) | Folder: / (root) or /docs
+    5. Save → site will be live at: `https://qafaraz.github.io/gi-all/`
+
+    CUSTOM DOMAIN (optional):
+    - Add a CNAME file to repo root with your domain
+    - Configure DNS: CNAME record pointing to qafaraz.github.io
+  -->
+</body>
+
+</html>
