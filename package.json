@@ -1,11 +1,11 @@
 {
   "name": "gi-all",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
   "homepage": "https://github.com/qafaraz/gi-all",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qafaraz/gi-all.git"
+    "url": "git+https://github.com/qafaraz/gi-all.git"
   },
   "bugs": {
     "url": "https://github.com/qafaraz/gi-all/issues"
@@ -16,7 +16,7 @@
   },
   "license": "MIT",
   "bin": {
-    "gi-all": "./bin/cli.js"
+    "gi-all": "bin/cli.js"
   },
   "main": "src/cli.js",
   "files": [
