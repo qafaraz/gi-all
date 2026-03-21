@@ -198,6 +198,8 @@ If `.gitignore` already exists, you’ll be asked to:
 
 `gi-all` is designed to be a **community-driven catalog** of `.gitignore` best practices.
 
+📚 Wiki: https://github.com/qafaraz/gi-all/wiki
+
 - Want to add support for a new framework, IDE, or tool?
 - Know a better ignore rule for a popular stack?
 

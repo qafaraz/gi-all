@@ -196,6 +196,8 @@ Sonrasında:
 
 `gi-all`, **topluluk tarafından beslenen bir `.gitignore` bilgi bankası** olarak tasarlandı.
 
+📚 Wiki: https://github.com/qafaraz/gi-all/wiki
+
 - Yeni bir framework, IDE veya araç için destek eklemek mi istiyorsun?
 - Popüler bir stack için daha iyi ignore kuralları mı biliyorsun?
 
