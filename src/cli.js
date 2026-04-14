@@ -1,10 +1,85 @@
 const path = require("path");
 const fs = require("fs");
+const crypto = require("crypto");
 const inquirerModule = require("inquirer");
 const chalk = require("chalk");
 
 const { loadTemplates, readTemplateFile } = require("./core/templateLoader");
 const { mergeTemplateContents, mergeWithExisting } = require("./core/merger");
+
+function assertSafeGitignoreTarget(targetPath) {
+  let targetStats;
+  try {
+    targetStats = fs.lstatSync(targetPath);
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return;
+    }
+    throw error;
+  }
+
+  if (targetStats.isSymbolicLink()) {
+    throw new Error(
+      "Refusing to write to a symbolic link. Replace the linked .gitignore with a regular file and try again."
+    );
+  }
+
+  if (!targetStats.isFile()) {
+    throw new Error(
+      "Refusing to write to a non-regular .gitignore target."
+    );
+  }
+
+  // Reject multi-linked files to avoid overwriting unexpected targets through hard links.
+  if (typeof targetStats.nlink === "number" && targetStats.nlink > 1) {
+    throw new Error(
+      "Refusing to write to a multi-linked .gitignore target."
+    );
+  }
+}
+
+function createTemporaryGitignorePath(targetPath) {
+  const targetDir = path.dirname(targetPath);
+  const targetBase = path.basename(targetPath);
+
+  for (let attempt = 0; attempt < 10; attempt += 1) {
+    const suffix = `${process.pid}-${Date.now()}-${crypto.randomBytes(6).toString("hex")}`;
+    const tempPath = path.join(targetDir, `.${targetBase}.${suffix}.tmp`);
+
+    if (!fs.existsSync(tempPath)) {
+      return tempPath;
+    }
+  }
+
+  throw new Error("Unable to allocate a temporary file for safe .gitignore writing.");
+}
+
+function writeGitignoreSafely(targetPath, content) {
+  assertSafeGitignoreTarget(targetPath);
+
+  const tempPath = createTemporaryGitignorePath(targetPath);
+  const targetExists = fs.existsSync(targetPath);
+  let targetMode;
+
+  if (targetExists) {
+    targetMode = fs.statSync(targetPath).mode;
+  }
+
+  try {
+    fs.writeFileSync(tempPath, content, {
+      encoding: "utf8",
+      flag: "wx",
+      mode: targetMode
+    });
+
+    fs.renameSync(tempPath, targetPath);
+  } catch (error) {
+    if (fs.existsSync(tempPath)) {
+      fs.unlinkSync(tempPath);
+    }
+    throw error;
+  }
+}
 
 async function run() {
   const inquirer = inquirerModule.default || inquirerModule;
@@ -120,8 +195,9 @@ async function run() {
     }
 
     if (conflictResolution === "merge") {
+      assertSafeGitignoreTarget(targetPath);
       const finalContent = mergeWithExisting(targetPath, generated);
-      fs.writeFileSync(targetPath, finalContent, "utf8");
+      writeGitignoreSafely(targetPath, finalContent);
       console.log(
         chalk.green(
           "✅ Merged gi-all templates into existing .gitignore with safety rules enforced."
@@ -131,7 +207,7 @@ async function run() {
     }
 
     if (conflictResolution === "overwrite") {
-      fs.writeFileSync(targetPath, generated, "utf8");
+      writeGitignoreSafely(targetPath, generated);
       console.log(
         chalk.green(
           "✅ Overwrote existing .gitignore with gi-all output (including mandatory safety rules)."
@@ -140,7 +216,7 @@ async function run() {
       return;
     }
   } else {
-    fs.writeFileSync(targetPath, generated, "utf8");
+    writeGitignoreSafely(targetPath, generated);
     console.log(
       chalk.green(
         "✅ Created .gitignore from selected gi-all templates with mandatory safety rules."
@@ -149,7 +225,12 @@ async function run() {
   }
 }
 
-module.exports = { run };
+module.exports = {
+  run,
+  assertSafeGitignoreTarget,
+  writeGitignoreSafely,
+  createTemporaryGitignorePath
+};
 
 if (require.main === module) {
   run().catch((err) => {

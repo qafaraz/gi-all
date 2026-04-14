@@ -327,10 +327,19 @@ a {
   flex-wrap: wrap;
 }
 
-.badges img {
-  height: 28px;
+.badge-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.35rem 0.75rem;
   border: var(--border);
   background: #111;
+  color: #d8fff0;
+  font-size: 0.83rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: var(--glow-green);
 }
 
 .feature-grid {
@@ -592,6 +601,11 @@ a {
 
 .footer-center a:hover {
   color: var(--primary);
+}
+
+.footer-note {
+  color: #8f8f8f;
+  font-size: 0.9rem;
 }
 
 .footer-right {

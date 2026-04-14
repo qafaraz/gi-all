@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="description"
         content="gi-all is a modular .gitignore generator with 500+ templates, dynamic indexing, and built-in secret protection.">
     <title>gi-all — The only .gitignore generator you'll ever need</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -23,7 +20,7 @@
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How it Works</a>
                 <a href="#templates">Templates</a>
-                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener noreferrer">GitHub</a>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -40,17 +37,16 @@
                     <div class="terminal-body" id="typewriter" aria-live="polite"></div>
                 </div>
                 <h1>The only .gitignore generator you'll ever need.</h1>
-                <p>500+ templates. Zero leaked secrets. One command.</p>
+                <p>500+ templates. Stronger secret defaults. One command.</p>
                 <div class="cta-row">
                     <button class="btn primary mono" data-copy="npx gi-all" id="heroCopy">$ npx gi-all</button>
-                    <a class="btn" href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">View on
+                    <a class="btn" href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener noreferrer">View on
                         GitHub</a>
                 </div>
                 <div class="badges">
-                    <img src="https://img.shields.io/npm/v/gi-all?style=for-the-badge&color=00ff88&labelColor=111111"
-                        alt="npm version badge">
-                    <img src="https://img.shields.io/github/stars/qafaraz/gi-all?style=for-the-badge&color=00ccff&labelColor=111111"
-                        alt="GitHub stars badge">
+                    <span class="badge-chip">npm package</span>
+                    <span class="badge-chip">500+ templates</span>
+                    <span class="badge-chip">secret-aware defaults</span>
                 </div>
             </div>
         </section>
@@ -72,8 +68,8 @@
                     </article>
                     <article class="card">
                         <div class="icon">🛡️</div>
-                        <h3>Zero Secret Leaks</h3>
-                        <p>.env files, private keys, and certificates are hardcoded as protected. Always.</p>
+                        <h3>Stronger Secret Defaults</h3>
+                        <p>Common secret files are protected by default, with more coverage added on top of selected templates.</p>
                     </article>
                     <article class="card">
                         <div class="icon">🧪</div>
@@ -119,7 +115,7 @@
                     <article class="step">
                         <div class="step-num">04</div>
                         <h3>Done.</h3>
-                        <p>A clean, deduplicated .gitignore lands in your project root. Secrets protected. No noise. No
+                        <p>A clean, deduplicated .gitignore lands in your project root with built-in safety rules. No noise. No
                             manual merging.</p>
                     </article>
                 </div>
@@ -182,8 +178,8 @@
                         <div class="stat-label">Categories</div>
                     </article>
                     <article class="stat">
-                        <div class="stat-value" data-count="0">0</div>
-                        <div class="stat-label">Secrets leaked</div>
+                        <div class="stat-value" data-count="20" data-suffix="+">0</div>
+                        <div class="stat-label">Safety defaults</div>
                     </article>
                     <article class="stat">
                         <div class="stat-value" data-count="1">0</div>
@@ -212,17 +208,17 @@
         <div class="container footer-grid">
             <div>
                 <a href="#top" class="logo"><span>&gt; gi-all</span></a>
-                <div style="color:#8f8f8f;font-size:.9rem;">Modular .gitignore generation for modern stacks.</div>
+                <div class="footer-note">Modular .gitignore generation for modern stacks.</div>
             </div>
             <div class="footer-center">
-                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.npmjs.com/package/gi-all" target="_blank" rel="noopener">npm</a>
-                <a href="https://github.com/qafaraz/gi-all/issues" target="_blank" rel="noopener">Issues</a>
+                <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.npmjs.com/package/gi-all" target="_blank" rel="noopener noreferrer">npm</a>
+                <a href="https://github.com/qafaraz/gi-all/issues" target="_blank" rel="noopener noreferrer">Issues</a>
                 <a href="https://github.com/qafaraz/gi-all/blob/main/README.md" target="_blank"
-                    rel="noopener">Contributing</a>
+                    rel="noopener noreferrer">Contributing</a>
             </div>
             <div class="footer-right">MIT License · Made by <a href="https://github.com/qafaraz" target="_blank"
-                    rel="noopener">Qafar</a></div>
+                    rel="noopener noreferrer">Qafar</a></div>
         </div>
     </footer>
 

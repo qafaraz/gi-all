@@ -6,7 +6,7 @@ const terminalLines = [
   "✔ Merging templates...",
   "✔ Deduplicating rules...",
   "✔ Appending security rules...",
-  "✓ .gitignore generated! (47 rules, 0 secrets exposed)"
+  "✓ .gitignore generated! (47 rules, stronger safety defaults applied)"
 ];
 
 const navbar = document.getElementById("navbar");

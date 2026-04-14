@@ -1,6 +1,6 @@
 {
   "name": "gi-all",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
   "homepage": "https://qafaraz.github.io/gi-all",
   "repository": {
@@ -29,6 +29,7 @@
   "scripts": {
     "start": "node src/cli.js",
     "dev": "node src/cli.js",
+    "test": "node --test",
     "lint": "node -e \"console.log('Add your linter of choice here')\""
   },
   "keywords": [

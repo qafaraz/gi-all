@@ -33,7 +33,7 @@ Most `.gitignore` generators fall into one of two traps:
   - Read all the selected `.gitignore` templates
   - Merge them into one smart `.gitignore`
   - Remove duplicate lines and redundant whitespace
-  - Append hardcoded security rules so you never leak secrets
+  - Append mandatory safety rules for common secret and credential files
 
 You get a **clean, minimal, accurate** `.gitignore` tailored to your stack — not someone else’s.
 
@@ -61,7 +61,7 @@ If it lives in `templates/`, `gi-all` can generate it.
 
 ---
 
-## 🛡️ Safety First (Secrets Are Never Optional)
+## 🛡️ Safety First (Common Secret Files Protected by Default)
 
 Leaking `.env` files or private keys into Git is a costly mistake — and it usually happens because someone forgot to add a rule.
 
@@ -69,14 +69,16 @@ Leaking `.env` files or private keys into Git is a costly mistake — and it usu
 
 - `.env`, `.env.*`, `*.env` and common per‑environment variants
 - Private keys & certificates: `*.key`, `*.pem`, `*.p12`, `*.cert`, `*.crt`, `*.pfx`, `id_rsa*`, `id_ed25519`, etc.
-- Generic secret stores like `secrets.*`, `*.kdbx`
+- Developer and cloud credentials like `.envrc`, `.npmrc`, `.netrc`, `.aws/`, `credentials.json`
+- Infrastructure and mobile secrets like `*.tfstate`, `*.tfvars`, `*.tfplan`, `*.mobileprovision`, `GoogleService-Info.plist`
+- Generic secret stores like `secrets.*`, `*.kdbx`, `serviceAccountKey.json`, `firebase-adminsdk*.json`
 - `node_modules/` and common debug logs
 - Misc OS/editor noise like `.DS_Store`
 
 These rules are **hardcoded and automatically appended** on top of whatever templates you select.  
-Even if a template is incomplete or outdated, `gi-all` **will still protect your secrets**.
+Even if a template is incomplete or outdated, `gi-all` still adds a baseline layer of protection.
 
-> It should be *extremely hard* to accidentally commit `.env` files or private keys when you use `gi-all`.
+> `gi-all` significantly reduces the chance of accidentally committing common secret files, but you should still review generated rules for project-specific credentials.
 
 ---
 
@@ -97,6 +99,7 @@ Even if a template is incomplete or outdated, `gi-all` **will still protect your
     - **Merge**: Combine your existing rules with the generated ones (deduplicated).
     - **Overwrite**: Replace your current `.gitignore` entirely.
     - **Cancel**: Abort without touching anything.
+  - For safety, `gi-all` refuses to overwrite `.gitignore` targets that are symbolic links or multi-linked files.
 
 ---
 
