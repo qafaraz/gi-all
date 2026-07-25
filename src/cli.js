@@ -427,7 +427,7 @@ async function run(argv) {
     throw new TypeError("Inquirer prompt API is unavailable in this environment.");
   }
 
-  console.log(chalk.cyan.bold("\n⚙️  gi-all — The Modular .gitignore Generator\n"));
+  console.log(chalk.cyan.bold("\ngi-all - The Modular .gitignore Generator\n"));
 
   // Derive available categories from templates
   const categories = Array.from(new Set(templates.map((t) => t.category || "Other"))).sort();
