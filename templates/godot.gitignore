@@ -1,4 +1,9 @@
+# Godot 4.2+ specific ignores
+~*.dll
+
+# Godot 4+ specific ignores
 .godot/
+.nomedia
 export.cfg
 export_presets.cfg
 *.translation
