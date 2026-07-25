@@ -22,9 +22,16 @@ const { mergeTemplateContents, mergeWithExisting } = require("./core/merger");
  * @returns {{ flags: Record<string, string|boolean>, positionals: string[] }}
  */
 function parseArgs(argv) {
-  const flags = {};
+  const flags = Object.create(null);
   const positionals = [];
+  const DANGEROUS_KEYS = new Set(["__proto__", "constructor", "prototype"]);
   let i = 0;
+
+  const setFlag = (key, value) => {
+    if (!DANGEROUS_KEYS.has(key)) {
+      flags[key] = value;
+    }
+  };
 
   while (i < argv.length) {
     const arg = argv[i];
@@ -32,17 +39,17 @@ function parseArgs(argv) {
     if (arg.startsWith("--")) {
       const eqIdx = arg.indexOf("=");
       if (eqIdx !== -1) {
-        flags[arg.slice(2, eqIdx)] = arg.slice(eqIdx + 1);
+        setFlag(arg.slice(2, eqIdx), arg.slice(eqIdx + 1));
       } else if (i + 1 < argv.length && !argv[i + 1].startsWith("-")) {
-        flags[arg.slice(2)] = argv[i + 1];
+        setFlag(arg.slice(2), argv[i + 1]);
         i += 1;
       } else {
-        flags[arg.slice(2)] = true;
+        setFlag(arg.slice(2), true);
       }
     } else if (arg.startsWith("-") && arg.length === 2) {
       const aliases = { v: "version", h: "help", y: "yes", l: "list" };
       const key = aliases[arg[1]] ?? arg[1];
-      flags[key] = true;
+      setFlag(key, true);
     } else {
       positionals.push(arg);
     }
@@ -94,6 +101,22 @@ function assertGitignoreExtension(resolvedPath) {
         `gi-all only writes .gitignore files.`
     );
   }
+}
+
+/**
+ * Resolve and validate the output gitignore path.
+ *
+ * @param {string|undefined} customOutput
+ * @returns {string}
+ */
+function getAndValidateOutputPath(customOutput) {
+  const outputPath = customOutput
+    ? path.resolve(String(customOutput))
+    : path.join(process.cwd(), ".gitignore");
+
+  assertSafeOutputPath(outputPath);
+  assertGitignoreExtension(outputPath);
+  return outputPath;
 }
 
 // ---------------------------------------------------------------------------
@@ -237,7 +260,7 @@ function printList(templates, filterCategory) {
     return;
   }
 
-  console.log(chalk.cyan.bold("\n📋 Available Templates\n"));
+  console.log(chalk.cyan.bold("\n Available Templates\n"));
 
   for (const cat of categories) {
     console.log(chalk.bold.underline(cat));
@@ -369,14 +392,9 @@ async function run(argv) {
     const contents = resolved.map((t) => readTemplateFile(t.filePath, templatesDir));
     const generated = mergeTemplateContents(contents);
 
-    const outputPath = flags.output
-      ? path.resolve(String(flags.output))
-      : path.join(process.cwd(), ".gitignore");
-
-    // Fix #1 + #4: validate output path safety
+    let outputPath;
     try {
-      assertSafeOutputPath(outputPath);
-      assertGitignoreExtension(outputPath);
+      outputPath = getAndValidateOutputPath(flags.output);
     } catch (err) {
       console.error(chalk.red(err.message));
       process.exitCode = 1;
@@ -438,7 +456,7 @@ async function run(argv) {
       name: "selectedCategories",
       message: "Which areas does this project use? (pick one or more categories)",
       choices: categories,
-      pageSize: 10,
+      pageSize: 8,
       loop: false,
       validate: (value) => value.length > 0 || "Pick at least one category to continue."
     }
@@ -459,23 +477,19 @@ async function run(argv) {
       name: "selectedTemplates",
       message: "Select the specific technologies, frameworks, and tools used in this project:",
       choices: templateChoices,
-      pageSize: 20,
+      pageSize: 8,
       loop: false,
       validate: (value) => value.length > 0 || "Pick at least one template to generate .gitignore."
     }
   ]);
 
-  const contents = selectedTemplates.map((filePath) => readTemplateFile(filePath));
+  const templatesDir = path.join(projectRoot, "templates");
+  const contents = selectedTemplates.map((filePath) => readTemplateFile(filePath, templatesDir));
   const generated = mergeTemplateContents(contents);
 
-  const targetPath = flags.output
-    ? path.resolve(String(flags.output))
-    : path.join(process.cwd(), ".gitignore");
-
-  // Fix #1 + #4: validate output path safety
+  let targetPath;
   try {
-    assertSafeOutputPath(targetPath);
-    assertGitignoreExtension(targetPath);
+    targetPath = getAndValidateOutputPath(flags.output);
   } catch (err) {
     console.error(chalk.red(err.message));
     process.exitCode = 1;
@@ -554,7 +568,8 @@ module.exports = {
   writeGitignoreSafely,
   createTemporaryGitignorePath,
   assertSafeOutputPath,
-  assertGitignoreExtension
+  assertGitignoreExtension,
+  getAndValidateOutputPath
 };
 
 if (require.main === module) {

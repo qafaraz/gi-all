@@ -9,133 +9,120 @@ const path = require("node:path");
  * @param {string} filename
  * @returns {string}
  */
+const CATEGORY_MAP = [
+  {
+    category: "Frontend",
+    keywords: [
+      "react",
+      "next",
+      "nuxt",
+      "vue",
+      "svelte",
+      "angular",
+      "astro",
+      "remix",
+      "gatsby",
+      "webpack",
+      "vite",
+      "tailwind",
+      "story"
+    ]
+  },
+  {
+    category: "Backend",
+    keywords: [
+      "node",
+      "express",
+      "nest",
+      "laravel",
+      "symfony",
+      "django",
+      "flask",
+      "spring",
+      "rails",
+      "phoenix",
+      "adonis",
+      "fastapi",
+      "trpc",
+      "hono",
+      "elysia"
+    ]
+  },
+  {
+    category: "Mobile",
+    keywords: [
+      "android",
+      "ios",
+      "flutter",
+      "react-native",
+      "nativescript",
+      "ionic",
+      "capacitor",
+      "tizen"
+    ]
+  },
+  {
+    category: "DevOps & Cloud",
+    keywords: [
+      "docker",
+      "kubernetes",
+      "helm",
+      "terraform",
+      "ansible",
+      "serverless",
+      "vercel",
+      "netlify",
+      "railway",
+      "cloudflare",
+      "vagrant",
+      "packer",
+      "synology",
+      "devops"
+    ]
+  },
+  {
+    category: "IDE & Editor",
+    keywords: [
+      "vscode",
+      "visualstudio-code",
+      "visualstudio",
+      "webstorm",
+      "intellij",
+      "jetbrains",
+      "vim",
+      "emacs",
+      "sublime",
+      "xcode",
+      "android-studio",
+      "netbeans"
+    ]
+  },
+  {
+    category: "Database",
+    keywords: ["postgres", "mysql", "sqlite", "redis", "mongo", "mssql", "database"]
+  },
+  {
+    category: "Game & 3D",
+    keywords: ["unity", "unreal", "godot", "game", "flaxengine", "monogame", "pico-8"]
+  },
+  { category: "Data & Science", keywords: ["latex", "matlab", "jupyter", "wolfram", "ai", "ml"] }
+];
+
+/**
+ * Best-effort semantic category detection based on file name.
+ * This lets us present templates grouped as Frontend / Backend / Mobile / DevOps / IDE / DB / Game / Other
+ * without requiring you to restructure the template folder.
+ *
+ * @param {string} filename
+ * @returns {string}
+ */
 function inferCategory(filename) {
   const lower = filename.toLowerCase();
-
-  const inName = (needle) => lower.includes(needle);
-
-  if (
-    inName("react") ||
-    inName("next") ||
-    inName("nuxt") ||
-    inName("vue") ||
-    inName("svelte") ||
-    inName("angular") ||
-    inName("astro") ||
-    inName("remix") ||
-    inName("gatsby") ||
-    inName("webpack") ||
-    inName("vite") ||
-    inName("tailwind") ||
-    inName("story") // storybook
-  ) {
-    return "Frontend";
+  for (const group of CATEGORY_MAP) {
+    if (group.keywords.some((kw) => lower.includes(kw))) {
+      return group.category;
+    }
   }
-
-  if (
-    inName("node") ||
-    inName("express") ||
-    inName("nest") ||
-    inName("laravel") ||
-    inName("symfony") ||
-    inName("django") ||
-    inName("flask") ||
-    inName("spring") ||
-    inName("rails") ||
-    inName("phoenix") ||
-    inName("adonis") ||
-    inName("fastapi") ||
-    inName("trpc") ||
-    inName("hono") ||
-    inName("elysia")
-  ) {
-    return "Backend";
-  }
-
-  if (
-    inName("android") ||
-    inName("ios") ||
-    inName("flutter") ||
-    inName("react-native") ||
-    inName("nativescript") ||
-    inName("ionic") ||
-    inName("capacitor") ||
-    inName("tizen")
-  ) {
-    return "Mobile";
-  }
-
-  if (
-    inName("docker") ||
-    inName("kubernetes") ||
-    inName("helm") ||
-    inName("terraform") ||
-    inName("ansible") ||
-    inName("serverless") ||
-    inName("vercel") ||
-    inName("netlify") ||
-    inName("railway") ||
-    inName("cloudflare") ||
-    inName("vagrant") ||
-    inName("packer") ||
-    inName("synology") ||
-    inName("devops")
-  ) {
-    return "DevOps & Cloud";
-  }
-
-  if (
-    inName("vscode") ||
-    inName("visualstudio-code") ||
-    inName("visualstudio") ||
-    inName("webstorm") ||
-    inName("intellij") ||
-    inName("jetbrains") ||
-    inName("vim") ||
-    inName("emacs") ||
-    inName("sublime") ||
-    inName("xcode") ||
-    inName("android-studio") ||
-    inName("netbeans")
-  ) {
-    return "IDE & Editor";
-  }
-
-  if (
-    inName("postgres") ||
-    inName("mysql") ||
-    inName("sqlite") ||
-    inName("redis") ||
-    inName("mongo") ||
-    inName("mssql") ||
-    inName("database")
-  ) {
-    return "Database";
-  }
-
-  if (
-    inName("unity") ||
-    inName("unreal") ||
-    inName("godot") ||
-    inName("game") ||
-    inName("flaxengine") ||
-    inName("monogame") ||
-    inName("pico-8")
-  ) {
-    return "Game & 3D";
-  }
-
-  if (
-    inName("latex") ||
-    inName("matlab") ||
-    inName("jupyter") ||
-    inName("wolfram") ||
-    inName("ai") ||
-    inName("ml")
-  ) {
-    return "Data & Science";
-  }
-
   return "Other";
 }
 
@@ -253,6 +240,5 @@ function readTemplateFile(filePath, templatesDir) {
 module.exports = {
   loadTemplates,
   readTemplateFile,
-  // exported for testing
-  inferCategory: (filename) => inferCategory(filename)
+  inferCategory
 };
