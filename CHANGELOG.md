@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.3.2](https://github.com/qafaraz/gi-all/compare/v1.3.1...v1.3.2) (2026-07-25)
+
 ## [1.3.1](https://github.com/qafaraz/gi-all/compare/v1.3.0...v1.3.1) (2026-07-25)
 
 ## 1.3.0 (2026-07-25)
