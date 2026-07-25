@@ -12,7 +12,7 @@
   "github": {
     "release": true,
     "releaseName": "v${version}",
-    "autoGenerate": false,
+    "autoGenerate": true,
     "tokenRef": "GITHUB_TOKEN",
     "web": false
   },
