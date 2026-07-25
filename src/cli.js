@@ -1,7 +1,6 @@
 const path = require("node:path");
 const fs = require("node:fs");
 const crypto = require("node:crypto");
-const inquirerModule = require("inquirer");
 const chalk = require("chalk");
 
 const { loadTemplates, readTemplateFile } = require("./core/templateLoader");
@@ -412,6 +411,13 @@ async function run(argv) {
   // ---------------------------------------------------------------------------
   // Interactive mode
   // ---------------------------------------------------------------------------
+
+  let inquirerModule;
+  try {
+    inquirerModule = await import("inquirer");
+  } catch (_err) {
+    inquirerModule = require("inquirer");
+  }
 
   const inquirer = inquirerModule.default || inquirerModule;
   const prompt =
