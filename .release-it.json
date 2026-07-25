@@ -4,29 +4,20 @@
     "requireBranch": "main",
     "commitMessage": "chore(release): v${version}",
     "tagName": "v${version}",
-    "tagAnnotation": "Release v${version}",
     "push": true,
-    "requireCleanWorkingDir": false,
-    "requireUpstream": true
+    "requireCleanWorkingDir": false
   },
   "github": {
     "release": true,
     "releaseName": "v${version}",
-    "draft": false,
-    "preRelease": false
+    "web": false
   },
   "npm": {
     "publish": true
   },
-  "hooks": {
-    "before:init": ["npm run lint", "npm run test"]
-  },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": "conventionalcommits",
-      "infile": "CHANGELOG.md",
-      "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n",
-      "ignoreRecommendedBump": false
+      "infile": "CHANGELOG.md"
     }
   }
 }
