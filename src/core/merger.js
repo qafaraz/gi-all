@@ -1,5 +1,4 @@
-const path = require("path");
-const fs = require("fs");
+const fs = require("node:fs");
 
 const MANDATORY_RULES = [
   "# gi-all mandatory safety rules",
@@ -82,7 +81,7 @@ function mergeTemplateContents(contents) {
     if (!content) continue;
     const lines = content.split(/\r?\n/);
 
-    for (let rawLine of lines) {
+    for (const rawLine of lines) {
       const line = rawLine.replace(/\s+$/g, ""); // trim right
 
       // Normalize multiple blank lines: allow at most one blank in a row
@@ -115,18 +114,21 @@ function mergeTemplateContents(contents) {
   }
 
   // Final normalization: remove any trailing blank lines
-  while (
-    mergedLines.length &&
-    mergedLines[mergedLines.length - 1].trim() === ""
-  ) {
+  while (mergedLines.length && mergedLines[mergedLines.length - 1].trim() === "") {
     mergedLines.pop();
   }
 
-  return mergedLines.join("\n") + "\n";
+  return `${mergedLines.join("\n")}\n`;
 }
+
+/** Maximum allowed size for an existing .gitignore file (10 MB). */
+const MAX_EXISTING_FILE_BYTES = 10 * 1024 * 1024;
 
 /**
  * Merge a new generated .gitignore with an existing one.
+ * Fix #6: Rejects existing files that exceed MAX_EXISTING_FILE_BYTES to prevent
+ * memory exhaustion from oversized inputs.
+ *
  * @param {string} existingPath
  * @param {string} generatedContent
  * @returns {string}
@@ -134,6 +136,14 @@ function mergeTemplateContents(contents) {
 function mergeWithExisting(existingPath, generatedContent) {
   let existing = "";
   if (fs.existsSync(existingPath)) {
+    const { size } = fs.statSync(existingPath);
+    if (size > MAX_EXISTING_FILE_BYTES) {
+      throw new Error(
+        `Security: existing .gitignore at "${existingPath}" is ${size} bytes, ` +
+          `which exceeds the ${MAX_EXISTING_FILE_BYTES / 1024 / 1024} MB safety limit. ` +
+          `Refusing to load it into memory.`
+      );
+    }
     existing = fs.readFileSync(existingPath, "utf8");
   }
 

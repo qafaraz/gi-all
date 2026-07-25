@@ -1,20 +1,60 @@
-*.tgz
+# Dependencies
 node_modules/
+/.pnp
+.pnp.js
+
+# Build & Output
+dist/
+build/
+out/
+tmp/
+temp/
+*.tmp
+*.tgz
+*.tar.gz
+
+# Environment & Secrets
 .env
 .env.*
 *.env
+.envrc
+*.key
+*.pem
+*.p12
+*.crt
+*.cert
+credentials.json
+auth.json
+secrets.*
+
+# Logs & Diagnostics
+*.log
 npm-debug.log*
+yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-*.log
-.DS_Store
-Thumbs.db
-dist/
-build/
+
+# Testing & Coverage
 coverage/
-tmp/
-temp/
-package-lock.json
-.npmrc
-.vscode/
+.nyc_output/
+
+# Biome & Linter Cache
+.biome/
+.eslintcache
+.stylelintcache
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Files
 .idea/
+.vscode/
+*.swp
+*.swo
+*~

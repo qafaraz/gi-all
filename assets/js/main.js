@@ -18,8 +18,10 @@ const tabUnderline = document.getElementById("tabUnderline");
 const tabButtons = [...document.querySelectorAll(".tab-btn")];
 const panels = [...document.querySelectorAll(".code-panel")];
 
-const copyIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"></rect><rect x="4" y="4" width="11" height="11"></rect></svg>';
-const checkIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg>';
+const copyIcon =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11"></rect><rect x="4" y="4" width="11" height="11"></rect></svg>';
+const checkIcon =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"></path></svg>';
 
 const baseTitle = "gi-all | .gitignore generator";
 const padding = "          ";
@@ -50,13 +52,15 @@ async function copyText(text, button) {
       }, 1400);
     }
     showToast("Copied!");
-  } catch (error) {
+  } catch (_error) {
     showToast("Copy failed");
   }
 }
 
 document.querySelectorAll("[data-copy]").forEach((el) => {
-  el.addEventListener("click", () => copyText(el.getAttribute("data-copy"), el.classList.contains("copy-btn") ? el : null));
+  el.addEventListener("click", () =>
+    copyText(el.getAttribute("data-copy"), el.classList.contains("copy-btn") ? el : null)
+  );
 });
 
 function updateUnderline(targetButton) {
@@ -68,10 +72,14 @@ function updateUnderline(targetButton) {
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    tabButtons.forEach((b) => b.classList.remove("active"));
+    tabButtons.forEach((b) => {
+      b.classList.remove("active");
+    });
     button.classList.add("active");
     const current = button.dataset.tab;
-    panels.forEach((panel) => panel.classList.toggle("active", panel.dataset.panel === current));
+    panels.forEach((panel) => {
+      panel.classList.toggle("active", panel.dataset.panel === current);
+    });
     updateUnderline(button);
   });
 });
@@ -106,21 +114,31 @@ function animateCounter(el) {
   requestAnimationFrame(frame);
 }
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add("in-view");
-  });
-}, { threshold: 0.15 });
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("in-view");
+    });
+  },
+  { threshold: 0.15 }
+);
 
-document.querySelectorAll(".reveal").forEach((section) => revealObserver.observe(section));
+document.querySelectorAll(".reveal").forEach((section) => {
+  revealObserver.observe(section);
+});
 
-const counterObserver = new IntersectionObserver((entries, obs) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.querySelectorAll(".stat-value").forEach((counter) => animateCounter(counter));
-    obs.unobserve(entry.target);
-  });
-}, { threshold: 0.35 });
+const counterObserver = new IntersectionObserver(
+  (entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.querySelectorAll(".stat-value").forEach((counter) => {
+        animateCounter(counter);
+      });
+      obs.unobserve(entry.target);
+    });
+  },
+  { threshold: 0.35 }
+);
 
 counterObserver.observe(document.getElementById("templates"));
 

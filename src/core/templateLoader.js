@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require("node:fs");
+const path = require("node:path");
 
 /**
  * Best-effort semantic category detection based on file name.
@@ -141,12 +141,28 @@ function inferCategory(filename) {
 
 /**
  * Recursively walk a directory and collect all files that match a predicate.
- * This guarantees that every template file under templates/ is indexed.
- * @param {string} dir
+ * Guards against symlink loops by tracking visited real paths.
+ *
+ * @param {string}   dir       Absolute directory path to walk
  * @param {(filename: string) => boolean} filter
- * @returns {Array<{ id: string, name: string, filePath: string }>}
+ * @param {Set<string>} [visited]  Tracks real paths already entered (loop guard)
+ * @returns {Array<{ id: string, name: string, filePath: string, category: string }>}
  */
-function collectTemplateFiles(dir, filter) {
+function collectTemplateFiles(dir, filter, visited = new Set()) {
+  // Fix #5: resolve to real path and guard against symlink loops
+  let realDir;
+  try {
+    realDir = fs.realpathSync(dir);
+  } catch {
+    // If realpathSync fails (e.g. broken symlink) skip this entry
+    return [];
+  }
+
+  if (visited.has(realDir)) {
+    return []; // cycle detected — skip
+  }
+  visited.add(realDir);
+
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   const templates = [];
 
@@ -154,20 +170,15 @@ function collectTemplateFiles(dir, filter) {
     const fullPath = path.join(dir, entry.name);
 
     if (entry.isDirectory()) {
-      templates.push(...collectTemplateFiles(fullPath, filter));
+      templates.push(...collectTemplateFiles(fullPath, filter, visited));
     } else if (entry.isFile() && filter(entry.name)) {
-      const id = path
-        .relative(dir, fullPath)
-        .replace(/\\/g, "/");
+      const id = path.relative(dir, fullPath).replace(/\\/g, "/");
 
       const baseName = entry.name.replace(/\.gitignore$/i, "");
       const prettyName =
         baseName
           .split(/[-_.]+/)
-          .map(
-            (segment) =>
-              segment.charAt(0).toUpperCase() + segment.slice(1).toLowerCase()
-          )
+          .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1).toLowerCase())
           .join(" ") || entry.name;
 
       const category = inferCategory(entry.name);
@@ -187,7 +198,7 @@ function collectTemplateFiles(dir, filter) {
 /**
  * Load metadata for all templates in the templates directory.
  * @param {string} baseDir - Project root (where templates/ lives)
- * @returns {Array<{ id: string, name: string, filePath: string }>}
+ * @returns {Array<{ id: string, name: string, filePath: string, category: string }>}
  */
 function loadTemplates(baseDir) {
   const templatesDir = path.join(baseDir, "templates");
@@ -196,9 +207,8 @@ function loadTemplates(baseDir) {
     throw new Error(`templates/ directory not found at: ${templatesDir}`);
   }
 
-  const templates = collectTemplateFiles(
-    templatesDir,
-    (filename) => filename.toLowerCase().endsWith(".gitignore")
+  const templates = collectTemplateFiles(templatesDir, (filename) =>
+    filename.toLowerCase().endsWith(".gitignore")
   );
 
   if (templates.length === 0) {
@@ -215,15 +225,34 @@ function loadTemplates(baseDir) {
 
 /**
  * Read a specific template's content by its file path.
- * @param {string} filePath
+ * Fix #2: Validates that filePath is strictly within the allowed templatesDir.
+ *
+ * @param {string} filePath     Absolute path to the template file
+ * @param {string} templatesDir Absolute path to the templates root directory
  * @returns {string}
  */
-function readTemplateFile(filePath) {
-  return fs.readFileSync(filePath, "utf8");
+function readTemplateFile(filePath, templatesDir) {
+  // Resolve both paths to their real form to defeat path-traversal via ".." or symlinks
+  const resolvedFile = path.resolve(filePath);
+
+  if (templatesDir) {
+    const resolvedBase = path.resolve(templatesDir);
+    const relative = path.relative(resolvedBase, resolvedFile);
+
+    // relative must not start with ".." and must not be an absolute path
+    if (relative.startsWith("..") || path.isAbsolute(relative)) {
+      throw new Error(
+        `Security: refusing to read template outside templates/ directory: ${filePath}`
+      );
+    }
+  }
+
+  return fs.readFileSync(resolvedFile, "utf8");
 }
 
 module.exports = {
   loadTemplates,
-  readTemplateFile
+  readTemplateFile,
+  // exported for testing
+  inferCategory: (filename) => inferCategory(filename)
 };
-

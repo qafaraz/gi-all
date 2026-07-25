@@ -30,7 +30,12 @@
     "start": "node src/cli.js",
     "dev": "node src/cli.js",
     "test": "node --test",
-    "lint": "node -e \"console.log('Add your linter of choice here')\""
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run",
+    "prepare": "husky"
   },
   "keywords": [
     "gitignore",
@@ -47,11 +52,19 @@
     "gi-all"
   ],
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "preferGlobal": false,
   "dependencies": {
     "chalk": "^4.1.2",
     "inquirer": "^9.2.11"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.5",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@release-it/conventional-changelog": "^11.0.1",
+    "husky": "^9.1.7",
+    "release-it": "^20.2.1"
   }
 }
