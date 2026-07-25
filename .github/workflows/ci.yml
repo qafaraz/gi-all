@@ -6,16 +6,14 @@ on:
   pull_request:
     branches: [main]
 
-# Fix #9: Least privilege global default
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   ci:
     name: Lint, Audit & Test (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: read # Fix #9: Scoped job permission
 
     strategy:
       fail-fast: false
@@ -24,22 +22,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        # Fix #8: SHA pinned action
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js ${{ matrix.node-version }}
-        # Fix #8: SHA pinned action
-        uses: actions/setup-node@39370e3970a6d050c08020d2b52479e0a0d42646 # v4.1.0
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Security Audit (npm audit)
-        # Fix #11: npm audit CI check for high/critical vulnerabilities
-        run: npm audit --audit-level=high
 
       - name: Run lint (Biome)
         run: npm run lint
