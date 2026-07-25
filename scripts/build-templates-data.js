@@ -72,7 +72,7 @@ function inferCategory(filename) {
       inName("slickedit") || inName("komodo") || inName("geany") || inName("brackets") ||
       inName("textmate") || inName("bbedit") || inName("notepad") || inName("cursor") ||
       inName("fleet") || inName("helix") || inName("zed") || inName("lapce") ||
-      inName("kate") || inName("neovim") || inName("neovim") || inName("android-studio"))
+      inName("kate") || inName("neovim") || inName("android-studio"))
     return "IDE & Editor";
 
   if (inName("postgres") || inName("mysql") || inName("sqlite") || inName("redis") ||

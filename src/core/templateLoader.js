@@ -105,7 +105,9 @@ const CATEGORY_MAP = [
     category: "Game & 3D",
     keywords: ["unity", "unreal", "godot", "game", "flaxengine", "monogame", "pico-8"]
   },
-  { category: "Data & Science", keywords: ["latex", "matlab", "jupyter", "wolfram", "ai", "ml"] }
+  { category: "Data & Science", keywords: ["latex", "matlab", "jupyter", "wolfram", "ai", "ml"] },
+  { category: "OS & System", keywords: ["linux", "windows", "macos", "osx"] },
+  { category: "Security", keywords: ["ssh", "gpg", "certificates", "secrets", "dotenv", "env"] }
 ];
 
 /**

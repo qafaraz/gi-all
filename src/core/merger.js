@@ -110,6 +110,7 @@ function mergeTemplateContents(contents) {
       // avoid duplicate blank lines
       if (rule.trim() === "") continue;
       mergedLines.push(rule);
+      seen.add(rule);
     }
   }
 
