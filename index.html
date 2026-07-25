@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+        content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="description"
         content="gi-all is a modular .gitignore generator with 500+ templates, dynamic indexing, and built-in secret protection.">
     <title>gi-all — The only .gitignore generator you'll ever need</title>
@@ -20,6 +20,7 @@
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How it Works</a>
                 <a href="#templates">Templates</a>
+                <a href="#generator" class="nav-cta">Generator</a>
                 <a href="https://github.com/qafaraz/gi-all" target="_blank" rel="noopener noreferrer">GitHub</a>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -196,6 +197,51 @@
                 </div>
             </div>
         </section>
+
+        <section class="section reveal" id="generator">
+            <div class="container">
+                <h2 class="section-title">.gitignore Builder</h2>
+                <div class="accent-line"></div>
+                <p class="section-sub">Browse 500+ templates by category or search. Select what you need, preview instantly, then copy or download your <code style="font-family:'JetBrains Mono',monospace;color:var(--primary);background:#111;padding:.1rem .35rem">.gitignore</code>.</p>
+
+                <div class="gen-layout">
+                    <!-- Left: search + filter + template list -->
+                    <div class="gen-panel">
+                        <div class="gen-search-row">
+                            <input
+                                type="search"
+                                id="genSearch"
+                                class="gen-search"
+                                placeholder="Search templates…"
+                                aria-label="Search templates"
+                                autocomplete="off"
+                            />
+                            <button class="gen-clear-btn" id="genClearAll" aria-label="Clear all selections">Clear</button>
+                        </div>
+                        <div class="gen-cats" id="genCats" role="group" aria-label="Category filter"></div>
+                        <div class="gen-list" id="genList" role="list"></div>
+                    </div>
+
+                    <!-- Right: live preview -->
+                    <div class="gen-preview-wrap">
+                        <div class="gen-preview-header">
+                            <span class="gen-preview-title">Preview</span>
+                            <div class="gen-action-btns">
+                                <button class="btn gen-btn" id="genCopyBtn" aria-label="Copy .gitignore content" disabled>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><rect x="9" y="9" width="11" height="11"></rect><rect x="4" y="4" width="11" height="11"></rect></svg>
+                                    Copy
+                                </button>
+                                <button class="btn gen-btn primary" id="genDownloadBtn" aria-label="Download .gitignore file" disabled>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 15l-4-4h3V4h2v7h3l-4 4z"></path><path d="M20 18H4v2h16v-2z"></path></svg>
+                                    Download
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gen-preview" id="genPreview" aria-live="polite" aria-label="Generated .gitignore preview"># Select templates on the left to see your .gitignore preview here.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -218,6 +264,7 @@
 
     <div class="toast" id="toast">Copied!</div>
 
+    <script src="assets/js/templates-data.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
