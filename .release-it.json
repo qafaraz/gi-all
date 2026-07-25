@@ -11,10 +11,7 @@
   },
   "github": {
     "release": true,
-    "releaseName": "v${version}",
-    "autoGenerate": true,
-    "tokenRef": "GITHUB_TOKEN",
-    "web": false
+    "releaseName": "v${version}"
   },
   "npm": {
     "publish": true
