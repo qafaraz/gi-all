@@ -11,27 +11,30 @@
   },
   "github": {
     "release": true,
-    "releaseName": "v${version}"
+    "releaseName": "v${version}",
+    "autoGenerate": true,
+    "draft": false,
+    "preRelease": false
   },
   "npm": {
     "publish": true
   },
   "hooks": {
-    "before:init": ["npm run lint", "npm test"]
+    "before:init": ["npm run lint", "npm run test"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
         "name": "conventionalcommits",
         "types": [
-          { "type": "feat", "section": "✨ Features" },
-          { "type": "fix", "section": "🐛 Bug Fixes" },
-          { "type": "perf", "section": "⚡ Performance Improvements" },
-          { "type": "refactor", "section": "♻️ Refactoring" },
-          { "type": "docs", "section": "📚 Documentation" },
-          { "type": "test", "section": "🧪 Tests" },
-          { "type": "build", "section": "🏗️ Build System" },
-          { "type": "ci", "section": "👷 CI / CD" },
+          { "type": "feat", "section": "Features" },
+          { "type": "fix", "section": "Bug Fixes" },
+          { "type": "perf", "section": "Performance Improvements" },
+          { "type": "refactor", "section": "Refactoring" },
+          { "type": "docs", "section": "Documentation" },
+          { "type": "test", "section": "Tests" },
+          { "type": "build", "section": "Build System" },
+          { "type": "ci", "section": "CI / CD" },
           { "type": "chore", "hidden": true },
           { "type": "style", "hidden": true }
         ]
