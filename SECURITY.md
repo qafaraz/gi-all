@@ -6,7 +6,7 @@ Security updates are currently provided for the following versions:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.x     | :white_check_mark: |
+| 1.x     | :white_check_mark: (Patched via package overrides) |
 | < 1.0.0 | :x:                |
 
 ---
