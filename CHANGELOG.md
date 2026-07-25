@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.5.1](https://github.com/qafaraz/gi-all/compare/v1.5.0...v1.5.1) (2026-07-25)
+
 ## [1.5.0](https://github.com/qafaraz/gi-all/compare/v1.4.0...v1.5.0) (2026-07-25)
 
 ## [1.4.0](https://github.com/qafaraz/gi-all/compare/v1.3.7...v1.4.0) (2026-07-25)
