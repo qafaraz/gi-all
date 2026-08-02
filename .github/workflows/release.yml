@@ -63,10 +63,9 @@ jobs:
           echo "=== GIT DIFF ==="
           git diff
 
-      - name: Reset working directory before release
+      - name: Reset package-lock.json before release
         run: |
-          git checkout -- .
-          git clean -fd
+          git checkout -- package-lock.json
 
       - name: Release (dry-run)
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
