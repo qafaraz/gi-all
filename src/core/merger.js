@@ -82,7 +82,7 @@ function mergeTemplateContents(contents) {
     const lines = content.split(/\r?\n/);
 
     for (const rawLine of lines) {
-      const line = rawLine.replace(/\s+$/g, ""); // trim right
+      const line = rawLine.trimEnd(); // trim right without ReDoS risk
 
       // Normalize multiple blank lines: allow at most one blank in a row
       const isEmpty = line.trim() === "";
