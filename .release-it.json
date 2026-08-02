@@ -4,7 +4,7 @@
     "requireBranch": "main",
     "commitMessage": "chore(release): v${version} [skip ci]",
     "tagName": "v${version}",
-    "push": true,
+    "push": false,
     "requireCleanWorkingDir": false
   },
   "github": {
