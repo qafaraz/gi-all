@@ -34,7 +34,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.RELEASE_TOKEN }}
 
       - name: Set up Node.js 22
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
@@ -63,14 +63,14 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
         run: npm run release -- --dry-run --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Real Release
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false') }}
         run: npm run release -- --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Push release commit to main
