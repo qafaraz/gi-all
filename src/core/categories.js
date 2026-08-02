@@ -199,7 +199,7 @@ const CATEGORY_MAP = [
       "warp-terminal",
       "render",
       "heroku",
-      "fly.io",
+      "fly-io",
       "linode",
       "digitalocean",
       "aws",

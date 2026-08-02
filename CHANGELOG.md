@@ -1,8 +1,26 @@
 # Changelog
 
-## [2.0.10](https://github.com/qafaraz/gi-all/compare/v2.0.9...v2.0.10) (2026-08-02)
+## [2.0.10](https://github.com/qafaraz/gi-all/compare/v2.0.1...v2.0.10) (2026-08-02)
+
+- Stabilized release automation pipeline and GitHub Actions release bot (v2.0.2–v2.0.9 were used for internal CI workflow testing)
 
 ## [2.0.1](https://github.com/qafaraz/gi-all/compare/v2.0.0...v2.0.1) (2026-08-02)
+
+### Bug Fixes & Security
+- Resolved CodeQL security alerts and fixed code vulnerabilities
+- Fixed release-it branch checkout and working directory verification in CI workflow
+
+## [2.0.0](https://github.com/qafaraz/gi-all/compare/v1.5.3...v2.0.0) (2026-08-02)
+
+### BREAKING CHANGES
+- Migrated package to pure ESM (`"type": "module"`). CommonJS `require()` is no longer supported; switch to `import`.
+
+### Features
+- Added programmatic API export `generateGitignore()`.
+
+### Refactor & Security Hardening
+- Modernized CLI architecture using `@clack/prompts` and `picocolors`.
+- Hardened CI/CD security with pinned action SHAs, npm provenance, and CodeQL scanning.
 
 ## [1.5.3](https://github.com/qafaraz/gi-all/compare/v1.5.2...v1.5.3) (2026-07-28)
 

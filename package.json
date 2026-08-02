@@ -3,6 +3,7 @@
   "version": "2.0.10",
   "type": "module",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
+  "readme": "README.md",
   "homepage": "https://qafaraz.github.io/gi-all",
   "repository": {
     "type": "git",
@@ -65,13 +66,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.6",
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
-    "@release-it/conventional-changelog": "^11.0.1",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@release-it/conventional-changelog": "^12.0.0",
     "conventional-changelog-conventionalcommits": "^10.2.1",
     "conventional-commits-filter": "^6.0.1",
     "husky": "^9.1.7",
-    "release-it": "^20.2.1"
+    "release-it": "^21.0.1"
   },
   "overrides": {
     "undici": "^6.26.1",
