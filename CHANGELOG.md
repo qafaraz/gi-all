@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.0.1](https://github.com/qafaraz/gi-all/compare/v2.0.0...v2.0.1) (2026-08-02)
+
 ## [1.5.3](https://github.com/qafaraz/gi-all/compare/v1.5.2...v1.5.3) (2026-07-28)
 
 ### Chores
