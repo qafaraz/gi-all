@@ -103,7 +103,7 @@ bin-release/
   {
     id: "advanced-installer-windows",
     name: "Advanced Installer Windows",
-    category: "OS",
+    category: "OS & System",
     content: `*.aip
 *.aip.bak
 AdvancedInstallerProject/`
@@ -131,7 +131,7 @@ _build/`
   {
     id: "ai-and-llm-tools",
     name: "AI & Llm Tools",
-    category: "Other",
+    category: "Data & Science",
     content: `.langchain.db
 langchain.db
 .chroma/
@@ -150,7 +150,7 @@ ollama/models/`
   {
     id: "ai-and-machine-learning",
     name: "AI & Machine Learning",
-    category: "Other",
+    category: "Data & Science",
     content: `*.onnx
 *.pb
 *.tflite
@@ -372,7 +372,7 @@ RemoteSystemsTempFiles/
   {
     id: "archive",
     name: "Archive",
-    category: "OS",
+    category: "OS & System",
     content: `*.7z
 *.dmg
 *.gz
@@ -396,7 +396,7 @@ RemoteSystemsTempFiles/
   {
     id: "archlinux-packages",
     name: "Archlinux Packages",
-    category: "OS",
+    category: "OS & System",
     content: `pkg/
 *.pkg.tar.xz
 src/`
@@ -600,7 +600,7 @@ tempinfo/`
   {
     id: "batch-and-windows-scripts",
     name: "Batch & Windows Scripts",
-    category: "OS",
+    category: "OS & System",
     content: `# Windows batch script temp files
 *.bat.tmp
 *.cmd.tmp`
@@ -953,7 +953,7 @@ Carthage/Checkouts/`
   {
     id: "certificates",
     name: "Certificates",
-    category: "Other",
+    category: "Security",
     content: `*.pem
 *.key
 *.crt
@@ -1006,7 +1006,7 @@ chefignore`
   {
     id: "chocolatey-windows-package-manager",
     name: "Chocolatey Windows Package Manager",
-    category: "OS",
+    category: "OS & System",
     content: `*.nupkg
 tools/chocolateyInstall.ps1.bak
 # Chocolatey packages
@@ -1696,7 +1696,7 @@ charts/`
   {
     id: "direnv",
     name: "Direnv",
-    category: "Other",
+    category: "Security",
     content: `.direnv/
 .envrc`
   },
@@ -1734,7 +1734,7 @@ docker-compose.local.yml
   {
     id: "dotenv",
     name: "Dotenv",
-    category: "Other",
+    category: "Security",
     content: `.env
 .env.*
 !.env.example`
@@ -2147,7 +2147,7 @@ rebar3.crashdump`
   {
     id: "espresso-macos-web-editor",
     name: "Espresso Macos Web Editor",
-    category: "OS",
+    category: "OS & System",
     content: `*.esproj/
 EspressoStorage/`
   },
@@ -3117,7 +3117,7 @@ service-account.json`
   {
     id: "gpg",
     name: "Gpg",
-    category: "Other",
+    category: "Security",
     content: `secring.*
 *.asc
 *.gpg
@@ -3269,7 +3269,7 @@ hugo_stats.json
   {
     id: "hugo",
     name: "Hugo",
-    category: "Other",
+    category: "Backend",
     content: `/public/
 /resources/_gen/
 hugo_stats.json
@@ -3495,7 +3495,7 @@ logs/
   {
     id: "jenv",
     name: "Jenv",
-    category: "Other",
+    category: "Security",
     content: `.java-version`
   },
   {
@@ -3701,7 +3701,7 @@ lvanlys/`
   {
     id: "langchain",
     name: "Langchain",
-    category: "Other",
+    category: "Data & Science",
     content: `.langchain.db
 langchain.db`
   },
@@ -3970,7 +3970,7 @@ desktop/target/`
   {
     id: "linux",
     name: "Linux",
-    category: "OS",
+    category: "OS & System",
     content: `*~
 .fuse_hidden*
 .directory
@@ -4071,7 +4071,7 @@ auto/
   {
     id: "macos",
     name: "Macos",
-    category: "OS",
+    category: "OS & System",
     content: `.DS_Store
 .AppleDouble
 .LSOverride
@@ -4839,7 +4839,7 @@ release/`
   {
     id: "osx",
     name: "Osx",
-    category: "OS",
+    category: "OS & System",
     content: `Network\\ Trash\\ Folder
 Temporary\\ Items
 .apdisk`
@@ -5244,7 +5244,7 @@ celerybeat.pid`
   {
     id: "qml-qt-modeling-language",
     name: "Qml Qt Modeling Language",
-    category: "Other",
+    category: "Data & Science",
     content: `import/
 *.qmlc
 *.jsc`
@@ -6433,7 +6433,7 @@ themes/
   {
     id: "thumbnails-and-preview-caches",
     name: "Thumbnails & Preview Caches",
-    category: "Other",
+    category: "Data & Science",
     content: `.thumbnails/
 thumbnails/
 Thumbs.db
@@ -6700,14 +6700,14 @@ tags
   {
     id: "virtualenv-and-pyenv",
     name: "Virtualenv & Pyenv",
-    category: "Other",
+    category: "Security",
     content: `.python-version
 pyvenv.cfg`
   },
   {
     id: "virtualenv",
     name: "Virtualenv",
-    category: "Other",
+    category: "Security",
     content: `.Python
 pyvenv.cfg
 pip-selfcheck.json`
@@ -6880,7 +6880,7 @@ stats.json`
   {
     id: "windows",
     name: "Windows",
-    category: "OS",
+    category: "OS & System",
     content: `Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -7091,50 +7091,68 @@ const CATEGORIES = [
   "Mobile",
   "DevOps & Cloud",
   "IDE & Editor",
-  "OS",
   "Database",
   "Game & 3D",
   "Data & Science",
+  "OS & System",
   "Security",
   "Other"
 ];
 
-// Safety rules always appended
 // biome-ignore lint/correctness/noUnusedVariables: used as global in main.js
-const SAFETY_RULES = `
-# ── Security: secrets & credentials ──────────────────────────────────────────
+// Auto-generated from src/core/merger.js MANDATORY_RULES — do not edit manually
+const SAFETY_RULES = `# gi-all mandatory safety rules
 .env
 .env.*
-!.env.example
-!.env.sample
-*.pem
+*.env
+.envrc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 *.key
+*.pem
 *.p12
-*.p8
 *.cert
 *.crt
 *.pfx
+*.p8
 *.jks
+*.keystore
+*.ovpn
+*.ppk
+*.mobileprovision
+AuthKey_*.p8
 id_rsa
+id_rsa.*
 id_dsa
 id_ecdsa
 id_ed25519
-*.ppk
-.ssh/
-# Config files with secrets
-secrets.json
+.aws/
+.npmrc
+.netrc
+.pgpass
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+credentials.json
+auth.json
+jwt.txt
 secrets.yml
 secrets.yaml
-credentials.json
-credentials.yml
 serviceAccountKey.json
-firebase-service-account.json
-*.secret
-# Tokens and API keys
-.npmrc
-.yarnrc
-.netrc
-# Cloud provider config
-.aws/credentials
-.gcloud/
-gcloud_credentials.json`;
+firebase-adminsdk*.json
+*-firebase-adminsdk-*.json
+GoogleService-Info.plist
+.htpasswd
+secrets.*
+*.kdbx
+.direnv/
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun.lockb
+.DS_Store`;

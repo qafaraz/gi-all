@@ -14,6 +14,7 @@ Instead of shipping a single bloated "kitchen sink" file, `gi-all` gives you a *
 [![GitHub commits](https://img.shields.io/github/commit-activity/t/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![GitHub last commit](https://img.shields.io/github/last-commit/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![license](https://img.shields.io/github/license/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/blob/main/LICENSE)
+[![Socket Badge](https://badge.socket.dev/npm/package/gi-all/1.5.3)](https://badge.socket.dev/npm/package/gi-all/1.5.3)
 
 ---
 
@@ -104,6 +105,8 @@ Even if a template is incomplete or outdated, `gi-all` still adds a baseline lay
 ---
 
 ## 📦 Installation
+
+Requires Node.js `>=22.0.0` (Node 22 or 24 LTS recommended).
 
 You can use `gi-all` instantly via `npx`, or install it globally if you prefer a persistent CLI.
 

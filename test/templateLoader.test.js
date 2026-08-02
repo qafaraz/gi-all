@@ -1,12 +1,10 @@
-const test = require("node:test");
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const os = require("node:os");
-const path = require("node:path");
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
 
-// We reach into the module's internals via the exported loadTemplates/readTemplateFile.
-// inferCategory is not exported, so we test it indirectly through loadTemplates.
-const { loadTemplates, readTemplateFile } = require("../src/core/templateLoader");
+import { loadTemplates, readTemplateFile } from "../src/core/templateLoader.js";
 
 // ---------------------------------------------------------------------------
 // inferCategory — tested indirectly via loadTemplates with fake template dirs

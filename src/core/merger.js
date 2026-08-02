@@ -1,4 +1,4 @@
-const fs = require("node:fs");
+import fs from "node:fs";
 
 const MANDATORY_RULES = [
   "# gi-all mandatory safety rules",
@@ -151,7 +151,4 @@ function mergeWithExisting(existingPath, generatedContent) {
   return mergeTemplateContents([existing, generatedContent]);
 }
 
-module.exports = {
-  mergeTemplateContents,
-  mergeWithExisting
-};
+export { MANDATORY_RULES, mergeTemplateContents, mergeWithExisting };

@@ -14,6 +14,7 @@ Tek bir şişmiş “mega.gitignore” yerine, `gi-all` sana **yüzlerce odaklı
 [![GitHub commits](https://img.shields.io/github/commit-activity/t/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![GitHub last commit](https://img.shields.io/github/last-commit/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![license](https://img.shields.io/github/license/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/blob/main/LICENSE)
+[![Socket Badge](https://badge.socket.dev/npm/package/gi-all/1.5.3)](https://badge.socket.dev/npm/package/gi-all/1.5.3)
 
 ---
 
@@ -104,6 +105,8 @@ Bir şablon eksik veya hatalı olsa bile, `gi-all` yine de temel bir koruma katm
 ---
 
 ## 📦 Kurulum
+
+Node.js `>=22.0.0` gerektirir (Node 22 veya 24 LTS önerilir).
 
 Hiç kurulum yapmadan, tek komutla kullanabilirsin:
 

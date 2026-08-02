@@ -1,6 +1,7 @@
 {
   "name": "gi-all",
   "version": "1.5.3",
+  "type": "module",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
   "homepage": "https://qafaraz.github.io/gi-all",
   "repository": {
@@ -18,7 +19,10 @@
   "bin": {
     "gi-all": "bin/cli.js"
   },
-  "main": "src/cli.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
   "files": [
     "bin/",
     "src/",
@@ -53,12 +57,11 @@
     "gi-all"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
-  "preferGlobal": false,
   "dependencies": {
-    "chalk": "^4.1.2",
-    "inquirer": "^9.2.11"
+    "@clack/prompts": "^1.7.0",
+    "picocolors": "^1.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.6",
@@ -72,7 +75,7 @@
   },
   "overrides": {
     "undici": "^6.26.1",
-    "lodash": "^4.17.23",
+    "lodash": "^4.17.21",
     "@conventional-changelog/git-client": "^3.1.0",
     "brace-expansion": "^2.0.1"
   }

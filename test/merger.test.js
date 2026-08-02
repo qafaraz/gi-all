@@ -1,10 +1,10 @@
-const test = require("node:test");
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const os = require("node:os");
-const path = require("node:path");
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
 
-const { mergeTemplateContents, mergeWithExisting } = require("../src/core/merger");
+import { mergeTemplateContents, mergeWithExisting } from "../src/core/merger.js";
 
 // ---------------------------------------------------------------------------
 // mergeTemplateContents
