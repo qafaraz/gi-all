@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0](https://github.com/qafaraz/gi-all/compare/v2.0.10...v2.1.0) (2026-08-02)
+
+### Features
+
+* security hardening, readme metadata and devDependencies modernization ([e3b6239](https://github.com/qafaraz/gi-all/commit/e3b62391fff2ce054b3b5cc093a5e9706f237aa3))
+
 ## [2.0.10](https://github.com/qafaraz/gi-all/compare/v2.0.1...v2.0.10) (2026-08-02)
 
 - Stabilized release automation pipeline and GitHub Actions release bot (v2.0.2–v2.0.9 were used for internal CI workflow testing)

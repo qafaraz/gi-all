@@ -1,6 +1,6 @@
 {
   "name": "gi-all",
-  "version": "2.0.10",
+  "version": "2.1.0",
   "type": "module",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
   "readme": "README.md",
