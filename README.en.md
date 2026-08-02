@@ -106,6 +106,8 @@ Even if a template is incomplete or outdated, `gi-all` still adds a baseline lay
 
 ## 📦 Installation
 
+Requires Node.js `>=22.0.0` (Node 22 or 24 LTS recommended).
+
 You can use `gi-all` instantly via `npx`, or install it globally if you prefer a persistent CLI.
 
 ### One‑shot (recommended)

@@ -1,11 +1,13 @@
-const test = require("node:test");
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const os = require("node:os");
-const path = require("node:path");
-
-const { assertSafeGitignoreTarget, writeGitignoreSafely } = require("../src/cli");
-const { mergeTemplateContents } = require("../src/core/merger");
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import { mergeTemplateContents, mergeWithExisting } from "../src/core/merger.js";
+import { loadTemplates, readTemplateFile } from "../src/core/templateLoader.js";
+import { assertSafeGitignoreTarget, writeGitignoreSafely } from "../src/io/writer.js";
+import { resolveTemplatesByName } from "../src/resolver.js";
+import { assertGitignoreExtension, assertSafeOutputPath } from "../src/validation.js";
 
 test("mergeTemplateContents appends expanded mandatory safety rules", () => {
   const merged = mergeTemplateContents(["dist/\n"]);
@@ -125,8 +127,6 @@ test("assertSafeOutputPath rejects paths outside process.cwd()", () => {
 // Security Fix #2: readTemplateFile path traversal guard
 // ---------------------------------------------------------------------------
 
-const { readTemplateFile, loadTemplates } = require("../src/core/templateLoader");
-
 test("readTemplateFile rejects paths outside allowed templatesDir", () => {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "gi-all-sec-"));
   const templatesDir = path.join(tmpDir, "templates");
@@ -162,12 +162,6 @@ test("readTemplateFile allows paths strictly inside templatesDir", () => {
 // ---------------------------------------------------------------------------
 // Security Fix #3: --templates DoS input limits
 // ---------------------------------------------------------------------------
-
-const {
-  resolveTemplatesByName,
-  assertSafeOutputPath,
-  assertGitignoreExtension
-} = require("../src/cli");
 
 test("resolveTemplatesByName rejects inputs exceeding max character length", () => {
   const hugeInput = "a,".repeat(1001); // 2002 chars > 2000 limit
@@ -237,8 +231,6 @@ test("loadTemplates handles symlink loops without stack overflow", () => {
 // ---------------------------------------------------------------------------
 // Security Fix #6: mergeWithExisting 10MB limit
 // ---------------------------------------------------------------------------
-
-const { mergeWithExisting } = require("../src/core/merger");
 
 test("mergeWithExisting rejects files larger than 10MB", () => {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "gi-all-huge-"));

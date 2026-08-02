@@ -106,6 +106,8 @@ Bir şablon eksik veya hatalı olsa bile, `gi-all` yine de temel bir koruma katm
 
 ## 📦 Kurulum
 
+Node.js `>=22.0.0` gerektirir (Node 22 veya 24 LTS önerilir).
+
 Hiç kurulum yapmadan, tek komutla kullanabilirsin:
 
 ```bash
