@@ -1,6 +1,6 @@
 {
   "name": "gi-all",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "type": "module",
   "description": "The only modular, category-based .gitignore generator you'll ever need.",
   "homepage": "https://qafaraz.github.io/gi-all",
