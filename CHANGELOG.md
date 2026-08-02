@@ -7,7 +7,6 @@
 ### Chores
 - Updated devDependencies (`@biomejs/biome` to 2.5.6, `@commitlint/cli` and `@commitlint/config-conventional` to 19.8.1) and refreshed linter schema reference
 
-
 ## [1.5.2](https://github.com/qafaraz/gi-all/compare/v1.5.1...v1.5.2) (2026-07-25)
 
 ### Bug Fixes
