@@ -50,7 +50,6 @@ function toDisplayName(filename) {
     .replace(/\bCrm\b/g, "CRM")
     .replace(/\bSdk\b/g, "SDK")
     .replace(/\bNpm\b/g, "npm")
-    .replace(/\bYarn\b/g, "Yarn")
     .replace(/\bPnpm\b/g, "pnpm")
     .replace(/\bVscode\b/g, "VS Code")
     .replace(/\bVsix\b/g, "VSIX");
