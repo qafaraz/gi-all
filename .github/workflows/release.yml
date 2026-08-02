@@ -63,6 +63,11 @@ jobs:
           echo "=== GIT DIFF ==="
           git diff
 
+      - name: Reset working directory before release
+        run: |
+          git checkout -- .
+          git clean -fd
+
       - name: Release (dry-run)
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true' }}
         run: npm run release -- --dry-run --ci
