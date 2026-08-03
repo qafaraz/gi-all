@@ -8,7 +8,8 @@
 
 ## [2.0.10](https://github.com/qafaraz/gi-all/compare/v2.0.1...v2.0.10) (2026-08-02)
 
-- Stabilized release automation pipeline and GitHub Actions release bot (v2.0.2–v2.0.9 were used for internal CI workflow testing)
+- Stabilized release automation pipeline and GitHub Actions release bot.
+- **Note:** Versions `v2.0.2` through `v2.0.9` were intermediate test builds created during CI/CD workflow testing and have been removed/unpublished from npm to prevent package clutter and maintain a clean release history.
 
 ## [2.0.1](https://github.com/qafaraz/gi-all/compare/v2.0.0...v2.0.1) (2026-08-02)
 

@@ -14,7 +14,7 @@ Tek bir şişmiş “mega.gitignore” yerine, `gi-all` sana **yüzlerce odaklı
 [![GitHub commits](https://img.shields.io/github/commit-activity/t/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![GitHub last commit](https://img.shields.io/github/last-commit/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/commits)
 [![license](https://img.shields.io/github/license/qafaraz/gi-all)](https://github.com/qafaraz/gi-all/blob/main/LICENSE)
-[![Socket Badge](https://badge.socket.dev/npm/package/gi-all/1.5.3)](https://badge.socket.dev/npm/package/gi-all/1.5.3)
+[![Socket Badge](https://badge.socket.dev/npm/package/gi-all/2.1.0)](https://badge.socket.dev/npm/package/gi-all/2.1.0)
 
 ---
 

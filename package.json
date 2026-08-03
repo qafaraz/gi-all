@@ -78,6 +78,11 @@
     "undici": "^6.26.1",
     "lodash": "^4.17.21",
     "@conventional-changelog/git-client": "^3.1.0",
-    "brace-expansion": "^2.0.1"
+    "brace-expansion": "^2.0.1",
+    "is-interactive": "npm:@socketregistry/is-interactive@^1.0.6",
+    "typedarray": "npm:@socketregistry/typedarray@^1.0.8",
+    "safe-buffer": "npm:@socketregistry/safe-buffer@^1.0.9",
+    "is-unicode-supported": "npm:@socketregistry/is-unicode-supported@^1.0.5",
+    "safer-buffer": "npm:@socketregistry/safer-buffer@^1.0.10"
   }
 }
