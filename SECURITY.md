@@ -4,10 +4,11 @@
 
 Security updates are currently provided for the following versions:
 
-| Version | Supported          |
-| ------- | ------------------ |
+| Version | Supported                                          |
+| ------- | -------------------------------------------------- |
+| 2.x     | :white_check_mark: (Current stable release)        |
 | 1.x     | :white_check_mark: (Patched via package overrides) |
-| < 1.0.0 | :x:                |
+| < 1.0.0 | :x:                                                |
 
 ---
 
