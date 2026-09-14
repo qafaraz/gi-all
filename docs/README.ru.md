@@ -1,6 +1,7 @@
 # gi-all
 
-> Читать эту страницу на: [English](README.en.md) · [Türkçe](README.tr.md) · **Русский**
+> **Читайте этот README на вашем языке:**  
+> [English](../README.md) · [Türkçe](README.tr.md) · [Azərbaycan](README.az.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Português](README.pt.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · **Русский** · [Українська](README.uk.md) · [العربية](README.ar.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh.md) · [Svenska](README.sv.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md)
 
 ## 🌟 Единственный генератор `.gitignore`, который вам понадобится
 
@@ -94,8 +95,7 @@
   - их содержимое объединяется в одну строку,
   - дублирующиеся строки удаляются, пустые строки нормализуются,
   - добавляются обязательные правила безопасности.
-- **Вывод**:
-  - Результат записывается в **один файл `.gitignore`** в текущей рабочей директории.
+- **Вывод**: результат записывается в **один файл `.gitignore`** в текущей рабочей директории.
 - **Конфликты**:
   - Если `.gitignore` уже существует, `gi-all` спрашивает:
     - **Merge**: объединить существующие правила сгенерированными (с дедупликацией).
@@ -177,38 +177,61 @@ gi-all
 
 ---
 
-## 🧱 Архитектура
+## Архитектура
 
-- **`src/core/templateLoader.js`**
-  - Рекурсивно сканирует папку `templates/`
-  - Индексирует **каждый** файл `.gitignore`
-  - По имени файла определяет его категорию (Frontend, Backend, Mobile и т.д.)
-  - Предоставляет удобный API для CLI
+```mermaid
+flowchart TD
+    A(["Пользователь: gi-all"])
+    B["templateLoader.js\nРекурсивно сканирует templates/"]
+    C[("templates/\n500+ файлов .gitignore")]
+    D["CLI — Шаг 1\nВыбор категорий\nFrontend · Backend · Mobile\nDevOps · IDE · Database · Game · Data"]
+    E["CLI — Шаг 2\nВыбор технологий\nдля выбранных категорий"]
+    F["merger.js\nЧитает и объединяет шаблоны"]
+    G["Дедупликация\nудалить дубликаты\nнормализовать пробелы"]
+    H["Правила безопасности\n.env · *.key · *.pem · node_modules/\nsecrets.* · credentials.json"]
+    I{{".гитигнор уже\nсуществует?"}}
+    J(["..gitignore записан\nв текущий каталог"])
+    K["Пользователь выбирает:\nMerge / Overwrite / Cancel"]
+    L["Слияние с существующим\n+ дедупликация"]
+    M(["Отмена — без изменений"])
 
-- **`src/core/merger.js`**
-  - Объединяет содержимое нескольких шаблонов
-  - Удаляет дубликаты строк и лишние пустые строки
-  - Добавляет обязательные правила безопасности
-  - Позволяет корректно объединять с уже существующим `.gitignore`
+    A --> B
+    B <--> C
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I -- Нет --> J
+    I -- Да --> K
+    K -- Merge --> L
+    K -- Overwrite --> J
+    K -- Cancel --> M
+    L --> J
+```
 
-- **`src/cli.js`**
-  - Пользовательский entry point
-  - Двухшаговый интерфейс (`inquirer`): категории → технологии
-  - Управляет конфликтами (**Merge / Overwrite / Cancel**)
-  - Записывает итоговый `.gitignore`
+### Ответственности модулей
+
+| Модуль | Ответственность |
+|---|---|
+| `src/cli.js` | Пользовательский entry point. Двухшаговый интерактивный интерфейс (категории → технологии). Управление конфликтами. |
+| `src/core/templateLoader.js` | Рекурсивно сканирует `templates/`. Индексирует каждый `.gitignore`. Определяет категорию по имени файла. |
+| `src/core/merger.js` | Объединяет шаблоны. Удаляет дубликаты. Добавляет обязательные правила безопасности. |
 
 ---
 
-## 🤝 Вклад
+## Вклад
 
-`gi-all` задуман как **сообщественный каталог лучших практик `.gitignore`**.
+`gi-all` задуман как **сообщественный каталог** лучших практик `.gitignore`.
 
-📚 Wiki: https://github.com/qafaraz/gi-all/wiki
+📚 Wiki: https://github.com/qafaraz/gi-all/wiki  
+💬 Обсуждения: https://github.com/qafaraz/gi-all/discussions
 
 - Хотите добавить поддержку нового фреймворка, IDE или инструмента?
 - Знаете лучшие правила игнорирования для популярного стэка?
 
-Ваши pull‑request’ы очень приветствуются.
+Ваши pull‑request'ы очень приветствуются.
 
 ### Добавление нового шаблона
 
@@ -224,4 +247,4 @@ CLI автоматически сканирует `templates/`, поэтому *
 
 ## 📜 Лицензия
 
-[MIT](LICENSE) — создано для open‑source сообщества **[Qafar](https://github.com/qafaraz)**.
+[MIT](../LICENSE) — создано для open‑source сообщества **[Qafar](https://github.com/qafaraz)**.

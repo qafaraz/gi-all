@@ -1,6 +1,7 @@
 # gi-all
 
-> Read this page in: **English** (default) · [Türkçe](README.tr.md) · [Русский](README.ru.md)
+> **Read this README in your language:**  
+> **English** · [Türkçe](docs/README.tr.md) · [Azərbaycan](docs/README.az.md) · [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Español](docs/README.es.md) · [Português](docs/README.pt.md) · [Italiano](docs/README.it.md) · [Nederlands](docs/README.nl.md) · [Polski](docs/README.pl.md) · [Русский](docs/README.ru.md) · [Українська](docs/README.uk.md) · [العربية](docs/README.ar.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [简体中文](docs/README.zh.md) · [Svenska](docs/README.sv.md) · [हिन्दी](docs/README.hi.md) · [Bahasa Indonesia](docs/README.id.md)
 
 ## 🌟 The Only `.gitignore` Generator You'll Ever Need
 
@@ -178,25 +179,47 @@ If `.gitignore` already exists, you’ll be asked to:
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture
 
-- **`src/core/templateLoader.js`**
-  - Recursively scans the `templates/` directory
-  - Indexes **every** `.gitignore` file (no template left behind)
-  - Assigns a high-level category (Frontend, Backend, Mobile, etc.) based on the file name
-  - Exposes a clean API for the CLI to list and read templates
+```mermaid
+flowchart TD
+    A(["User: gi-all"])
+    B["templateLoader.js\nRecursively scans templates/"]
+    C[("templates/\n500+ .gitignore files")]
+    D["CLI — Step 1\nCategory Selection\nFrontend · Backend · Mobile\nDevOps · IDE · Database · Game · Data"]
+    E["CLI — Step 2\nTechnology Selection\nper chosen category"]
+    F["merger.js\nReads & merges selected templates"]
+    G["Deduplicate\nremove duplicate lines\nnormalize whitespace"]
+    H["Append Safety Rules\n.env · *.key · *.pem · node_modules/\nsecrets.* · credentials.json"]
+    I{{".gitignore\nalready exists?"}}
+    J(["Write .gitignore\nto current directory"])
+    K["User chooses:\nMerge / Overwrite / Cancel"]
+    L["Merge with existing\n+ deduplicate"]
+    M(["Abort — no changes"])
 
-- **`src/core/merger.js`**
-  - Merges the content of multiple templates
-  - Removes duplicate lines and redundant empty lines
-  - Appends mandatory safety rules (secrets, node_modules, OS noise)
-  - Provides a helper to merge the generated output with an existing `.gitignore`
+    A --> B
+    B <--> C
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I -- No --> J
+    I -- Yes --> K
+    K -- Merge --> L
+    K -- Overwrite --> J
+    K -- Cancel --> M
+    L --> J
+```
 
-- **`src/cli.js`**
-  - User-facing entry point (wired via npm `bin`)
-  - Two-step interactive UI powered by `inquirer` (categories → technologies)
-  - Handles conflict resolution (**Merge / Overwrite / Cancel**)
-  - Writes the final `.gitignore` to the current working directory
+### Module Responsibilities
+
+| Module | Responsibility |
+|---|---|
+| `src/cli.js` | User-facing entry point. Two-step interactive UI (categories → technologies). Conflict resolution. |
+| `src/core/templateLoader.js` | Scans `templates/` recursively. Indexes every `.gitignore` file. Assigns category by filename. |
+| `src/core/merger.js` | Merges multiple templates. Deduplicates lines. Appends mandatory safety rules. |
 
 ---
 
@@ -204,7 +227,8 @@ If `.gitignore` already exists, you’ll be asked to:
 
 `gi-all` is designed to be a **community-driven catalog** of `.gitignore` best practices.
 
-📚 Wiki: https://github.com/qafaraz/gi-all/wiki
+📚 Wiki: https://github.com/qafaraz/gi-all/wiki  
+💬 Discussions: https://github.com/qafaraz/gi-all/discussions
 
 - Want to add support for a new framework, IDE, or tool?
 - Know a better ignore rule for a popular stack?

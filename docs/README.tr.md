@@ -1,12 +1,13 @@
 # gi-all
 
-> Bu sayfayı şu dilde oku: [English](README.en.md) · **Türkçe** · [Русский](README.ru.md)
+> **Bu README'yi dilinizde okuyun:**  
+> [English](../README.md) · **Türkçe** · [Azərbaycan](README.az.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Português](README.pt.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [Русский](README.ru.md) · [Українська](README.uk.md) · [العربية](README.ar.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh.md) · [Svenska](README.sv.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md)
 
 ## 🌟 İhtiyacın Olan Son `.gitignore` Üreticisi
 
 `gi-all`, modern ekipler ve iddialı solo geliştiriciler için tasarlanmış **modüler, kategori bazlı bir `.gitignore` üreticisidir**.
 
-Tek bir şişmiş “mega.gitignore” yerine, `gi-all` sana **yüzlerce odaklı şablondan oluşan bir kütüphane** sunar (Angular, Unity, Android, Flutter, Node.js, Laravel, Docker ve çok daha fazlası) ve bunları birkaç tıklamayla kendi stack’ine göre birleştirir.
+Tek bir şişmiş "mega.gitignore" yerine, `gi-all` sana **yüzlerce odaklı şablondan oluşan bir kütüphane** sunar (Angular, Unity, Android, Flutter, Node.js, Laravel, Docker ve çok daha fazlası) ve bunları birkaç tıklamayla kendi stack'ine göre birleştirir.
 
 [![npm version](https://img.shields.io/npm/v/gi-all)](https://www.npmjs.com/package/gi-all)
 [![npm downloads](https://img.shields.io/npm/dm/gi-all)](https://www.npmjs.com/package/gi-all)
@@ -23,20 +24,20 @@ Tek bir şişmiş “mega.gitignore” yerine, `gi-all` sana **yüzlerce odaklı
 Çoğu `.gitignore` çözümü iki hatadan birine düşer:
 
 - **Çok küçük**: Sadece bir dil seçersin, ama IDE ayarları, build çıktıları veya platform çöpü yine de repoya girer.
-- **Çok büyük**: İnternetten rastgele bir “mega.gitignore” kopyalarsın ve **binlerce alakasız kuralı** anlamadan projene gömersin.
+- **Çok büyük**: İnternetten rastgele bir "mega.gitignore" kopyalarsın ve **binlerce alakasız kuralı** anlamadan projene gömersin.
 
 `gi-all` bambaşka bir yaklaşım sunar:
 
 - **Modüler tasarım** – Her teknoloji, `templates/` klasöründe kendi özel `.gitignore` dosyasında yaşar.
 - **Dinamik tarama** – CLI, çalıştığı anda `templates/` klasörünü tarar; **her bir `.gitignore` otomatik olarak desteklenir**. Yeni bir dosya eklediğinde, kod yazmana gerek kalmadan menüye eklenir.
 - **Kategori bazlı UX** – Önce yüksek seviye alanları seçersin (Frontend, Backend, Mobile, DevOps & Cloud, IDE & Editor, Database, Game & 3D, Data & Science, Other), sonra bu kategorilerin içinden kullandığın teknolojileri işaretlersin.
-- **Elle merge yok** – Stack’ini seç (Angular + Node + Android + Unity + Docker + VS Code…) ve `gi-all`:
+- **Elle merge yok** – Stack'ini seç (Angular + Node + Android + Unity + Docker + VS Code…) ve `gi-all`:
   - Tüm ilgili `.gitignore` şablonlarını okur
   - Tek bir akıllı `.gitignore` içinde birleştirir
   - Aynı satırları tekilleştirir, gereksiz boşlukları temizler
   - Yaygın secret ve credential dosyaları için zorunlu güvenlik kuralları ekler
 
-Sonuç: Stack’ine **özel**, sade ama **eksiksiz** bir `.gitignore`.
+Sonuç: Stack'ine **özel**, sade ama **eksiksiz** bir `.gitignore`.
 
 ---
 
@@ -49,13 +50,13 @@ Kutudan çıktığı haliyle `gi-all`, `templates/` altında **yüzlerce odaklı
 - **Backend & API**: Node.js, Express, NestJS, Django, Flask, Laravel, Symfony, Spring, Rails, FastAPI…
 - **Game & 3D**: Unity, Unreal Engine, Godot, libGDX, FlaxEngine, MonoGame, PICO‑8…
 - **Cloud & DevOps**: Docker, Kubernetes, Terraform, Ansible, Vagrant, Cloudflare, Snap/Snapcraft…
-- **Editör & IDE**: VS Code, JetBrains IDE’leri (WebStorm, Rider, vb.), Vim, Emacs, Sublime, Xcode, Android Studio, NetBeans…
+- **Editör & IDE**: VS Code, JetBrains IDE'leri (WebStorm, Rider, vb.), Vim, Emacs, Sublime, Xcode, Android Studio, NetBeans…
 - **Veritabanları**: Redis, PostgreSQL, MySQL, MongoDB, MSSQL…
-- **Bilgi & Araçlar**: Obsidian/Notion export’ları, ERP sistemleri, farklı diller ve özel tool’lar…
+- **Bilgi & Araçlar**: Obsidian/Notion export'ları, ERP sistemleri, farklı diller ve özel tool'lar…
 
 Her teknoloji **kendi `.gitignore` dosyasına** sahiptir. CLI, `templates/` altındaki **her dosyayı** indeksler, böylece:
 
-- Hiçbir şablon “unutulmaz” veya hard-code edilmez.
+- Hiçbir şablon "unutulmaz" veya hard-code edilmez.
 - Yeni bir şablon eklediğinde, CLI otomatik olarak onu da kullanır.
 
 `templates/` içinde yaşıyorsa, `gi-all` onun için `.gitignore` üretebilir.
@@ -64,22 +65,22 @@ Her teknoloji **kendi `.gitignore` dosyasına** sahiptir. CLI, `templates/` alt�
 
 ## 🛡️ Varsayılan Güvenlik Katmanı
 
-`.env` dosyalarını veya private key’leri yanlışlıkla Git’e itmek pahalı bir hatadır — genelde de sadece “unutulmuş” bir ignore kuralından kaynaklanır.
+`.env` dosyalarını veya private key'leri yanlışlıkla Git'e itmek pahalı bir hatadır — genelde de sadece "unutulmuş" bir ignore kuralından kaynaklanır.
 
 `gi-all` güvenliği en baştan tasarıma dahil eder:
 
 - `.env`, `.env.*`, `*.env` ve yaygın environment varyantları
 - Özel anahtar ve sertifikalar: `*.key`, `*.pem`, `*.p12`, `*.cert`, `*.crt`, `*.pfx`, `id_rsa*`, `id_ed25519`, vb.
-- Geliştirici ve bulut credential’ları: `.envrc`, `.npmrc`, `.netrc`, `.aws/`, `credentials.json`
-- Altyapı ve mobil secret’ları: `*.tfstate`, `*.tfvars`, `*.tfplan`, `*.mobileprovision`, `GoogleService-Info.plist`
-- Ortak secret store’lar: `secrets.*`, `*.kdbx`, `serviceAccountKey.json`, `firebase-adminsdk*.json`
+- Geliştirici ve bulut credential'ları: `.envrc`, `.npmrc`, `.netrc`, `.aws/`, `credentials.json`
+- Altyapı ve mobil secret'ları: `*.tfstate`, `*.tfvars`, `*.tfplan`, `*.mobileprovision`, `GoogleService-Info.plist`
+- Ortak secret store'lar: `secrets.*`, `*.kdbx`, `serviceAccountKey.json`, `firebase-adminsdk*.json`
 - `node_modules/` ve yaygın debug log dosyaları
 - OS / editör gürültüsü: `.DS_Store` vb.
 
 Bu kurallar **her durumda, otomatik olarak** seçtiğin şablonların sonuna eklenir.  
 Bir şablon eksik veya hatalı olsa bile, `gi-all` yine de temel bir koruma katmanı ekler.
 
-> `gi-all`, yaygın secret dosyalarını yanlışlıkla commit etme riskini ciddi biçimde azaltır; yine de projeye ozel credential dosyalarini elle gozden gecirmelisin.
+> `gi-all`, yaygın secret dosyalarını yanlışlıkla commit etme riskini ciddi biçimde azaltır; yine de projeye özel credential dosyalarını elle gözden geçirmelisin.
 
 ---
 
@@ -98,7 +99,7 @@ Bir şablon eksik veya hatalı olsa bile, `gi-all` yine de temel bir koruma katm
 - **Çakışma yönetimi**:
   - Klasörde zaten `.gitignore` varsa, `gi-all` sorar:
     - **Merge**: Mevcut kuralları koru, `gi-all` kurallarını üstüne ekle ve tekilleştir.
-    - **Overwrite**: Var olan `.gitignore`’u tamamen `gi-all` çıktısı ile değiştir.
+    - **Overwrite**: Var olan `.gitignore`'u tamamen `gi-all` çıktısı ile değiştir.
     - **Cancel**: Hiçbir değişiklik yapma.
   - Güvenlik için, symbolic link veya çoklu hardlink olan `.gitignore` hedeflerine yazmayı reddeder.
 
@@ -171,38 +172,61 @@ Sonrasında:
 `.gitignore` zaten varsa:
 
 - **Merge** – mevcut kuralları korur, `gi-all` kurallarıyla zenginleştirir  
-- **Overwrite** – `.gitignore`’u tamamen `gi-all` çıktısı ile değiştirir  
+- **Overwrite** – `.gitignore`'u tamamen `gi-all` çıktısı ile değiştirir  
 - **Cancel** – hiçbir şey yapmaz  
 
 ---
 
-## 🧱 Mimari Genel Bakış
+## Mimari
 
-- **`src/core/templateLoader.js`**
-  - `templates/` klasörünü recursive olarak tarar
-  - Her `.gitignore` dosyasını indeksler (hiçbiri unutulmaz)
-  - Dosya adına göre kategori atar (Frontend, Backend, Mobile, vb.)
-  - CLI için temiz bir API sunar
+```mermaid
+flowchart TD
+    A(["Kullanıcı: gi-all"])
+    B["templateLoader.js\ntemplates/ klasörünü recursive tarar"]
+    C[("templates/\n500+ .gitignore dosyası")]
+    D["CLI — Adım 1\nKategori Seçimi\nFrontend · Backend · Mobile\nDevOps · IDE · Database · Game · Data"]
+    E["CLI — Adım 2\nTeknoloji Seçimi\nseçilen kategoriye göre"]
+    F["merger.js\nSeçilen şablonları okur ve birleştirir"]
+    G["Tekilleştirme\naynı satırları kaldır\nboşlukları normalize et"]
+    H["Güvenlik Kuralları Ekle\n.env · *.key · *.pem · node_modules/\nsecrets.* · credentials.json"]
+    I{{".gitignore\nzaten var mı?"}}
+    J([".gitignore yaz\nbulunulan klasöre"])
+    K["Kullanıcı seçer:\nMerge / Overwrite / Cancel"]
+    L["Mevcut ile birleştir\n+ tekilleştir"]
+    M(["Vazgeç — hiçbir değişiklik yok"])
 
-- **`src/core/merger.js`**
-  - Birden fazla şablonun içeriğini birleştirir
-  - Duplicate satırları ve gereksiz boşlukları temizler
-  - Zorunlu güvenlik kurallarını ekler
-  - Mevcut `.gitignore` ile merge etmek için yardımcı fonksiyon sağlar
+    A --> B
+    B <--> C
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I -- Hayır --> J
+    I -- Evet --> K
+    K -- Merge --> L
+    K -- Overwrite --> J
+    K -- Cancel --> M
+    L --> J
+```
 
-- **`src/cli.js`**
-  - Kullanıcıya gösterilen CLI entry point
-  - `inquirer` ile iki adımlı arayüz (kategori → teknoloji)
-  - Çakışma durumlarında (**Merge / Overwrite / Cancel**) kontrollü davranır
-  - Son `.gitignore` dosyasını yazar
+### Modül Sorumlulukları
+
+| Modül | Sorumluluk |
+|---|---|
+| `src/cli.js` | Kullanıcı arayüzyü. İki adımlı interaktif arayüz (kategori → teknoloji). Çaktışma yönetimi. |
+| `src/core/templateLoader.js` | `templates/` klasörünü recursive tarar. Her `.gitignore` dosyasını indeksler. Dosya adına göre kategori atar. |
+| `src/core/merger.js` | Birden fazla şablonu birleştirir. Duplicate satırları siler. Zorunlu güvenlik kurallarını ekler. |
 
 ---
 
-## 🤝 Katkı
+## Katkı
 
 `gi-all`, **topluluk tarafından beslenen bir `.gitignore` bilgi bankası** olarak tasarlandı.
 
-📚 Wiki: https://github.com/qafaraz/gi-all/wiki
+📚 Wiki: https://github.com/qafaraz/gi-all/wiki  
+💬 Tartışmalar: https://github.com/qafaraz/gi-all/discussions
 
 - Yeni bir framework, IDE veya araç için destek eklemek mi istiyorsun?
 - Popüler bir stack için daha iyi ignore kuralları mı biliyorsun?
@@ -211,16 +235,16 @@ PR açmak için harika bir zaman.
 
 ### Yeni şablon eklemek
 
-1. Reponun bir fork’unu al
+1. Reponun bir fork'unu al
 2. `templates/` altında yeni bir `.gitignore` dosyası oluştur  
    - Örnek: `templates/flutter.gitignore`, `templates/unity.gitignore`, `templates/devops/docker.gitignore`, vb.
 3. O teknoloji için odaklı, kaliteli kurallar yaz
 4. Kısa açıklamalı bir pull request aç
 
-CLI, `templates/` klasörünü otomatik taradığı için **yeni dosyan anında keşfedilir**; `src/` tarafında dəyişiklik yapmana gerek kalmaz.
+CLI, `templates/` klasörünü otomatik taradığı için **yeni dosyan anında keşfedilir**; `src/` tarafında değişiklik yapmana gerek kalmaz.
 
 ---
 
 ## 📜 Lisans
 
-[MIT](LICENSE) — açık kaynak topluluğu için **[Qafar](https://github.com/qafaraz)** tarafından geliştirildi.
+[MIT](../LICENSE) — açık kaynak topluluğu için **[Qafar](https://github.com/qafaraz)** tarafından geliştirildi.
