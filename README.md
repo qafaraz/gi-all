@@ -1,7 +1,7 @@
 # gi-all
 
 > **Read this README in your language:**  
-> **English** · [Türkçe](docs/README.tr.md) · [Azərbaycan](docs/README.az.md) · [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Español](docs/README.es.md) · [Português](docs/README.pt.md) · [Italiano](docs/README.it.md) · [Nederlands](docs/README.nl.md) · [Polski](docs/README.pl.md) · [Русский](docs/README.ru.md) · [Українська](docs/README.uk.md) · [العربية](docs/README.ar.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [简体中文](docs/README.zh.md) · [Svenska](docs/README.sv.md) · [हिन्दी](docs/README.hi.md) · [Bahasa Indonesia](docs/README.id.md)
+> **English** · [Türkçe](docs/README.tr.md) · [Azərbaycan](docs/README.az.md) · [O'zbekcha](docs/README.uz.md) · [Қазақша](docs/README.kk.md) · [Кыргызча](docs/README.ky.md) · [Türkmençe](docs/README.tk.md) · [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Español](docs/README.es.md) · [Português](docs/README.pt.md) · [Italiano](docs/README.it.md) · [Română](docs/README.ro.md) · [Nederlands](docs/README.nl.md) · [Polski](docs/README.pl.md) · [Русский](docs/README.ru.md) · [Українська](docs/README.uk.md) · [Svenska](docs/README.sv.md) · [Tiếng Việt](docs/README.vi.md) · [Bahasa Indonesia](docs/README.id.md) · [ภาษาไทย](docs/README.th.md) · [فارسی](docs/README.fa.md) · [العربية](docs/README.ar.md) · [हिन्दी](docs/README.hi.md) · [বাংলা](docs/README.bn.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [简体中文](docs/README.zh.md)
 
 ## 🌟 The Only `.gitignore` Generator You'll Ever Need
 
