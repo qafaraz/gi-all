@@ -1,5 +1,23 @@
+# Libraries
+*.lvlibp
+*.llb
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
 *.aliases
 *.lvlps
+.cache/
+*.UserState
+
+# Backups and Caches
 *.lvproj.bak
 *.lvclass.bak
 *.lvlib.bak
