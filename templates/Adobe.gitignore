@@ -1,0 +1,30 @@
+# gitignore template for Adobe Creative Cloud / Creative Suite products
+# website: https://adobe.com
+
+# Adobe Design & Creative Source Files
+*.psd
+*.psb
+*.ai
+*.eps
+*.indd
+*.xd
+*.sesx
+
+# Temporary, backup & autosave files
+*.ai~
+*.indd~
+*.aep~
+*.prproj~
+Adobe After Effects Auto-Save/
+Adobe Premiere Pro Auto-Save/
+
+# Audio & Media Cache files (Premiere / Audition)
+*.cfa
+*.pek
+* Media Cache/
+* Media Cache Files/
+
+# Adobe Bridge & OS thumbnails
+Thumbs.db
+.BridgeCache
+.BridgeCacheT

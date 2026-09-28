@@ -1,0 +1,15 @@
+# gitignore template for Adobe Dreamweaver, a web development tool
+# website: https://adobe.com/products/dreamweaver.html
+
+# Dreamweaver added files
+_notes/
+_compareTemp/
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno
+
+# Lock files
+.LCK
+*.dwl
+*.dwl2
