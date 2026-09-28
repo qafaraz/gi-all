@@ -1,0 +1,4 @@
+## for projects that use SCons for building: https://www.scons.org/
+.sconsign.dblite
+.sconf_temp/
+config.log
