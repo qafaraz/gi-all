@@ -1,0 +1,14 @@
+# gitignore template for A-Frame, a web framework for building 3D/VR/AR (WebXR) experiences
+# website: https://aframe.io
+
+# Production & build outputs
+dist/
+build/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Test coverage
+coverage/
+tests/coverage/

@@ -1,0 +1,22 @@
+# gitignore template for Ada, a high-integrity systems programming language
+# website: https://ada-lang.io
+
+# Object files & Ada Library Information (GNAT)
+*.o
+*.ali
+
+# GNAT binder generated files
+b~*.ad[bs]
+b_*.ad[bs]
+
+# GPRbuild & standard output directories
+obj/
+lib/
+bin/
+
+# Alire package manager (Ada modern package manager)
+alire/cache/
+alire/build/
+
+# GNAT Studio IDE
+.gnat_studio/
