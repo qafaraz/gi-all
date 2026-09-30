@@ -1,7 +1,9 @@
-# gitignore template for Ada, a high-integrity systems programming language
+# gitignore template for Ada
 # website: https://ada-lang.io
+# docs: https://learn.adacore.com
+# description: Ada programming language, GNAT compiler artifacts, and Alire package manager
 
-# Object files & Ada Library Information (GNAT)
+# Object files and Ada Library Information (GNAT)
 *.o
 *.ali
 
@@ -9,12 +11,12 @@
 b~*.ad[bs]
 b_*.ad[bs]
 
-# GPRbuild & standard output directories
+# GPRbuild and build output directories
 obj/
 lib/
 bin/
 
-# Alire package manager (Ada modern package manager)
+# Alire package manager
 alire/cache/
 alire/build/
 

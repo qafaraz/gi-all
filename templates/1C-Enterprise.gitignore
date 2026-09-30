@@ -1,9 +1,53 @@
 # gitignore template for 1C:Enterprise (1С:Предприятие)
 # website: https://1c.ru
+# docs: https://its.1c.ru
+# description: 1C:Enterprise platform, database, locks, and cache files
+
+# Configuration and extensions
 *.cf
 *.cfu
+*.cfe
+*.efd
+
+# External reports and data processors
 *.epf
 *.erf
 *.ert
+
+# Databases, backups, and recovery files
+*.1CD
+1Cv8.1CD
+1Cv8tmp.1CD
+~1Cv8*
+*.dt
+
+# Database locks and runtime flags
+1Cv8.cfl
+1Cv8.1CL
+1Cv8tmp.1CL
+1Cv8.lck
+
+# Event logs and full-text search indexes
+1Cv8FTxt/
+1Cv8Log/
+1Cv8.lgd
+1Cv8.lgf
+1Cv8.lgx
+
+# User settings, profiles, and local cache
+1Cv8.pfl
+1cv8u.dat
+ibclients.xml
+ibses.xml
+ConnMsgs.txt
+v8components.cache
+
+# Web publish configurations and server cluster metadata
+default.vrd
+1CV8Reg.lst
+srvribrg.lst
+snccntx*.dat
+
+# Build artifacts
 bin/
 obj/

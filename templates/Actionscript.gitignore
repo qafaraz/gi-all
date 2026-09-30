@@ -1,18 +1,22 @@
-# Build and Release Folders
+# gitignore template for ActionScript
+# website: https://adobe.com
+# docs: https://helpx.adobe.com/animate/using/actionscript.html
+# description: ActionScript, Adobe Flash, Flex, and AIR build artifacts and binaries
+
+# Build and release directories
 bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
 
-# Other files and folders
+# Flash Builder and Eclipse settings
 .settings/
 
-# Executables
+# Compiled executables and packages
 *.swf
 *.air
 *.ipa
 *.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Note: Project files (.project, .actionScriptProperties, .flexProperties)
+# should NOT be excluded as they contain compiler settings for Eclipse / Flash Builder.

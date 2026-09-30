@@ -1,7 +1,9 @@
-# gitignore template for Adobe Creative Cloud / Creative Suite products
+# gitignore template for Adobe
 # website: https://adobe.com
+# docs: https://helpx.adobe.com/creative-cloud/user-guide.html
+# description: Adobe Creative Cloud source files, autosaves, and media cache
 
-# Adobe Design & Creative Source Files
+# Adobe design and creative source files
 *.psd
 *.psb
 *.ai
@@ -10,7 +12,7 @@
 *.xd
 *.sesx
 
-# Temporary, backup & autosave files
+# Temporary, backup, and autosave files
 *.ai~
 *.indd~
 *.aep~
@@ -18,13 +20,13 @@
 Adobe After Effects Auto-Save/
 Adobe Premiere Pro Auto-Save/
 
-# Audio & Media Cache files (Premiere / Audition)
+# Audio and media cache files (Premiere Pro and Audition)
 *.cfa
 *.pek
 * Media Cache/
 * Media Cache Files/
 
-# Adobe Bridge & OS thumbnails
+# Adobe Bridge cache files
 Thumbs.db
 .BridgeCache
 .BridgeCacheT

@@ -1,7 +1,9 @@
-# gitignore template for A-Frame, a web framework for building 3D/VR/AR (WebXR) experiences
+# gitignore template for A-Frame
 # website: https://aframe.io
+# docs: https://aframe.io/docs/
+# description: A-Frame web framework for 3D, VR, and AR (WebXR) experiences
 
-# Production & build outputs
+# Production and build outputs
 dist/
 build/
 
