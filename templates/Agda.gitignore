@@ -1,0 +1,13 @@
+# gitignore template for Agda
+# website: https://wiki.portal.chalmers.se/agda/pmwiki.php
+# docs: https://agda.readthedocs.io
+# description: Agda dependently typed functional programming language and proof assistant
+
+# Compiled interface files
+*.agdai
+
+# Agda build directory
+_build/
+
+# GHC compiler backend output
+**/MAlonzo/**

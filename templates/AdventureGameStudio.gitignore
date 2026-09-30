@@ -1,0 +1,34 @@
+# gitignore template for Adventure Game Studio
+# website: https://www.adventuregamestudio.co.uk
+# docs: https://adventuregamestudio.github.io/ags-manual/
+# description: Adventure Game Studio (AGS) game engine build artifacts, locks, user settings, backups, and temporary files.
+
+# Built things
+_Debug/
+Compiled/
+*.exe
+
+# AudioCache can be rebuilt from sources
+AudioCache/
+
+# Lockfile
+_OpenInEditor.lock
+
+# User settings
+Game.agf.user
+*.crm.user
+
+# Backups
+*.bak
+Game.agf.bak
+backup_acsprset.spr
+
+# Memory dumps
+*.dmp
+
+# Temporary files
+~aclzw.tmp
+game28.dta
+
+# Log files
+warnings.log

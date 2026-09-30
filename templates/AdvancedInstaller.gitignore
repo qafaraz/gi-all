@@ -1,0 +1,11 @@
+# gitignore template for Advanced Installer
+# website: https://www.advancedinstaller.com
+# docs: https://www.advancedinstaller.com/user-guide/
+# description: Advanced Installer packaging tool, project backups, and build outputs
+
+# Project files and backups
+*.aip
+*.aip.bak
+
+# Build output directories
+AdvancedInstallerProject/
