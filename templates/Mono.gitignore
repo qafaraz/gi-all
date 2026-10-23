@@ -1,0 +1,11 @@
+# Mono
+# website: https://www.mono-project.com
+# docs: https://www.mono-project.com/docs/
+# description: Mono open-source .NET cross-platform runtime crash logs, symbol databases, and debug files
+
+# Crash logs and diagnostics
+mono_crash.*
+
+# Debugger symbols and program databases
+*.pidb
+*.mdb

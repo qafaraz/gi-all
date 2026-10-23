@@ -1,3 +1,15 @@
-test-results/
-*.pidb
+# MonoDevelop
+# website: https://www.monodevelop.com
+# docs: https://www.monodevelop.com/documentation/
+# description: MonoDevelop IDE user preferences, test results, and symbol database caches
+
+# User-specific configuration and tasks
 *.userprefs
+*.usertasks
+
+# Parser database and compiled resources
+*.pidb
+*.resources
+
+# Test results
+test-results/

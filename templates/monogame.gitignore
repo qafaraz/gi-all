@@ -1,3 +1,15 @@
-Content/bin/
-Content/obj/
+# MonoGame
+# website: https://monogame.net
+# docs: https://docs.monogame.net
+# description: MonoGame game framework compiled content pipeline artifacts and editor backups
+
+# Content pipeline build directories
+[Cc]ontent/[Bb]in/
+[Cc]ontent/[Oo]bj/
+
+# Compiled game content and shaders
+*.xnb
+*.mgfxo
+
+# MGCB Editor backups
 *.mgcb.bak
