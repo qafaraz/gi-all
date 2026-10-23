@@ -1,2 +1,15 @@
+# Nix
+# website: https://nixos.org
+# docs: https://nixos.org/manual/nix/stable/
+# description: Nix package manager build outputs, environment caches, and NixOS test artifacts
+
+# Nix build outputs
 result
 result-*
+
+# NixOS interactive test driver history
+**/.nixos-test-history
+
+# Devenv developer environment
+.devenv*
+devenv.local.nix

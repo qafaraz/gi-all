@@ -1,7 +1,28 @@
-*.exe~
-go.sum
-go.work.sum
-vendor/
+# Go (Golang)
+# website: https://go.dev
+# docs: https://go.dev/doc/
+# description: Go compiled binaries, test artifacts, coverage profiles, and local workspace files
+
+# Binaries for programs and plugins
 *.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
 *.test
+
+# Code coverage profiles and test artifacts
 *.out
+coverage.*
+!coverage.go
+*.coverprofile
+profile.cov
+
+# Go workspace files (local multi-module development)
+go.work
+go.work.sum
+
+# Dependency directories (Uncomment if vendoring is not committed)
+# vendor/
