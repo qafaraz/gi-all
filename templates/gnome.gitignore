@@ -1,1 +1,17 @@
-.directory
+# GNOME
+# website: https://www.gnome.org
+# docs: https://developer.gnome.org
+# description: GNOME desktop applications, shell extensions, compiled schemas, resources, and translation artifacts.
+
+# GNOME Shell Extension bundle
+*.zip
+
+# GSettings compiled schemas
+gschemas.compiled
+
+# Compiled binary resources
+*.gresource
+
+# Compiled gettext translations
+*.mo
+*.gmo

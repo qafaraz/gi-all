@@ -1,8 +1,21 @@
+# macOS
+# website: https://www.apple.com/macos/
+# docs: https://support.apple.com/macos
+# description: macOS system files, Finder metadata, resource forks, Spotlight indexes, and Time Machine attributes
+
+# General system and Finder files
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
+Icon[\r]
+.localized
+__MACOSX/
+*.icloud
+
+# Resource forks and extended attributes
 ._*
+
+# Volume root and disk management
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -10,8 +23,41 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+.com.apple.timemachine.supported
+.PKInstallSandboxManager
+.PKInstallSandboxManager-SystemSoftware
+.hotfiles.btree
+.vol
+.file
+.disk_label*
+lost+found
+.HFS+ Private Directory Data[\r]
+
+# Remote network shares (AFP and SMB)
 .AppleDB
 .AppleDesktop
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Disk quota system
+.quota.group
+.quota.user
+.quota.ops.group
+.quota.ops.user
+
+# Time Machine and mobile backups
+Backups.backupdb
+.MobileBackups
+.MobileBackups.trash
+MobileBackups.trash
+tmbootpicker.efi
+
+# Legacy Mac OS (Classic Mac OS 6 to 9)
+Desktop DB
+Desktop DF
+TheFindByContentFolder
+TheVolumeSettingsFolder
+.FBCIndex
+.FBCSemaphoreFile
+.FBCLockFolder

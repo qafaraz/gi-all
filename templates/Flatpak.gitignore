@@ -1,0 +1,14 @@
+# Flatpak
+# website: https://flatpak.org
+# docs: https://docs.flatpak.org
+# description: Flatpak Linux desktop application sandbox build directories, state, and export repository
+
+# Flatpak builder cache and state directory (Official upstream)
+.flatpak-builder
+.flatpak-builder/
+
+# Flatpak build directory (Official upstream)
+builddir/
+
+# Local OSTree export repository (Official upstream)
+repo/
