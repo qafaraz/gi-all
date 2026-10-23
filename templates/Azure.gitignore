@@ -1,0 +1,20 @@
+# Azure
+# website: https://azure.microsoft.com
+# docs: https://learn.microsoft.com/azure/
+# description: Microsoft Azure cloud services, Azure Functions local settings, deployment profiles, and Azurite emulator storage
+
+# Azure Functions and local configuration
+local.settings.json
+.azure/
+.azurefunctions/
+
+# Azure deployment credentials and profiles
+*.publishsettings
+*.pubxml.user
+
+# Azurite local storage emulator
+__azurite_db*.json
+__azurite_db*.json.bak
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/

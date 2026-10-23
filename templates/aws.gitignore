@@ -1,8 +1,13 @@
-*.js
-!jest.config.js
-*.d.ts
-node_modules
+# AWS
+# website: https://aws.amazon.com
+# docs: https://docs.aws.amazon.com
+# description: Amazon Web Services Cloud Development Kit (CDK) and Serverless Application Model (SAM) build artifacts and cache
+
+# AWS Cloud Development Kit (CDK)
+.cdk.staging/
 cdk.out/
 cdk.context.json
-*.bak
-Recovery/
+
+# AWS Serverless Application Model (SAM)
+.aws-sam/
+samconfig.toml.bak
