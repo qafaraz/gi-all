@@ -1,8 +1,19 @@
+# Gradle
+# website: https://gradle.org
+# docs: https://docs.gradle.org
+# description: Gradle build tool execution cache, build directories, wrapper rules, and task caches.
+
+# Build directory and caches
 .gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!gradle/wrapper/gradle-wrapper.properties
+**/build/
+!**/src/**/build/
+.gradletasknamecache
+
+# Gradle GUI configuration
 gradle-app.setting
-!**/src/main/**/build/
-!**/src/test/**/build/
-*.class
+
+# Gradle Wrapper
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+!**/gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.properties

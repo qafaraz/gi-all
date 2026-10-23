@@ -1,9 +1,38 @@
+# Grails
+# website: https://grails.apache.org
+# docs: https://grails.apache.org/docs/latest/guide/
+# description: Apache Grails Groovy-based web framework build outputs, asset cache, and runtime logs
+
+# Modern Gradle build outputs (Grails 3+)
+.gradle/
+build/
+/build/
+
+# Packaged application archives
+*.war
+*.jar
+
+# Grails Asset-Pipeline cache
+.asset-pipeline/
+
+# Runtime exception logs
+stacktrace.log
+/stacktrace.log
+
+# Embedded development databases (H2 and HSQLDB)
+*Db.properties
+*Db.script
+*.mv.db
+*.trace.db
+/prodDb.*
+/devDb.*
+/testDb.*
+
+# Legacy Grails 1.x / 2.x build directories and plugins
+target/
 /target/
 /web-app/WEB-INF/classes/
 /web-app/WEB-INF/lib/
-stacktrace.log
-*.war
+/web-app/WEB-INF/spring/resources.xml
 web-app/plugins/
 plugins/
-/web-app/WEB-INF/spring/resources.xml
-application.properties

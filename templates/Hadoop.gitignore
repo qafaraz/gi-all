@@ -1,0 +1,21 @@
+# Apache Hadoop
+# website: https://hadoop.apache.org
+# docs: https://hadoop.apache.org/docs/stable/
+# description: Apache Hadoop HDFS checksums, local cluster runtime data, and daemon logs
+
+# HDFS checksum files (generated during read/write operations)
+*.crc
+
+# Local cluster state and daemon PID files
+*.pid
+namenode/
+datanode/
+dfs/
+yarn/
+
+# Hadoop local job temporary directories
+_temporary/
+
+# Ecosystem: Apache Hive local metastore (embedded Derby)
+metastore_db/
+derby.log
