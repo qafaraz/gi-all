@@ -1,0 +1,19 @@
+# Bookdown
+# website: https://bookdown.org/
+# docs: https://pkg.yihui.org/bookdown/
+# description: Gitignore rules for Bookdown, an open-source R package for authoring books and technical documents with R Markdown.
+
+# Output directory
+_book/
+
+# Bookdown auxiliary and intermediate files
+_bookdown_files/
+_main.Rmd
+_main.rds
+_main.*
+
+# Knitr and R Markdown rendering cache and temporary files
+*_cache/
+*_files/
+*.knit.md
+*.utf8.md

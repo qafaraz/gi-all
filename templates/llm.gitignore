@@ -1,0 +1,33 @@
+# Open Source LLM & Local AI Models
+# website: https://huggingface.co
+# docs: https://huggingface.co/docs
+# description: Large Language Model local runtimes, quantized models, vector databases, and embeddings cache
+
+# Local vector databases and storage
+.chroma/
+chroma/
+chroma.sqlite3
+qdrant_storage/
+.qdrant/
+.weaviate/
+weaviate_data/
+.lancedb/
+*.lance/
+milvus_data/
+milvus.db
+vector_stores/
+embeddings_cache/
+faiss_index/
+*.faiss
+
+# Local LLM runtimes, models, and quantized weights
+*.gguf
+*.ggml
+llama.cpp/models/
+ollama/models/
+.ollama/
+
+# LLM agent frameworks and local traces
+.llama_index/
+.crewai/
+.phoenix/
