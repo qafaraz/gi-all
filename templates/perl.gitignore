@@ -1,12 +1,41 @@
-!Build
-!Build.bat
-*.o
-*.bs
-.lwpcookies
+# Perl
+# website: https://www.perl.org
+# docs: https://perldoc.perl.org
+# description: Perl programming language build artifacts, module installations, and test coverage reports.
+
+# Module::Build
+!Build/
+_build/
+Build
+Build.bat
+
+# ExtUtils::MakeMaker
 blib/
+pm_to_blib
+_eumm/
 Makefile
 Makefile.old
-pm_to_blib
-MYMETA.yml
+MANIFEST.bak
+*.bs
+*.o
+
+# Dist::Zilla and Module::Install
+.build/
+inc/
+
+# Dynamic metadata files
 MYMETA.json
-_build/
+MYMETA.yml
+
+# Test coverage and profiler reports
+cover_db/
+.last_cover_stats
+nytprof.out
+
+# Dependency managers (Carton and Carmel)
+local/
+.carmel/
+
+# Tooling artifacts
+*.pm.tdy
+.lwpcookies

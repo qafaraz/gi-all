@@ -1,0 +1,42 @@
+# Plone
+# website: https://plone.org
+# docs: https://docs.plone.org
+# description: Python-based enterprise open source content management system
+
+# Byte-compiled and translation files
+*.py[cod]
+*$py.class
+*.mo
+*.tmp*
+
+# Packaging and distributions
+*.egg
+*.egg-info
+.eggs/
+dist/
+build/
+
+# Zope and Buildout
+bin/
+parts/
+develop-eggs/
+eggs/
+fake-eggs/
+downloads/
+var/
+etc/
+buildout-cache/
+.installed.cfg
+.mr.developer.cfg
+local.cfg
+
+# Plone 6 and mxdev
+instance/
+sources/
+.make-sentinels/
+*-mxdev.txt
+.installed.txt
+
+# Dependency graphs
+forest.dot
+forest.json
