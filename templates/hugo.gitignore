@@ -1,7 +1,18 @@
+# Hugo
+# website: https://gohugo.io/
+# docs: https://gohugo.io/documentation/
+# description: Fast and modern static site generator written in Go, ignoring build outputs, asset caches, and temporary build files.
+
+# Generated files
 /public/
 /resources/_gen/
+/assets/jsconfig.json
 hugo_stats.json
+
+# Executables
 hugo.exe
 hugo.darwin
 hugo.linux
-.hugo_build.lock
+
+# Temporary build files
+/.hugo_build.lock

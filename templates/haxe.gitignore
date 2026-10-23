@@ -1,6 +1,18 @@
-export/
+# Haxe
+# website: https://haxe.org
+# docs: https://haxe.org/manual/
+# description: Haxe cross-platform programming language build artifacts, libraries, and compiler dumps.
+
+# Compiled binaries and target artifacts
+*.hl
 *.n
 *.swf
 *.swc
+export/
+
+# Dependencies and language server
 .haxelib/
+.haxelsp/recording/
+
+# Compiler dumps
 dump/

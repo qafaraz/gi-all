@@ -1,6 +1,23 @@
-*.ibc
-*.idrepl
-.idris/
+# Idris
+# website: https://idris-lang.org
+# docs: https://idris2.readthedocs.io/en/latest/
+# description: Idris 1 and Idris 2 build outputs, typecheck cache files, bytecode, and package artifacts
+
+# Idris 2 build outputs and typecheck cache
 build/
 *.ttc
 *.ttm
+
+# Idris 2 package manager (pack)
+.pack/
+
+# Idris 1 artifacts (legacy)
+*.ibc
+*.idrepl
+.idris/
+
+# Native compilation objects
+*.o
+*.so
+*.dylib
+*.dll
