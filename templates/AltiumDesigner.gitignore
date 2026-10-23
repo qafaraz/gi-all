@@ -1,0 +1,23 @@
+# Altium Designer
+# website: https://www.altium.com/altium-designer
+# docs: https://www.altium.com/documentation/altium-designer
+# description: Altium Designer PCB design cache, history, logs, and generated outputs
+
+# Cache data and previews
+History/
+**/History/
+__Previews/
+**/__Previews/
+*.SchDocPreview
+*.PcbDocPreview
+
+# Logs and generated outputs
+Project\ Logs*/
+Project\ Outputs*/
+Status\ Report.txt
+debug.log
+
+# Temporary, lock, and web preview files
+*.PcbDoc.htm
+*.ldb
+.~lock.*

@@ -1,0 +1,31 @@
+# Altera Quartus
+# website: https://www.altera.com
+# docs: https://www.intel.com/content/www/us/en/docs/programmable/
+# description: Altera Quartus compilation databases, reports, and FPGA programming bitstreams
+
+# Compilation databases and temporary directories
+db/
+incremental_db/
+greybox_tmp/
+hc_output/
+output_files/
+
+# Simulation outputs
+simulation/
+
+# Programming bitstreams and debug files
+*.sof
+*.pof
+*.jdi
+*.pin
+
+# Compilation summaries, messages, and reports
+*.rpt
+*.summary
+*.smsg
+*.done
+
+# Workspace settings, backups, and packages
+*.qws
+*.bak
+*.gpak
