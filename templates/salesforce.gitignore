@@ -1,2 +1,23 @@
-.sfdx/
+# Salesforce
+# website: https://developer.salesforce.com
+# docs: https://developer.salesforce.com/docs
+# description: Salesforce DX, Salesforce CLI cache, LWC development tools, and Code Analyzer results
+
+# Salesforce CLI and local development cache
 .sf/
+.sfdx/
+.localdev/
+.localdevserver/
+deploy-options.json
+
+# Lightning Web Components (LWC) autocompletion cache
+**/lwc/jsconfig.json
+
+# Salesforce Code Analyzer results
+sca_results.csv
+sfca_results.json
+
+# Package archives and metadata bundles
+*.zip
+*.oas
+**/staticresources/**
