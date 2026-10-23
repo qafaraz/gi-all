@@ -1,5 +1,12 @@
-# AutoHotkey compiled scripts
+# AutoHotkey
+# website: https://www.autohotkey.com
+# docs: https://www.autohotkey.com/docs/
+# description: AutoHotkey scripting language compiled binaries and backup files
+
+# Compiled scripts
 *.exe
+
 # Script backups
 *.bak
 *.ahk.bak
+*.bak.ahk

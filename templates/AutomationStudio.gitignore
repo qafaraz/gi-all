@@ -1,0 +1,33 @@
+# B&R Automation Studio
+# website: https://www.br-automation.com
+# docs: https://help.br-automation.com
+# description: B&R Automation Studio project build binaries, simulation files, temporary objects, and diagnostic logs
+
+# Temporary directories and build outputs
+Binaries/
+Diagnosis/
+Simulation/
+Temp/
+TempObjects/
+ignored/
+
+# Transfer and runtime deployment files
+*artransfer.br
+*arTrsfmode.nv
+*arnc0ext.br
+
+# File types and editor settings
+*.bak
+*.isopen
+*.orig
+*.asar
+*.set
+!**/Physical/**/*.set
+
+# Variable files
+*RevInfo.var
+
+# Logs and diagnostic traces
+*.log
+*.csvlog*
+*.isf
