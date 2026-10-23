@@ -1,7 +1,36 @@
+# Fortran
+# website: https://fortran-lang.org
+# docs: https://fortran-lang.org/learn/
+# description: Fortran compiled modules, object files, runtime units, libraries, and fpm build outputs
+
+# Fortran module and submodule files
 *.mod
 *.smod
+
+# Preprocessed Fortran source files
 *.i
 *.i90
+
+# Compiled object files and libraries
 *.o
-*.f90.bak
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+
+# Fortran runtime I/O units
 fort.*
+
+# Compiler optimization reports and debug files
+*.optrpt
+*.dwo
+
+# Build directories and formatter backup files
+build/
+*.f90.bak
