@@ -71,14 +71,14 @@
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.13",
+    "@biomejs/biome": "^2.5.15",
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
     "@release-it/conventional-changelog": "^12.0.0",
-    "conventional-changelog-conventionalcommits": "^10.4.0",
+    "conventional-changelog-conventionalcommits": "^10.4.1",
     "conventional-commits-filter": "^6.0.1",
     "husky": "^9.1.7",
-    "release-it": "^21.0.2"
+    "release-it": "^21.1.1"
   },
   "overrides": {
     "undici": "^6.26.1",
