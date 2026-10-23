@@ -1,0 +1,60 @@
+# Archives
+# website: https://en.wikipedia.org/wiki/Archive_file
+# docs: https://en.wikipedia.org/wiki/List_of_archive_formats
+# description: Compressed archives, packaging formats, and software installers
+
+# Compressed archive formats
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.gzip
+*.tgz
+*.bz2
+*.bzip
+*.bzip2
+*.xz
+*.lzma
+*.lz4
+*.lz
+*.sz
+*.zlib
+*.br
+*.cab
+*.xar
+*.zst
+*.tzst
+
+# Packing-only formats
+*.iso
+*.tar
+
+# Java archive formats
+*.war
+*.ear
+
+# Mobile application packages
+*.apk
+*.aab
+*.ipa
+*.aar
+
+# Package management and installer formats
+*.dmg
+*.pkg
+*.xpi
+*.crx
+*.gem
+*.egg
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
+*.msix
+*.appx
+*.snap
+*.AppImage
+*.txz
+*.pkg.tar.xz
