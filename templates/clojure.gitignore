@@ -1,2 +1,33 @@
-.clj-kondo/
-.clojure-lsp/
+# Clojure
+# website: https://clojure.org
+# docs: https://clojure.org/reference/documentation
+# description: Clojure language, Clojure CLI, Leiningen, REPL, and tooling build artifacts and caches.
+
+# Compiled classes and build artifacts
+/target/
+/classes/
+/lib/
+*.class
+*.jar
+
+# Clojure CLI and classpath cache
+.cpcache/
+
+# Leiningen and project dependencies
+/checkouts/
+profiles.clj
+pom.xml.asc
+.lein-deps-sum
+.lein-plugins/
+.lein-failures
+
+# REPL and socket ports
+.nrepl-port
+.lein-repl-history
+
+# ClojureScript and tooling caches
+.shadow-cljs/
+.clj-kondo/.cache/
+.lsp/.cache/
+.lsp/sqlite.*.db
+.calva/
