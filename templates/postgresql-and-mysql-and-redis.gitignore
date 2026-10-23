@@ -1,5 +1,0 @@
-*.pgdump
-*.sql.gz
-redis.conf
-my.cnf
-pg_hba.conf

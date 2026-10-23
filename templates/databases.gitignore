@@ -1,19 +1,43 @@
+# Databases
+# website: https://en.wikipedia.org/wiki/Database
+# docs: https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
+# description: Local database binaries, journal logs, memory dumps, and SQL export archives.
+
+# SQLite and embedded database storage
 *.db
 *.sqlite
 *.sqlite3
+*.db3
+*.s3db
+*.sl3
+
+# SQLite transaction journals and WAL temporary files
 *.sqlite-journal
 *.db-shm
 *.db-wal
+
+# Database dumps and SQL export archives
 *.sql
 *.dump
-*.mdb
-*.ldf
-dump.rdb
-*.accdb
-*.sdf
-*.db3
 *.pgdump
+*.dmp
 *.sql.gz
-redis.conf
+*.sql.tar
+*.sql.bz2
+
+# Microsoft SQL Server, Access, and Compact databases
+*.mdf
+*.ldf
+*.ndf
+*.sdf
+*.mdb
+*.accdb
+
+# Redis in-memory storage dumps
+dump.rdb
+*.rdb
+
+# Local database service configuration files
 my.cnf
 pg_hba.conf
+redis.conf

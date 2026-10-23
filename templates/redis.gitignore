@@ -1,6 +1,22 @@
+# Redis
+# website: https://redis.io
+# docs: https://redis.io/docs/latest/
+# description: Redis in-memory database snapshots, Append-Only File (AOF) persistence, and cluster node configuration
+
+# Snapshot (RDB) persistence
 dump.rdb
-appendonly.aof
-nodes.conf
 *.rdb
+
+# Append-Only File (AOF) persistence
+appendonly.aof
+*.aof
+appendonlydir/
+
+# Cluster node configuration
+nodes.conf
 nodes-*.conf
+
+# Runtime files and logs
 redis.pid
+*.pid
+redis.log
