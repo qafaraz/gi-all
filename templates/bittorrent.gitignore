@@ -1,1 +1,12 @@
+# BitTorrent
+# website: https://www.bittorrent.org
+# docs: https://www.bittorrent.org/introduction.html
+# description: BitTorrent peer-to-peer protocol metainfo files, client watch files, and partial downloads
+
+# Torrent metainfo files
 *.torrent
+*.torrent.added
+*.torrent.imported
+
+# Incomplete download files
+*.!ut

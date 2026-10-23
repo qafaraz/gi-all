@@ -1,6 +1,20 @@
+# Blender
+# website: https://www.blender.org
+# docs: https://docs.blender.org
+# description: Blender 3D creation suite backup files, simulation bake caches, and render outputs
+
+# Numbered backup and atomic save files
 *.blend1
 *.blend2
-# Saved renders
+*.blend@
+
+# Physics and simulation bake caches
+blendcache_*/
+
+# Crash logs and reports
+*.blend.crash.txt
+
+# Render outputs and temporary directories
+renders/
 /renders/
-# Blender temp files
 /tmp/

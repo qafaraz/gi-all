@@ -1,0 +1,14 @@
+# Bitrise
+# website: https://bitrise.io
+# docs: https://docs.bitrise.io
+# description: Bitrise mobile CI/CD service, local CLI configuration, and secret files
+
+# Bitrise CLI local files and cache
+.bitrise/
+.envstore.yml
+
+# Bitrise secrets
+.bitrise.secrets.yml
+
+# Bitrise configuration backups
+bitrise.yml.bak
