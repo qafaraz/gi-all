@@ -1,5 +1,0 @@
-.venv/
-uv.lock
-.rye/
-.hatch/
-__pypackages__/
