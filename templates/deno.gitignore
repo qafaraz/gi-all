@@ -1,4 +1,11 @@
-deno.lock
+# Deno
+# website: https://deno.com
+# docs: https://docs.deno.com
+# description: Deno JavaScript and TypeScript runtime cache directories and test coverage reports
+
+# Local cache directory (when DENO_DIR is project-local)
 .deno/
-deno.json
-.denodeps/
+
+# Test coverage reports
+coverage/
+*.lcov

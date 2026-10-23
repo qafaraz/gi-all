@@ -1,4 +1,16 @@
-bun.lockb
-node_modules/
-bun.lock
+# Bun
+# website: https://bun.sh
+# docs: https://bun.sh/docs
+# description: Bun JavaScript runtime and package manager build outputs, cache, and deployment files
+
+# Bun install and deployment artifacts
+node_modules.bun
+
+# Bun internal cache directory
 .bun/
+
+# Build outputs
+dist/
+
+# TypeScript build cache
+*.tsbuildinfo

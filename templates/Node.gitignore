@@ -1,0 +1,47 @@
+# Node.js
+# website: https://nodejs.org
+# docs: https://nodejs.org/docs/latest/api/
+# description: Node.js runtime environment, npm package management, build artifacts, and crash reports
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Node.js diagnostic crash reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime process and state data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage and instrumented libraries
+lib-cov
+coverage/
+*.lcov
+.nyc_output
+
+# Compiled binary addons
+build/Release
+.lock-wscript
+
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# TypeScript and compiler build cache
+*.tsbuildinfo
+.cache/
+
+# Package manager caches and tarballs
+.npm
+.node_repl_history
+*.tgz
+.yarn-integrity
