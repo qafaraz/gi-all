@@ -1,12 +1,30 @@
+# CMake
+# website: https://cmake.org
+# docs: https://cmake.org/cmake/help/latest/
+# description: CMake build outputs, cache files, presets, CTest test artifacts, and CPack packaging files
+
+# Build directory and generated build files
+build/
 CMakeCache.txt
 CMakeFiles/
 CMakeScripts/
-Testing/
 Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
-CTestTestfile.cmake
-_deps/
-build/
+
+# User presets and IDE configuration
 CMakeUserPresets.json
+CMakeLists.txt.user*
+
+# CTest testing artifacts
+Testing/
+CTestTestfile.cmake
+
+# CPack packaging outputs
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages/
+
+# FetchContent dependency cache
+_deps/
