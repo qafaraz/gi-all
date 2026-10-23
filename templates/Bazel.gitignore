@@ -1,0 +1,13 @@
+# Bazel
+# website: https://bazel.build
+# docs: https://bazel.build/concepts/build-ref
+# description: Bazel multi-language build system output symlinks, cache, and IDE plugin directories
+
+# Bazel build outputs and convenience symlinks
+bazel-*
+/bazel-*
+
+# Bazel IDE plugin generated project files (IntelliJ, Android Studio, CLion)
+/.ijwb/
+/.aswb/
+/.clwb/

@@ -1,0 +1,22 @@
+# Backup
+# website: https://en.wikipedia.org/wiki/Backup
+# docs: https://en.wikipedia.org/wiki/Bak_file
+# description: Generic backup files, Norton Ghost disk images, original pre-modification copies, and temporary files
+
+# Generic backup files
+*.bak
+*.back
+*.backup
+
+# Norton Ghost backup files
+*.gho
+
+# Generic original files
+*.ori
+*.orig
+*.original
+
+# Generic temporary files
+*.tmp
+*.temp
+*.temporary

@@ -1,3 +1,20 @@
+# Ballerina
+# website: https://ballerina.io
+# docs: https://ballerina.io/learn/
+# description: Ballerina cloud-native programming language build artifacts, dependencies, and configuration files
+
+# Generated files and build artifacts
 target/
-Ballerina.lock
+generated/
+
+# Dependencies
+Dependencies.toml
+
+# Configuration files
+Config.toml
+# Uncomment to commit test config files:
+#!**/tests/Config.toml
+
+# Tooling cache and legacy lockfile
 .ballerina/
+Ballerina.lock
