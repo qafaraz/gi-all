@@ -1,8 +1,13 @@
+# LabVIEW
+# website: https://www.ni.com/labview
+# docs: https://www.ni.com/docs/en-US/bundle/labview/page/lvhelp/labview_help.html
+# description: National Instruments LabVIEW VI libraries, binaries, caches, and project metadata
+
 # Libraries
 *.lvlibp
 *.llb
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects (including Windows DLLs)
 *.dll
 *.so
 *.so.*
@@ -14,13 +19,13 @@
 # Metadata
 *.aliases
 *.lvlps
+*.lvprojstate
 .cache/
 *.UserState
 
-# Backups and Caches
+# Backups and local caches
 *.lvproj.bak
 *.lvclass.bak
 *.lvlib.bak
-*.tsv
 labview object cache/
 lvanlys/

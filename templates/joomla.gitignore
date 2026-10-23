@@ -1,9 +1,45 @@
+# Joomla
+# website: https://www.joomla.org
+# docs: https://manual.joomla.org
+# description: Joomla configuration, cache directories, logs, temporary files, and backup archives
+
+# Configuration
 configuration.php
+configuration.php.bak
+
+# Cache
 /administrator/cache/*
-/administrator/logs/*
 /cache/*
-/images/stories
+!/administrator/cache/.gitkeep
+!/cache/.gitkeep
+
+# Logs
+/administrator/logs/*
 /log/*
 /logs/*
+*.log
+!/administrator/logs/.gitkeep
+!/logs/.gitkeep
+
+# Temporary files
 /tmp/*
-!.gitkeep
+!/tmp/.gitkeep
+
+# Media uploads and sample data
+/images/banners/*
+/images/sampledata/*
+/images/stories/
+!/images/banners/.gitkeep
+!/images/sampledata/.gitkeep
+
+# Backups (Akeeba Backup and site archives)
+/administrator/components/com_akeeba/backup/*
+*.jpa
+*.jps
+
+# Post-installation directory
+/installation/
+
+# Composer dependencies
+/libraries/vendor/
+/vendor/
