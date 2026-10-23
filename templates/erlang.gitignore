@@ -1,11 +1,34 @@
-.eunit/
-*.plt
-ebin/
-.rebar3
-_build/
-_checkouts/
-deps/
+# Erlang
+# website: https://www.erlang.org
+# docs: https://www.erlang.org/doc/
+# description: Erlang and OTP build outputs, compiled BEAM bytecode, Dialyzer PLTs, Rebar artifacts, and crash dumps
+
+# Compiled BEAM bytecode, archives, and native objects
+*.beam
+*.ez
+*.o
+*.so
+
+# Erlang OTP application directories
+ebin/*.beam
+
+# Runtime and tool crash dumps
 erl_crash.dump
+rebar3.crashdump
+
+# Dialyzer PLT
+*.plt
+
+# Test outputs
+.eunit/
+
+# Rebar 2 (legacy)
+.rebar/
+deps/
 rel/example_project
 .concrete/DEV_MODE
-rebar3.crashdump
+
+# Rebar 3
+.rebar3/
+_build/
+_checkouts/

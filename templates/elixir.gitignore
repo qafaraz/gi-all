@@ -1,11 +1,31 @@
+# Elixir
+# website: https://elixir-lang.org
+# docs: https://elixir-lang.org/docs
+# description: Elixir build outputs, Mix dependencies, documentation, test coverage, and language server caches
+
+# Compilation outputs and Mix dependencies
 /_build/
-/cover/
 /deps/
-/doc/
 /.fetch
-erl_crash.dump
-*.ez
 *.beam
+*.ez
+erl_crash.dump
+
+# Test coverage and documentation
+/cover/
+/doc/
+
+# Secret and local environment configurations
 /config/*.secret.exs
+
+# Dialyzer PLT files
+*.plt
+*.plt.hash
+
+# Language servers and IDE tooling
 .elixir_ls/
+.lexical/
+.next_ls/
+
+# Phoenix static assets (if using Phoenix)
 /priv/static/

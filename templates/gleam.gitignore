@@ -1,3 +1,14 @@
+# Gleam
+# website: https://gleam.run
+# docs: https://gleam.run/documentation/
+# description: Gleam build outputs, compiled BEAM bytecode, Erlang archives, and crash dumps
+
+# Build outputs and dependencies
 build/
+
+# Compiled BEAM bytecode and archives
 *.beam
-manifest.toml
+*.ez
+
+# Erlang runtime crash dumps
+erl_crash.dump
