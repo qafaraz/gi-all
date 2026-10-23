@@ -1,4 +1,17 @@
+# TurboGears
+# website: https://turbogears.org
+# docs: https://turbogears.readthedocs.io/en/latest/
+# description: TurboGears Python web framework application data, distribution, and gearbox cache artifacts
+
+# Application runtime data and caches
 data/
-dist/
-*.egg-info/
+cache/
+session/
+devdata.db
 .gearbox-cache/
+
+# Distribution and packaging
+dist/
+build/
+*.egg
+*.egg-info/

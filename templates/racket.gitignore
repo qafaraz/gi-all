@@ -1,6 +1,25 @@
+# Racket
+# website: https://racket-lang.org
+# docs: https://docs.racket-lang.org
+# description: Racket programming language compiled bytecode, dependencies, documentation artifacts, and editor temporary files.
+
+# Compiled bytecode and dependency tracking
 compiled/
 *.zo
 *.dep
-*.rkt~
-*.rktd
+
+# Documentation build artifacts
 /doc/
+
+# Racket data and cache files
+*.rktd
+
+# DrRacket and editor backup/autosave files
+*.rkt~
+*.rkt.bak
+*.rktd~
+*.rktd.bak
+*~
+*.bak
+\#*
+.\#*

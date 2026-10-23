@@ -1,0 +1,13 @@
+# Raku
+# website: https://raku.org
+# docs: https://docs.raku.org
+# description: Raku programming language precompiled bytecode, module caches, and Rakudo profiler reports.
+
+# Precompiled bytecode caches
+.precomp/
+lib/.precomp/
+
+# Rakudo profiler output (--profile)
+profile-*.html
+profile-*.json
+heap-snapshot-*
