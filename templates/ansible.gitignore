@@ -1,8 +1,20 @@
+# Ansible
+# website: https://www.ansible.com
+# docs: https://docs.ansible.com/ansible/latest/
+# description: Ansible controller config directory, playbook retry files, vault passwords, and collections
+
+# Controller configuration directory
+.ansible/
+
+# Playbook retry files
 *.retry
+
+# Vault password files
 .vault_pass
 vault_password_file
-inventory/
-!inventory/hosts.example
-# Retry files
-# Collections
-/collections/
+
+# Downloaded collections
+collections/
+
+# Tower / AWX CLI credentials
+.tower_cli.cfg

@@ -1,6 +1,19 @@
-docker-compose.override.yml
+# Docker
+# website: https://www.docker.com
+# docs: https://docs.docker.com
+# description: Docker container platform, Docker Compose local overrides, and CLI configuration files
+
+# Docker CLI configuration and local state
 .docker/
-*.log
-.env
-docker-compose.local.yml
 *.dockerignore.local
+.dockerignore.local
+
+# Docker Compose local overrides (legacy and Compose Specification v2)
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.local.yml
+docker-compose.local.yaml
+compose.override.yml
+compose.override.yaml
+compose.local.yml
+compose.local.yaml
