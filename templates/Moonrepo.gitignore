@@ -1,0 +1,10 @@
+# Moonrepo
+# website: https://moonrepo.dev
+# docs: https://moonrepo.dev/docs
+# description: Moonrepo build system and repository management tool caches and artifacts
+
+# Cache data and build artifacts
+.moon/cache/
+
+# Docker scaffolding output
+.moon/docker/

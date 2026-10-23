@@ -1,0 +1,7 @@
+# Turborepo
+# website: https://turborepo.dev
+# docs: https://turborepo.dev/docs
+# description: Turborepo build system local cache, task summaries, and daemon artifacts
+
+# Local cache and daemon logs
+.turbo/

@@ -1,0 +1,11 @@
+# Nx
+# website: https://nx.dev
+# docs: https://nx.dev/getting-started/intro
+# description: Nx smart monorepo build system cache and workspace metadata
+
+# Nx cache and workspace metadata
+.nx/cache/
+.nx/workspace-data/
+
+# Legacy Nx cache (Nx < 15)
+.nx-cache/
