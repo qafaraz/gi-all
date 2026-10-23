@@ -1,3 +1,11 @@
-.arcconfig
-.arclint
-.arcunit
+# Arcanist
+# website: https://github.com/phacility/arcanist
+# docs: https://secure.phabricator.com/book/phabricator/article/arcanist/
+# description: Arcanist and Phabricator CLI cache, linters, and temporary patch files
+
+# Arcanist and libphutil caches
+.phutil_module_cache
+.divinercache/
+
+# Temporary patch artifacts
+*.arc-patch

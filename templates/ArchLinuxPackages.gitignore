@@ -1,0 +1,45 @@
+# Arch Linux Packages
+# website: https://archlinux.org
+# docs: https://wiki.archlinux.org/title/Creating_packages
+# description: Arch Linux package build artifacts, source extractions, and makepkg outputs
+
+# makepkg working directories
+pkg/
+src/
+
+# Built package archives and signatures (makepkg PKGEXT)
+*.pkg.tar
+*.pkg.tar.*
+*.sig
+
+# Source package archives (makepkg SRCEXT)
+*.src.tar
+*.src.tar.*
+
+# Downloaded source archives and binary packages
+*.tar
+*.tar.*
+*.tgz
+*.zip
+*.7z
+*.gz
+*.bz2
+*.xz
+*.zst
+*.jar
+*.deb
+*.rpm
+*.whl
+*.gem
+*.exe
+*.msi
+*.iso
+
+# Incomplete downloads
+*.part
+
+# Build logs and patch rejects
+*.log
+*.log.*
+*.orig
+*.rej

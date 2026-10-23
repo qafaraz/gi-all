@@ -1,0 +1,12 @@
+# Anjuta
+# website: https://wiki.gnome.org/Apps/Anjuta
+# docs: https://gitlab.gnome.org/Archive/anjuta
+# description: Anjuta GNOME IDE local configuration folder, symbol database, and project files
+
+# Local configuration folder and symbol database
+.anjuta/
+.anjuta_sym_db.db
+
+# Project files and backups
+*.anjuta
+*.anjuta.bak
