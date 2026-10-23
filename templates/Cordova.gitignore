@@ -1,0 +1,13 @@
+# Apache Cordova
+# website: https://cordova.apache.org
+# docs: https://cordova.apache.org/docs/en/latest/
+# description: Apache Cordova mobile application platform builds and installed plugins
+
+# Platform binaries and build outputs (Official upstream)
+platforms/
+
+# Installed plugins (Restored via config.xml / package.json)
+plugins/
+
+# Cordova CLI cache
+.cordova/

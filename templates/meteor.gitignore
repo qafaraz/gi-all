@@ -1,2 +1,20 @@
+# Meteor
+# website: https://www.meteor.com
+# docs: https://docs.meteor.com
+# description: Ignores local development build files, databases, and sensitive configuration for Meteor.js applications
+
+# Meteor local development and build
 .meteor/local/
 .meteor/meteorite/
+.meteor/dev_bundle/
+
+# Build outputs
+.build*/
+
+# Sensitive configuration settings
+settings.json
+settings-production.json
+
+# Meteor Up (MUP) deployment settings
+mup.json
+mup.js
