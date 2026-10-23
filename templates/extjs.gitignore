@@ -1,3 +1,35 @@
-.sencha/
+# Ext JS
+# website: https://www.sencha.com/products/extjs/
+# docs: https://docs.sencha.com/extjs/
+# description: Sencha Ext JS enterprise cross-platform JavaScript framework, Sencha Cmd build artifacts, and toolkit caches.
+
+# Sencha Cmd build outputs
 build/
+
+# Sencha Cmd workspace and application metadata
+.sencha/
+
+# SASS and theme compilation caches
+.sass-cache/
 sass/.sass-cache/
+classic/sass/.sass-cache/
+modern/sass/.sass-cache/
+resources/sass/.sass-cache/
+
+# Generated bootstrap files and microloader manifests
+bootstrap.css
+bootstrap.js
+bootstrap.json
+bootstrap.jsonp
+classic.json
+classic.jsonp
+modern.json
+modern.jsonp
+
+# Sencha Architect designer artifacts
+.architect
+.arch-internal-preview.css
+resources/.arch-internal-preview.css
+
+# Local framework distribution copy
+ext/
