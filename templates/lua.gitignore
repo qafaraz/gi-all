@@ -1,6 +1,49 @@
+# Lua
+# website: https://www.lua.org/
+# docs: https://www.lua.org/docs.html
+# description: Lua bytecode, Luarocks packages, local module trees, and compiled C native extensions
+
+# Compiled Lua sources and bytecode
 luac.out
 *.luac
+
+# Luarocks build and package files
+*.src.rock
+*.rock
+*.zip
+*.tar.gz
 .luarocks/
-# Compiled Lua
-# Love2D
-*.love
+lua_modules/
+
+# Object files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries and export definitions
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
