@@ -1,0 +1,18 @@
+# Ceylon
+# website: https://projects.eclipse.org/projects/technology.ceylon
+# docs: https://site.ceylon-lang.dev/documentation/1.3/
+# description: Ceylon programming language compiled module archives, repositories, and build artifacts.
+
+# Compiled module archives and repositories
+modules/
+test-modules/
+*.car
+*.src
+*.sha1
+
+# Build output
+build/
+.exploded/
+
+# Cache directories
+.ceylon/cache/

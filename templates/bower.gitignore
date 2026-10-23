@@ -1,2 +1,12 @@
+# Bower
+# website: https://bower.io
+# docs: https://bower.io/docs/api/
+# description: Bower front-end package manager dependencies and temporary download caches
+
+# Installed package dependencies
 bower_components/
+
+# Temporary directories and debug logs
 .tmp/
+bower-debug.log
+bower-error.log

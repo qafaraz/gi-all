@@ -1,3 +1,26 @@
+# CakePHP
+# website: https://cakephp.org
+# docs: https://book.cakephp.org
+# description: CakePHP rapid development PHP framework temporary files, cache, logs, and sensitive configurations
+
+# CakePHP 3.x, 4.x & 5.x application runtime
+/tmp/*
+!/tmp/cache/models/empty
+!/tmp/cache/persistent/empty
+!/tmp/cache/views/empty
+!/tmp/sessions/empty
+!/tmp/tests/empty
+!/tmp/**/.gitkeep
+/logs/*
+!/logs/empty
+!/logs/.gitkeep
+
+# CakePHP sensitive and local configuration
+/config/app_local.php
+/config/app.php
+/config/.env
+
+# CakePHP 2.x legacy application runtime
 /app/tmp/*
 !/app/tmp/cache
 !/app/tmp/logs
@@ -15,10 +38,12 @@
 !/app/tmp/tests/empty
 /app/tmp/logs/*
 !/app/tmp/logs/empty
-/config/.env
-# CakePHP 2.x
-/app/tmp/
+
+# CakePHP 2.x legacy configuration
+/app/Config/core.php
 /app/Config/database.php
-# CakePHP 3.x
-/logs/
-/tmp/
+/app/Config/email.php
+
+# Dependency directories
+/vendor/*
+/vendors/*
