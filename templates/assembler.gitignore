@@ -1,6 +1,28 @@
+# Assembler
+# website: https://sourceware.org/binutils/
+# docs: https://sourceware.org/binutils/docs/as/
+# description: Assembler build outputs, object files, listing files, and executable binary artifacts
+
+# Object files
 *.o
+*.obj
+*.ko
+
+# Listing and symbol files
 *.lst
-*.hex
-*.bin
-*.elf
 *.map
+*.sym
+
+# Binary and executable images
+*.bin
+*.hex
+*.srec
+*.elf
+*.out
+*.exe
+*.com
+
+# Debug files
+*.ilk
+*.pdb
+*.idb

@@ -1,0 +1,32 @@
+# Atmel Studio
+# website: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio
+# docs: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42613-Atmel-Studio-User-Guide_UserGuide.pdf
+# description: Atmel Studio (Microchip Studio) IDE project caches, user settings, build outputs, and debugger files
+
+# Build output directories
+[Dd]ebug/
+[Rr]elease/
+
+# Build artifacts
+*.o
+*.d
+*.eep
+*.elf
+*.hex
+*.lss
+*.map
+*.srec
+
+# User-specific configuration files
+*.atsuo
+*.atsln.user
+*.cproj.user
+*.cppproj.user
+
+# IntelliSense and Visual Studio shell caches
+ipch/
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.componentinfo.xml

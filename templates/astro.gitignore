@@ -1,1 +1,10 @@
+# Astro
+# website: https://astro.build
+# docs: https://docs.astro.build
+# description: Astro web framework build output, content collections metadata, and generated types
+
+# Build output
+dist/
+
+# Generated types and content collection cache
 .astro/
