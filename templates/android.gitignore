@@ -1,15 +1,17 @@
-# Gradle files
+# Android
+# website: https://developer.android.com
+# docs: https://developer.android.com/develop
+# description: Android platform application builds, Gradle artifacts, SDK configurations, and debugging outputs
+
+# Gradle build system
 .gradle/
 build/
 .kotlin/
 
-# Local configuration file (sdk path, etc)
+# Local configuration file (SDK and NDK paths)
 local.properties
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
+# Android Studio and Gradle build outputs
 captures/
 .externalNativeBuild/
 .cxx/
@@ -17,19 +19,11 @@ captures/
 *.apk
 output-metadata.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
+# Google Services configuration (sensitive API keys)
 google-services.json
 
-# Android Profiling
+# Android profiling
 *.hprof
+
+# Log files
+*.log

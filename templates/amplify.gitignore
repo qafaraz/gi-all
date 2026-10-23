@@ -1,18 +1,28 @@
+# AWS Amplify
+# website: https://aws.amazon.com/amplify/
+# docs: https://docs.amplify.aws/
+# description: AWS Amplify backend state, local configs, client outputs, and secrets
+
+# Local backend state and cloud formation cache
 amplify/\#current-cloud-backend/
+\#current-cloud-backend/
 amplify/.config/local-*
 amplify/backend/amplify-meta.json
 amplify/backend/awscloudformation/
 amplify/backend/.temp/
-build/
-dist/
-node_modules/
+amplify/logs/
+amplify/mock-data/
+.amplify/
+
+# Generated client configuration and outputs (Gen 1 & Gen 2)
 aws-exports.js
 awsconfiguration.json
 amplifyconfiguration.json
 amplifyconfiguration.dart
+amplify_outputs.json
 amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
+
+# Local secrets and temporary files
 .secret-*
-**.sample
-\#current-cloud-backend/

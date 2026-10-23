@@ -1,9 +1,28 @@
+# Angular
+# website: https://angular.dev
+# docs: https://angular.dev/overview
+# description: Angular framework, Angular CLI build artifacts, caches, and test outputs
+
+# Compiled and build outputs
 /dist/
 /tmp/
 /out-tsc/
 /bazel-out/
-/node_modules/
-.angular/cache
-*.js
-!src/**/*.js
-!src/**/*.spec.js
+
+# Angular CLI cache and internal files
+.angular/
+/.angular-cli.json
+/.ng/
+
+# Test outputs and reports
+/coverage/
+/e2e/test-output/
+__screenshots__/
+
+# Test runner logs and locks
+testem.log
+/libpeerconnection.log
+/connect.lock
+
+# TypeScript build cache
+*.tsbuildinfo
