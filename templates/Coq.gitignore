@@ -1,0 +1,59 @@
+# Coq
+# website: https://rocq-prover.org
+# docs: https://rocq-prover.org/docs
+# description: Coq and Rocq Prover compiled object files, dependencies, tactic caches, timing logs, and plugin artifacts
+
+# Compiled Coq objects
+*.vo
+*.vos
+*.vok
+*.vio
+
+# Dependency and auxiliary files
+*.v.d
+.*.aux
+.*.d
+*.glob
+
+# Native compilation and profiling
+.coq-native
+*.native
+native_compute_profile_*.data
+
+# Proof engine and solver caches
+.csdp.cache
+.lia.cache
+.nia.cache
+.nlia.cache
+.nra.cache
+csdp.cache
+lia.cache
+nia.cache
+nlia.cache
+nra.cache
+
+# Build timing and benchmark logs
+*.timing.diff
+*.v.after-timing
+*.v.before-timing
+*.v.timing
+time-of-build-after.log
+time-of-build-before.log
+time-of-build-both.log
+time-of-build-pretty.log
+
+# OCaml plugin and extraction artifacts
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.cmxs
+*.a
+*.o
+*.ml.d
+*.ml4.d
+*.mlg.d
+*.mli.d
+*.mllib.d
+*.mlpack.d

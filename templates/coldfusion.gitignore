@@ -1,5 +1,24 @@
-# Adobe ColdFusion
+# ColdFusion
+# website: https://www.adobe.com/products/coldfusion-family.html
+# docs: https://helpx.adobe.com/coldfusion/user-guide.html
+# description: Adobe ColdFusion web application runtime generated files, compiled classes, and editor backups
+
+# ColdFusion administrator and internal components
+CFIDE/
 /CFIDE/
+
+# Compiled CFML classes and runtime cache
+cfclasses/
+WEB-INF/cfclasses/
 /WEB-INF/cfclasses/
+WEB-INF/cpcache/
+/WEB-INF/cpcache/
+
+# Server runtime logs
+cflogs/
+WEB-INF/cflogs/
+/WEB-INF/cflogs/
+
+# Backup files
 *.cfm.bak
 *.cfc.bak
