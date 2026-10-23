@@ -1,0 +1,15 @@
+# Cocos Creator
+# website: https://www.cocos.com/creator
+# docs: https://docs.cocos.com/creator/manual/en/
+# description: Cocos Creator game engine project build artifacts, editor cache, temporary files, and local profiles.
+
+# Build output
+build/
+
+# Editor cache and temporary files
+library/
+temp/
+
+# Local preferences and profiles
+local/
+profiles/

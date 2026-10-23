@@ -1,3 +1,17 @@
--codekit-cache/
+# CodeKit
+# website: https://codekitapp.com
+# docs: https://codekitapp.com/help/
+# description: CodeKit web development build tool configuration, cache directories, and output files.
+
+# Project configuration
+config.codekit
+config.codekit3
 *.codekit
 *.codekit3
+
+# Internal cache directories
+.codekit-cache/
+-codekit-cache/
+
+# Default minification output
+/min/

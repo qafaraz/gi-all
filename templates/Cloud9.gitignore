@@ -1,0 +1,8 @@
+# Cloud9
+# website: https://aws.amazon.com/cloud9/
+# docs: https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html
+# description: AWS Cloud9 cloud-based integrated development environment project settings and file revisions
+
+# Cloud9 IDE configuration and revision history
+.c9/
+.c9revisions/
