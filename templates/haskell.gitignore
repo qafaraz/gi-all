@@ -1,22 +1,37 @@
-dist-*/
+# Haskell
+# website: https://www.haskell.org
+# docs: https://www.haskell.org/documentation/
+# description: Purely functional programming language; ignores GHC compiler outputs, Cabal and Stack build directories, profiling data, and environment state
+
+# Cabal build artifacts and local configurations
+dist
+dist-*
 cabal-dev/
+.cabal-sandbox/
+cabal.sandbox.config
+cabal.project.local
+cabal.project.local~
+
+# Stack build artifacts
+.stack-work/
+
+# GHC compiler outputs and interfaces
+*.o
 *.hi
 *.hie
 *.chi
 *.chs.h
 *.dyn_o
 *.dyn_hi
-.hpc/
-.hsenv/
-.cabal-sandbox/
-cabal.sandbox.config
-*.hp
-*.eventlog
-.stack-work/
-cabal.project.local
-cabal.project.local~
-.HTF/
 .ghc.environment.*
-*.o
+
+# Profiling and code coverage
 *.prof
 *.aux
+*.hp
+*.eventlog
+.hpc/
+
+# Test framework and environment
+.hsenv/
+.HTF/

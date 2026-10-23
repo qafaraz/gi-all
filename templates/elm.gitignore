@@ -1,3 +1,14 @@
+# Elm
+# website: https://elm-lang.org
+# docs: https://guide.elm-lang.org/
+# description: Elm compiler artifacts, package manager cache, REPL temporary files, and Elm Land framework outputs
+
+# Elm compiler and package manager build artifacts
 elm-stuff/
+
+# Elm REPL temporary files
 repl-temp-*
+
+# Elm frameworks and tooling caches
 .elm-land/
+.elm-spa/
