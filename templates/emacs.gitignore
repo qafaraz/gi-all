@@ -1,23 +1,44 @@
+# Emacs
+# website: https://github.com/emacs-mirror/emacs
+# docs: https://www.emacswiki.org
+# description: Extensible text editor; ignores backup files, auto-saves, compiled Elisp, packages, and mode-specific state
+
+# Backup and auto-save files
 *~
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
+.\#*
 auto-save-list
 tramp
-.\#*
+*.~undo-tree~
+
+# Compiled Elisp and desktop session
+*.elc
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Org-mode
 .org-id-locations
 *_archive
+
+# Flymake and Flycheck syntax checkers
 *_flymake.*
+flycheck_*.el
+
+# Eshell and server state
 /eshell/history
 /eshell/lastdir
+/server/
+
+# Package managers and dependencies
 /elpa/
-*.rel
-/auto/
 .cask/
 dist/
-flycheck_*.el
-/server/
+
+# TeX and AUCTeX artifacts
+*.rel
+/auto/
+
+# Project configuration and security
 .projectile
 .dir-locals.el
 /network-security.data

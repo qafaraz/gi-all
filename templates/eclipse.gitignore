@@ -1,4 +1,11 @@
-.metadata
+# Eclipse
+# website: https://eclipseide.org
+# docs: https://help.eclipse.org
+# description: Eclipse IDE workspace metadata, settings, build artifacts, and plugin configurations
+
+# General workspace and local configuration
+.metadata/
+bin/
 tmp/
 *.tmp
 *.bak
@@ -8,18 +15,51 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-.externalToolBuilders/
-*.launch
-.factorypath
+.recommenders/
+
+# Eclipse project and classpath configuration
 .classpath
 .project
-.buildpath
-.target
-.tern-project
-.springBeans
-.recommenders/
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored Eclipse launch configurations
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
 .apt_generated/
 .apt_generated_test/
+.apt_generated_tests/
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
 .worksheet
+
+# Aptana Studio (Eclipse-based Web IDE)
+.aptana/
+RemoteSystemsTempFiles/
