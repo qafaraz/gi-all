@@ -82,17 +82,55 @@ Examples:
 
 ## 📑 How to Add a New Template
 
-`gi-all` is built around modular `.gitignore` templates! Adding a new template is super easy:
+`gi-all` is built around modular `.gitignore` templates! Adding a new template is straightforward:
 
-1. Navigate to the `templates/` directory (or appropriate subfolder).
-2. Create a new `.gitignore` file named in **kebab-case**:
-   - `technology-name.gitignore` (e.g., `deno.gitignore`, `tauri.gitignore`, `astro.gitignore`)
-3. Add **only** the ignore patterns specific to that technology.
-4. Run tests and linting to ensure everything passes:
+1. **Navigate to the `templates/` directory:**
+   All templates are located inside the root `templates/` folder.
+2. **Name your file in PascalCase:**
+   Files must strictly use **PascalCase** matching the official technology name (e.g., `Docker.gitignore`, `Astro.gitignore`, `FastAPI.gitignore`, `Rust.gitignore`). Do not use lowercase or hyphenated names.
+3. **Include the Standard Header Metadata:**  
+   Every template must start with standardized header comments to keep the library well-documented and searchable:
+   ```gitignore
+   # <Technology Name>
+   # website: <Official website URL>
+   # docs: <Documentation URL>
+   # description: <Short 1-sentence summary of what this template covers>
+   ```
+4. **Group Rules Logically:**  
+   - Group related patterns under clear section comments (e.g., `# Build output`, `# Local overrides`, `# Cache & logs`).
+   - Add **only** rules specific to that technology. Common secret files (like `.env*`, `*.key`, `id_rsa`), OS artifacts (`.DS_Store`, `Thumbs.db`), and editor files are automatically injected into every generated file by `gi-all`'s mandatory safety rules.
+5. **Rebuild the template data and run tests:**
+   After adding or modifying templates, rebuild the web metadata and verify tests:
    ```bash
+   npm run build:templates
    npm test
    npm run lint
    ```
+
+### 🌟 Example Template:
+
+```gitignore
+# Docker
+# website: https://www.docker.com
+# docs: https://docs.docker.com
+# description: Docker container platform, Docker Compose local overrides, and CLI configuration files
+
+# Docker CLI configuration and local state
+.docker/
+*.dockerignore.local
+.dockerignore.local
+
+# Docker Compose local overrides (legacy and Compose Specification v2)
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.local.yml
+docker-compose.local.yaml
+compose.override.yml
+compose.override.yaml
+compose.local.yml
+compose.local.yaml
+```
+
 
 ---
 
