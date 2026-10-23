@@ -1,4 +1,24 @@
-.bsp/
-project/project/
-project/target/
+# SBT
+# website: https://www.scala-sbt.org/
+# docs: https://www.scala-sbt.org/1.x/docs/Directories.html
+# description: Simple Build Tool (sbt) build outputs, managed dependencies, and cache directories
+
+# Build and distribution directories
+dist/*
 target/
+
+# Managed dependencies and generated sources
+lib_managed/
+src_managed/
+
+# sbt boot and plugin staging
+project/boot/
+project/plugins/project/
+
+# Local history and caches
+.history
+.cache
+.lib/
+
+# Build Server Protocol (BSP)
+.bsp/

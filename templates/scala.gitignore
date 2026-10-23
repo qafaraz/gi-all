@@ -1,15 +1,16 @@
+# Scala
+# website: https://www.scala-lang.org/
+# docs: https://docs.scala-lang.org/
+# description: Scala programming language compiled binaries, Tasty files, and JVM crash logs
+
+# Compiled class files
 *.class
+
+# Scala 3 Tasty files (Typed Abstract Syntax Trees)
+*.tasty
+
+# Log files
 *.log
-.cache
-.history
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-.settings/
-.worksheet/
-.bsp/
-project/project/
+
+# JVM crash logs
+hs_err_pid*
