@@ -1,6 +1,34 @@
-*.i
-*.ii
-*.gpu
-*.ptx
+# CUDA
+# website: https://developer.nvidia.com/cuda-toolkit
+# docs: https://docs.nvidia.com/cuda/
+# description: NVIDIA CUDA parallel computing platform compiler artifacts, intermediate files, and profiler reports.
+
+# Compiled device binaries and fatbins
 *.cubin
 *.fatbin
+
+# Intermediate assembly and device code
+*.ptx
+*.gpu
+*.ltoir
+
+# Preprocessed host/device sources
+*.i
+*.ii
+
+# NVCC compiler frontend and diagnostic artifacts (--keep)
+*.cudafe1.*
+*.cudafe2.*
+*.stub.c
+*.fatbin.c
+*.module_id
+*.hash
+
+# NVIDIA Nsight profiling and performance analysis reports
+*.nsys-rep
+*.ncu-rep
+*.nvvp
+*.qdrep
+
+# NVIDIA Nsight user configurations
+*.nvuser
