@@ -1,0 +1,19 @@
+# Bazaar
+# website: https://launchpad.net/bzr
+# docs: https://www.breezy-vcs.org/doc/en/
+# description: GNU Bazaar (bzr) and Breezy distributed version control system metadata, ignore rules, and conflict artifacts
+
+# Bazaar and Breezy metadata and ignore rules
+.bzr/
+.bzrignore
+*.bzrignore
+.bzrtags
+
+# Merge conflict temporary artifacts
+*.BASE
+*.THIS
+*.OTHER
+*.moved
+
+# Diagnostic logs
+.bzr.log

@@ -1,2 +1,17 @@
+# Apache Subversion
+# website: https://subversion.apache.org
+# docs: https://subversion.apache.org/docs/
+# description: Apache Subversion (SVN) and TortoiseSVN working copy directories, conflict files, and administrative data
+
+# Subversion administrative directories
 .svn/
 _svn/
+
+# Subversion internal files and text-base
+*.svn-base
+*.svn-work
+*.svn-revert
+
+# Subversion conflict resolution files
+*.mine
+*.r[0-9]*
