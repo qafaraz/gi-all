@@ -1,35 +1,27 @@
-# Template for AL projects for Dynamics 365 Business Central
+# Microsoft Dynamics 365 Business Central (AL)
+# website: https://dynamics.microsoft.com/business-central/overview/
+# docs: https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview
+# description: Recommended gitignore rules for Microsoft Dynamics 365 Business Central AL development.
 
-# launch.json folder
-.vscode/
-
-# Cache folder
+# Symbols and compiler caches
 .alcache/
-
-# Symbols folder
 .alpackages/
 
-# Snapshots folder
-.snapshots/
-
-# Testing Output folder
+# Build artifacts and extension packages
+*.app
 .output/
 
-# Extension App-file
-*.app
-
-# Rapid Application Development file
+# Snapshots and rapid application development
+.snapshots/
 rad.json
 
-# Translation Base-file
+# Auto-generated translation files
 *.g.xlf
 
-# License-files
+# License files
 *.bclicense
 *.flf
 
-# Test results file
+# Test outputs and runner
 TestResults.xml
-
-# AL Test Runner
 .altestrunner/

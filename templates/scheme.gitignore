@@ -1,22 +1,37 @@
-*.elc
-*.go
+# Scheme
+# website: https://www.scheme.org
+# docs: https://docs.scheme.org
+# description: Scheme programming language compiled binaries, bytecode, package caches, and editor backup files.
+
+# Akku.scm package manager
+.akku/
+
+# Compiled object files and bytecode
 *.so
+*.wpo
+*.boot
+*.go
+*.import.scm
+*.import.so
+*.com
+*.bci
 *.bin
-*.lbin
-*.FASL
-*.fasl
-*.fasle
-*.dxl
-*.dx64fsl
-*.dfsl
-*.d32fsl
-*.cfsl
-*.sx32fsl
-*.sx64fsl
-*.wx32fsl
-*.wx64fsl
-*.x86fsl
-*.i86fsl
-*.lx32fsl
-*.lx64fsl
-*.p64fsl
+
+# Implementation caches and build artifacts
+.gerbil/
+*.ssxi
+*.sci
+
+# Backup and auto-save files
+*.ss~
+*.ss#*
+.#*.ss
+*.scm~
+*.scm#*
+.#*.scm
+*.sld~
+*.sld#*
+.#*.sld
+*.sls~
+*.sls#*
+.#*.sls

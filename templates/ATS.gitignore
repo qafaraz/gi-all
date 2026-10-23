@@ -1,0 +1,21 @@
+# ATS
+# website: https://www.cs.bu.edu/~hwxi/atslangweb/
+# docs: https://www.cs.bu.edu/~hwxi/atslangweb/Documents.html
+# description: ATS (Applied Type System) programming language generated C/JS code, headers, and compiled binaries
+
+# Generated C source and header files
+*_dats.c
+*_sats.c
+*_dats.h
+*_sats.h
+*_hats.c
+*_cats.c
+*_?ats.c
+
+# Generated JavaScript files (atscc2js)
+*_?ats.js
+
+# Object files and compiled binaries
+*.o
+*.so
+*.a

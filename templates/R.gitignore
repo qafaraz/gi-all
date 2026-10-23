@@ -1,3 +1,8 @@
+# R
+# website: https://www.r-project.org/
+# docs: https://cran.r-project.org/manuals.html
+# description: Gitignore rules for the R programming language, package development, and RStudio workflows.
+
 # History files
 .Rhistory
 .Rapp.history
@@ -38,7 +43,6 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
-.env
 
 # pkgdown site
 docs/
