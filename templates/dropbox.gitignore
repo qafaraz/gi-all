@@ -1,3 +1,21 @@
+# Dropbox
+# website: https://www.dropbox.com
+# docs: https://help.dropbox.com/sync
+# description: Dropbox folder settings, sync attributes, ignore rules, caches, and conflicted copies
+
+# Dropbox settings, metadata, and caches
 .dropbox
+*.dropbox
 .dropbox.attr
 .dropbox.cache
+
+# Dropbox ignore rules
+rules.dropboxignore
+.dropboxignore
+
+# Dropbox sync collision and conflict copies
+*conflicted copy*
+*(Case Conflict)*
+*(selective sync conflict)*
+*(Shared Folder Conflict)*
+*(View-Only Conflict)*
