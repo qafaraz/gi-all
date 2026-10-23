@@ -1,0 +1,7 @@
+# Google App Engine
+# website: https://cloud.google.com/appengine
+# docs: https://cloud.google.com/appengine/docs
+# description: Google App Engine local development server and emulator generated artifacts
+
+# App Engine generated folder (Official upstream)
+appengine-generated/

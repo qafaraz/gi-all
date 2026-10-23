@@ -1,0 +1,16 @@
+# Appcelerator Titanium
+# website: https://titaniumsdk.com
+# docs: https://titaniumsdk.com
+# description: Appcelerator Titanium and Alloy mobile app build outputs, logs, and compiled resources
+
+# Build outputs and logs (Official upstream)
+build/
+build.log
+
+# Titanium CLI cache and configuration
+.titanium/
+
+# Alloy compiled resources
+Resources/android/
+Resources/iphone/
+Resources/mobileweb/
