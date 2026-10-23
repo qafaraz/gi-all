@@ -1,3 +1,21 @@
+# ROS 2
+# website: https://www.ros.org/
+# docs: https://docs.ros.org/
+# description: Robot Operating System 2 (ROS 2) Colcon workspace build artifacts, install outputs, and logs
+
+# Colcon workspace directories
+build/
 install/
 log/
-build/
+
+# Generated service bindings and point cloud data
+srv/_*.py
+*.pcd
+
+# Documentation generation
+*.dox
+*.wikidoc
+
+# Colcon and Ament ignore markers
+COLCON_IGNORE
+AMENT_IGNORE

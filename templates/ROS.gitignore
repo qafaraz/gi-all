@@ -1,0 +1,46 @@
+# ROS
+# website: https://www.ros.org/
+# docs: https://wiki.ros.org/
+# description: Robot Operating System (ROS 1) Catkin workspace build outputs, generated messages, and cache files
+
+# Catkin and workspace build directories
+devel/
+devel_isolated/
+build/
+build_isolated/
+install/
+bin/
+lib/
+logs/
+
+# Generated messages and service bindings
+msg_gen/
+srv_gen/
+msg/*Action.msg
+msg/*ActionFeedback.msg
+msg/*ActionGoal.msg
+msg/*ActionResult.msg
+msg/*Feedback.msg
+msg/*Goal.msg
+msg/*Result.msg
+msg/_*.py
+srv/_*.py
+src/*_msgs/
+
+# Dynamic reconfigure
+*.cfgc
+/cfg/cpp/
+/cfg/*.py
+
+# Planning and point cloud data
+/planning/cfg
+/planning/docs
+/planning/src
+*.pcd
+
+# Documentation generation
+*.dox
+*.wikidoc
+
+# Catkin ignore marker
+CATKIN_IGNORE
