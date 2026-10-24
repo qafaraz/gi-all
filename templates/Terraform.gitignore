@@ -1,14 +1,34 @@
+# Terraform
+# website: https://developer.hashicorp.com/terraform
+# docs: https://developer.hashicorp.com/terraform/docs
+# description: HashiCorp Infrastructure as Code tool ignoring local state, plan files, and provider cache.
+
+# Local .terraform directories and lock info
 .terraform/
-.terraform.lock.hcl
+.terraform.tfstate.lock.info
+
+# Local and remote state files
 *.tfstate
 *.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variables and secrets
 *.tfvars
+*.tfvars.json
 !*.tfvars.example
+
+# Plan outputs
 *.tfplan
+
+# Override files (local adjustments)
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+# CLI configuration files
 .terraformrc
 terraform.rc
-.terragrunt-cache/

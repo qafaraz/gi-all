@@ -1,2 +1,7 @@
+# Grunt
+# website: https://gruntjs.com
+# docs: https://gruntjs.com/getting-started
+# description: JavaScript task runner ignoring temporary task storage and build caches.
+
+# Grunt intermediate storage and task cache
 .grunt/
-node_modules/

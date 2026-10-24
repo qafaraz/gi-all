@@ -1,1 +1,15 @@
+# PuTTY
+# website: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+# docs: https://www.chiark.greenend.org.uk/~sgtatham/putty/docs.html
+# description: Terminal emulator and SSH client ignoring private keys, random seed files, and session logs.
+
+# Private keys
 *.ppk
+
+# Cryptographic random seed files
+putty.rnd
+PUTTY.RND
+
+# Terminal session logs
+putty.log
+PUTTY.LOG
