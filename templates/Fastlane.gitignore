@@ -1,0 +1,18 @@
+# Fastlane
+# website: https://fastlane.tools
+# docs: https://docs.fastlane.tools
+# description: iOS and Android automation tool ignoring generated reports, previews, screenshots, and test outputs.
+
+# Fastlane test reports and delivery previews
+**/fastlane/report.xml
+**/fastlane/Preview.html
+
+# Snapshot generated screenshots
+**/fastlane/screenshots/
+
+# Scan test outputs and logs
+**/fastlane/test_output/
+
+# Auto-generated lane documentation
+**/fastlane/README.md
+**/fastlane/readme.md

@@ -1,0 +1,10 @@
+# Kohana
+# website: https://kohanaframework.org
+# docs: https://github.com/kohana/kohana
+# description: PHP HMVC framework ignoring application cache, logs, and temporary runtime data.
+
+# Application cache and logs
+application/cache/*
+!application/cache/.gitkeep
+application/logs/*
+!application/logs/.gitkeep
