@@ -1,0 +1,26 @@
+# Godot
+# website: https://godotengine.org/
+# docs: https://docs.godotengine.org/en/stable/
+# description: Godot Engine editor cache, import artifacts, export presets credentials, and Mono build outputs.
+
+# Godot 4+ cache and editor files
+.godot/
+.nomedia
+~*.dll
+
+# Godot import and project cache
+.import/
+export.cfg
+export_credentials.cfg
+*.tmp
+
+# Imported translations
+*.translation
+
+# Mono and C# ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# Export outputs
+*.exe

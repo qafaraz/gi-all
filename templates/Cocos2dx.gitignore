@@ -1,0 +1,16 @@
+# Cocos2d-x
+# website: https://www.cocos2d-x.org/
+# docs: https://docs.cocos.com/cocos2d-x/manual/en/
+# description: Cocos2d-x game engine build artifacts, runtime binaries, and embedded framework dependencies.
+
+# Build and publish outputs
+build/
+bin/
+publish/
+
+# Runtime and simulators
+runtime/
+
+# Engine dependencies and frameworks
+cocos2d/
+frameworks/
