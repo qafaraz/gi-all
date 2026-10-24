@@ -1,0 +1,19 @@
+# GPG
+# website: https://gnupg.org/
+# docs: https://gnupg.org/documentation/
+# description: GNU Privacy Guard (GnuPG) OpenPGP keyrings, private keys, and runtime artifacts.
+
+# Legacy and modern GnuPG secret key stores
+secring.*
+private-keys-v1.d/
+
+# GnuPG keyrings, trust database, and runtime files
+.gnupg/
+pubring.*
+random_seed
+trustdb.gpg
+S.gpg-agent*
+S.dirmngr*
+
+# OpenPGP message and encrypted files
+*.pgp

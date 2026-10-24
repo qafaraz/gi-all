@@ -1,0 +1,17 @@
+# Snap
+# website: https://snapcraft.io
+# docs: https://snapcraft.io/docs/
+# description: Canonical Snapcraft packaging tool for building and distributing Snap packages across Linux distributions.
+
+# Snapcraft build directories and artifacts
+parts/
+prime/
+stage/
+*.snap
+
+# Snapcraft global state tracking data
+.snapcraft/
+/snap/.snapcraft/
+
+# Source archive packed by snapcraft cleanbuild
+/*_source.tar.bz2

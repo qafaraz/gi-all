@@ -1,0 +1,11 @@
+# Terragrunt
+# website: https://terragrunt.com
+# docs: https://docs.terragrunt.com
+# description: Gruntwork wrapper for Terraform ignoring cache directories and debug variable files.
+
+# Terragrunt cache directories
+.terragrunt-cache/
+**/.terragrunt-cache/*
+
+# Terragrunt debug and log files
+terragrunt-debug.tfvars.json
