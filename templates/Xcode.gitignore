@@ -1,0 +1,28 @@
+# Xcode
+# website: https://developer.apple.com/xcode/
+# docs: https://developer.apple.com/documentation/xcode
+# description: Xcode IDE user settings, project schemes, DerivedData, playgrounds, and build/test result bundles.
+
+# User settings and personal state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+
+# Build and DerivedData
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+*.xcresult
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/

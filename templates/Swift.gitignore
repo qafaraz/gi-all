@@ -1,0 +1,37 @@
+# Swift
+# website: https://www.swift.org/
+# docs: https://docs.swift.org/latest/documentation/
+# description: Swift and Apple ecosystem build artifacts, Xcode user settings, Swift Package Manager, Carthage, and Fastlane.
+
+# User settings and Xcode output
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+*.resolved
+
+# Swift compiler and modules
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+*.swiftinterface
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output

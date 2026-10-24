@@ -1,8 +1,0 @@
-*.bundle
-*.xcworkspace/
-xcuserdata/
-DerivedData/
-*.moved-aside
-*.app
-*.ipa
-*.framework
