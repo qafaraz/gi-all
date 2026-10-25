@@ -1,0 +1,26 @@
+# Puppet
+# website: https://www.puppet.com
+# docs: https://help.puppet.com/core/current/Content/PuppetCore/puppet_index.htm
+# description: Puppet configuration management and module development ignore rules.
+
+# Built packages
+pkg/
+
+# Dependencies and lock files
+.bundle/
+vendor/
+Gemfile.lock
+Puppetfile.lock
+.librarian/
+
+# Testing and fixtures
+spec/fixtures/
+coverage/
+junit/
+
+# PDK, Bolt and documentation caches
+.pdk/
+.resource_types/
+.yardoc/
+doc/
+bolt-debug.log
