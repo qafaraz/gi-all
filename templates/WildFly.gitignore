@@ -1,0 +1,28 @@
+# WildFly
+# website: https://www.wildfly.org
+# docs: https://docs.wildfly.org
+# description: WildFly, JBoss AS 7+ and JBoss EAP standalone and domain mode runtime data, logs, temp directories, configuration history, and deployment scanner markers
+
+# Standalone mode runtime
+**/standalone/data/
+**/standalone/log/
+**/standalone/tmp/
+**/standalone/configuration/standalone_xml_history/
+
+# Domain mode runtime
+**/domain/data/
+**/domain/log/
+**/domain/tmp/
+**/domain/servers/
+**/domain/configuration/domain_xml_history/
+**/domain/configuration/host_xml_history/
+
+# Deployment scanner markers
+**/standalone/deployments/*.dodeploy
+**/standalone/deployments/*.skipdeploy
+**/standalone/deployments/*.isdeploying
+**/standalone/deployments/*.deployed
+**/standalone/deployments/*.failed
+**/standalone/deployments/*.isundeploying
+**/standalone/deployments/*.undeployed
+**/standalone/deployments/*.pending
