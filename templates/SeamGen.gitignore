@@ -1,0 +1,18 @@
+# JBoss Seam (seam-gen)
+# website: https://www.seamframework.org
+# docs: https://docs.jboss.org/seam/2.3.1.Final/reference/html/gettingstarted.html
+# description: JBoss Seam seam-gen project embedded bootstrap runtime data, compiled classes, exploded archives, distribution packages, and test reports
+
+# Embedded JBoss bootstrap runtime
+/bootstrap/data/
+/bootstrap/tmp/
+
+# Build output
+/classes/
+/dist/
+/exploded-archives/
+
+# Test output
+/test-build/
+/test-output/
+/test-report/
