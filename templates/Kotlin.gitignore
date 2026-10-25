@@ -1,0 +1,32 @@
+# Kotlin
+# website: https://kotlinlang.org
+# docs: https://kotlinlang.org/docs/home.html
+# description: Kotlin programming language compiler artifacts, packages, daemon caches, and native binaries.
+
+# Compiled bytecode and class files
+*.class
+
+# Kotlin Multiplatform and Native binaries
+*.klib
+*.kexe
+*.knm
+.konan/
+
+# Package files and archives
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Kotlin compiler cache and daemon data
+.kotlin/
+kotlin-daemon*.log
+
+# JVM crash and memory logs
+hs_err_pid*
+replay_pid*
+*.hprof
+*.log
