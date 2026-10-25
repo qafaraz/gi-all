@@ -1,0 +1,20 @@
+# Prisma
+# website: https://www.prisma.io/
+# docs: https://www.prisma.io/docs
+# description: Next-generation ORM for Node.js and TypeScript, ignoring local SQLite database files, generated client outputs, and engine binaries.
+
+# Local SQLite databases and journals
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Generated Prisma Client (custom output paths)
+prisma/generated/
+src/generated/prisma/
+
+# Prisma engine binaries
+*libquery_engine*
+*migration-engine*
+*introspection-engine*
+*prisma-fmt*
