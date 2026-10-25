@@ -1,0 +1,12 @@
+# DVC
+# website: https://dvc.org
+# docs: https://doc.dvc.org/
+# description: Ignores internal cache, temporary runtime files, and local configuration for Data Version Control (DVC).
+
+# DVC cache and runtime directories
+.dvc/cache/
+.dvc/tmp/
+.dvc/plots/
+
+# Local configuration overrides (machine-specific paths and credentials)
+.dvc/config.local
