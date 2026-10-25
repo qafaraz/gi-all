@@ -1,0 +1,8 @@
+# Notepad++
+# website: https://notepad-plus-plus.org
+# docs: https://npp-user-manual.org
+# description: Notepad++ editor verbose backups and auto-recovery files.
+
+# Backup files and directories
+nppBackup/
+*.bak
