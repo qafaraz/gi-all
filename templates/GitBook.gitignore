@@ -1,0 +1,12 @@
+# GitBook
+# website: https://www.gitbook.com
+# docs: https://gitbook.com/docs/
+# description: Modern documentation platform and book generator, ignoring static book build outputs and compiled eBooks.
+
+# Book build output
+_book/
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
