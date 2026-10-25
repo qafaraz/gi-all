@@ -1,60 +1,71 @@
 # Dependencies
 node_modules/
-/.pnp
-.pnp.js
 
-# Build & Output
+# Build & Distribution
 dist/
 build/
 out/
-tmp/
-temp/
-*.tmp
 *.tgz
 *.tar.gz
 
-# Environment & Secrets
-.env
-.env.*
-*.env
-.envrc
-*.key
-*.pem
-*.p12
-*.crt
-*.cert
-credentials.json
-auth.json
-secrets.*
+# Temporary & Cache Files
+tmp/
+temp/
+*.tmp
+*.bak
 
-# Logs & Diagnostics
+# Logs & Debugging
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Testing & Coverage
+# Testing & Linting
 coverage/
-.nyc_output/
-
-# Biome & Linter Cache
 .biome/
-.eslintcache
-.stylelintcache
 
-# OS Generated Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Environment, Secrets & Credentials
+.env
+.env.*
+*.env
+.envrc
+.envrc.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+!.env.sample
+!.env.template
+.npmrc
+!.npmrc.example
+*.key
+*.pem
+*.crt
+*.cert
+*.p12
+id_rsa
+id_rsa.*
+id_ed25519
+credentials.json
+auth.json
+secrets.*
+bun.lockb
 
-# IDE & Editor Files
+# IDEs & Code Editors
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+!.vscode/launch.json
 *.swp
 *.swo
 *~
+
+# Operating System Metadata
+.DS_Store
+.DS_Store?
+Thumbs.db
