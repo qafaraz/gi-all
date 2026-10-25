@@ -1,0 +1,18 @@
+# Linux
+# website: https://www.kernel.org/
+# docs: https://docs.kernel.org/
+# description: Linux operating system files, filesystem temporary locks, desktop metadata, and process logs.
+
+# Temporary and backup files
+*~
+
+# Filesystem temporary locks and unlinked open files
+.fuse_hidden*
+.nfs*
+
+# Desktop and file manager metadata (KDE Dolphin / FreeDesktop Trash)
+.directory
+.Trash-*
+
+# Process execution output
+nohup.out
