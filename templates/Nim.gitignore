@@ -1,0 +1,22 @@
+# Nim
+# website: https://nim-lang.org/
+# docs: https://nim-lang.org/documentation.html
+# description: Statically typed, compiled systems programming language, ignoring compiler caches, package manager directories, documentation outputs, and native binaries.
+
+# Compiler cache
+nimcache/
+
+# Package manager (Nimble)
+nimblecache/
+nimblepath/
+nimble.develop
+*.paths
+
+# Documentation
+htmldocs/
+
+# Compiled binaries and libraries
+*.exe
+*.dll
+*.dylib
+*.so
