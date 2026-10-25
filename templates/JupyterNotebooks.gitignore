@@ -1,0 +1,25 @@
+# JupyterNotebooks
+# website: https://jupyter.org
+# docs: https://docs.jupyter.org/en/latest/
+# description: Ignores Jupyter Notebook checkpoints, JupyterLab LSP virtual documents, and local collaborative state databases.
+
+# Jupyter Notebook checkpoints (root and nested directories)
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython profiles and runtime configuration
+profile_default/
+ipython_config.py
+.config/ipython/
+
+# JupyterLab Language Server Protocol (LSP) virtual documents
+.virtual_documents/
+
+# JupyterLab 4+ local collaborative editing storage
+.jupyter_ystore.db
+
+# Jupyter local runtime and state directory
+.jupyter/
+
+# Converted notebook artifacts
+*.nbconvert.ipynb

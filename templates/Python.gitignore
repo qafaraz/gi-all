@@ -79,11 +79,6 @@ docs/_build/
 .pybuilder/
 target/
 
-# Jupyter Notebook & IPython
-.ipynb_checkpoints
-profile_default/
-ipython_config.py
-
 # PDM, Hatch, Rye & PEP 582
 .pdm-python
 .pdm-build/
