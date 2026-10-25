@@ -1,0 +1,43 @@
+# Kentico
+# website: https://www.kentico.com/
+# docs: https://docs.kentico.com/
+# description: Ignores Kentico CMS and Xperience by Kentico runtime cache, search indexes, temporary files, and local configs.
+
+# Continuous Integration & Deployment exceptions (must be tracked in source control)
+!**/CIRepository/
+!**/CIRepository/**
+!**/CDRepository/repository.config
+
+# Temporary runtime and cache files
+**/App_Data/AzureCache/
+**/App_Data/AzureTemp/
+**/App_Data/CMSTemp/
+**/App_Data/Persistent/
+**/CMSApp_AppData/
+**/CMSFiles/
+
+# Site export and import packages
+**/CMSSiteUtils/Export/
+**/CMSSiteUtils/Import/
+
+# Web farm and device profile sync markers
+**/webfarm.sync
+**/logFiftyOne.txt
+
+# SmartSearch and Lucene index directories (excluding dictionary stop words and synonyms)
+**/App_Data/CMSModules/SmartSearch/**
+!**/App_Data/CMSModules/SmartSearch/*/
+!**/App_Data/CMSModules/SmartSearch/_StopWords/**
+!**/App_Data/CMSModules/SmartSearch/_Synonyms/**
+**/App_Data/LuceneSearch/
+
+# Sample and starter site templates (Dancing Goat, etc.)
+**/App_Data/DancingGoat/
+**/App_Themes/DancingGoat/
+**/DancingGoat/
+
+# Local configuration overrides (Classic .NET & Modern ASP.NET Core)
+AppSettings.config
+ConnectionStrings.config
+appsettings.local.json
+appsettings.*.local.json
