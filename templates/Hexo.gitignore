@@ -1,0 +1,20 @@
+# Hexo
+# website: https://hexo.io/
+# docs: https://hexo.io/docs/
+# description: Node.js-based static blog framework, ignoring generated static output, database cache, temporary files, and deployment artifacts.
+
+# Generated output
+public/
+
+# Database cache
+db.json
+
+# Deployment directories
+.deploy*/
+
+# Temporary files
+tmp/
+.tmp*
+
+# Multi-configuration merge output
+_multiconfig.yml
