@@ -1,0 +1,37 @@
+# Smalltalk
+# website: https://pharo.org/
+# docs: https://pharo.org/documentation
+# description: Object-oriented dynamic programming language, ignoring image memory snapshots, changes logs, local Iceberg/Pharo caches, and debug logs.
+
+# Changes transaction logs
+*.changes
+*.chg
+*.cha
+
+# System image snapshots, base sources, and object graph dumps
+*.image
+*.img
+*.img7
+*.sources
+*.fuel
+
+# Debug logs and error dumps
+PharoDebug.log
+SqueakDebug.log
+CuisDebug.log
+*.errors
+
+# Dolphin Smalltalk source file
+*.sml
+
+# Modern Pharo / Iceberg local workspace (Pharo 7+)
+pharo-local/
+pharo.version
+meta-inf.ston
+
+# Legacy Monticello, Metacello, and playground caches
+package-cache/
+play-cache/
+play-stash/
+github-cache/
+github-*.zip
