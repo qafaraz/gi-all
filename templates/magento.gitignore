@@ -1,6 +1,0 @@
-/app/etc/local.xml
-/app/etc/enterprise/license.xml
-/media/*
-/var/
-/errors/local.xml
-/includes/config.php

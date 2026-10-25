@@ -1,0 +1,42 @@
+# Magento 1
+# website: https://www.openmage.org
+# docs: https://github.com/OpenMage/magento-lts
+# description: Legacy Magento 1.x and OpenMage LTS e-commerce platform ignore rules.
+
+# System and local configuration
+/app/etc/local.xml
+/app/etc/enterprise/license.xml
+/errors/local.xml
+/includes/config.php
+/PATCH_*.sh
+
+# Generated cache and sessions
+/var/*
+!/var/.htaccess
+!/var/package
+/var/package/*
+!/var/package/*.xml
+
+# Media uploads and user content
+/media/*
+!/media/.htaccess
+!/media/customer
+/media/customer/*
+!/media/customer/.htaccess
+!/media/dhl
+/media/dhl/*
+!/media/dhl/logo.jpg
+!/media/downloadable
+/media/downloadable/*
+!/media/downloadable/.htaccess
+!/media/xmlconnect
+/media/xmlconnect/*
+!/media/xmlconnect/custom
+/media/xmlconnect/custom/*
+!/media/xmlconnect/custom/ok.gif
+!/media/xmlconnect/original
+/media/xmlconnect/original/*
+!/media/xmlconnect/original/ok.gif
+!/media/xmlconnect/system
+/media/xmlconnect/system/*
+!/media/xmlconnect/system/ok.gif
