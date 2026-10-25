@@ -1,0 +1,20 @@
+# JBoss Application Server
+# website: https://jbossas.jboss.org
+# docs: https://docs.jboss.org/jbossas/docs/
+# description: Legacy JBoss Application Server 4.x-6.x (superseded by WildFly) server profile runtime data, logs, temp and JSP work directories, and deployment markers
+
+# Server profile runtime data
+**/server/*/data/
+
+# Server profile logs
+**/server/*/log/
+
+# Server profile temp files
+**/server/*/tmp/
+
+# Server profile JSP work files
+**/server/*/work/
+
+# Deployment markers
+**/server/*/deploy/*.failed
+*.DEPLOYED
