@@ -1,0 +1,42 @@
+# Mercury
+# website: https://mercurylang.org
+# docs: https://mercurylang.org/documentation/documentation.html
+# description: Ignores Mercury compiler build directories, interface/optimization files, module maps, and compiled binaries.
+
+# Build directory
+Mercury/
+
+# Module mapping and dependencies
+Mercury.modules
+*.d
+*.dep
+*.dv
+*.date
+*.date0
+*.date3
+*.c_date
+
+# Interface and optimization files
+*.int
+*.int0
+*.int2
+*.int3
+*.opt
+*.trans_opt
+
+# Compiler intermediate and error files
+*.mh
+*.init
+*.err
+
+# Target backend bytecode
+*.beam
+*.beams
+
+# Compiled binaries and libraries
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
