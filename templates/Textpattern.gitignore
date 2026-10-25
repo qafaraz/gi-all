@@ -1,0 +1,31 @@
+# Textpattern
+# website: https://textpattern.com/
+# docs: https://docs.textpattern.com/
+# description: PHP-based content management system, ignoring sensitive database credentials, temporary caches, and uploaded media.
+
+# Sensitive database configuration
+textpattern/config.php
+
+# Temporary and cache files
+textpattern/tmp/
+*.log
+
+# User-uploaded files and media (preserving security .htaccess files)
+/files/*
+!/files/.htaccess
+/images/*
+!/images/.htaccess
+/themes/*
+!/themes/.htaccess
+
+# Post-installation setup
+textpattern/setup/
+
+# Server configuration
+.htaccess
+
+# Multi-site setup (if used)
+sites/site*/admin/
+sites/site*/private/
+sites/site*/public/admin/
+sites/site*/public/setup/
