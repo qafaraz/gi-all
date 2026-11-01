@@ -1,0 +1,19 @@
+# Lithium
+# website: https://li3.me
+# docs: https://li3.me/docs
+# description: Lithium (li3) PHP framework temporary runtime files, cache, and library dependencies
+
+# Temporary files and cache
+resources/tmp/*
+!resources/tmp/**/empty
+!resources/tmp/**/.gitkeep
+
+# Third-party libraries (Composer vendor directory)
+libraries/*
+!libraries/empty
+!libraries/.gitkeep
+
+# Legacy and nested app layouts
+app/resources/tmp/*
+app/libraries/*
+app/webroot/cache/
