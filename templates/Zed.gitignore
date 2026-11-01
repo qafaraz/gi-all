@@ -1,0 +1,10 @@
+# Zed
+# website: https://zed.dev
+# docs: https://zed.dev/docs/
+# description: Zed high-performance code editor workspace settings and project task configurations.
+
+# Project-level settings and configuration
+.zed/*
+!.zed/settings.json
+!.zed/tasks.json
+!.zed/debug.json

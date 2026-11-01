@@ -1,0 +1,12 @@
+# Syncthing
+# website: https://syncthing.net
+# docs: https://docs.syncthing.net
+# description: Syncthing continuous file synchronization folder markers, version caches, and temporary sync files.
+
+# Folder marker and versioning
+.stfolder
+.stversions
+
+# Temporary synchronization files
+.syncthing.*.tmp
+~syncthing~*.tmp
