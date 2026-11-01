@@ -1,0 +1,32 @@
+# Windows
+# website: https://www.microsoft.com/windows
+# docs: https://learn.microsoft.com/windows/
+# description: Microsoft Windows operating system files, thumbnail databases, folder shortcuts, and installer packages.
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump files
+*.stackdump
+
+# Folder configuration file
+[Dd]esktop.ini
+
+# Recycle Bin
+$RECYCLE.BIN/
+
+# Windows Installer and package files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.appx
+*.appxbundle
+*.msixbundle
+
+# Windows shortcuts
+*.lnk

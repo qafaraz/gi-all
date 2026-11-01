@@ -1,0 +1,13 @@
+# Chocolatey
+# website: https://chocolatey.org
+# docs: https://docs.chocolatey.org/en-us/
+# description: Windows package manager ignoring compiled packages, backup scripts, and package installations.
+
+# Compiled package files
+*.nupkg
+
+# Script backups
+tools/chocolateyInstall.ps1.bak
+
+# Local package cache and installations
+packages/

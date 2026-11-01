@@ -1,4 +1,0 @@
-*.nupkg
-tools/chocolateyInstall.ps1.bak
-# Chocolatey packages
-packages/
