@@ -1,0 +1,11 @@
+# Ensime
+# website: https://ensime.github.io/
+# docs: https://github.com/ensime/ensime-server
+# description: ENhanced Scala Interaction Mode for text Editors ignoring generated configurations, caches, and Lucene indices.
+
+# Generated configuration file
+.ensime
+
+# Server and symbol search caches
+.ensime_cache/
+.ensime_lucene/
