@@ -1,8 +1,34 @@
+# Dart
+# website: https://dart.dev
+# docs: https://dart.dev/docs
+# description: Dart programming language build artifacts, Pub package manager cache, and compiler outputs.
+
+# Pub artifacts and dependencies
 .dart_tool/
 .packages
-pubspec.lock
-build/
-doc/api/
-.pub-cache/
 .pub/
-/build/
+.pub-cache/
+pubspec.lock
+
+# Build outputs
+build/
+
+# Documentation
+doc/api/
+
+# Compiled JavaScript (dart2js / dart compile js)
+*.dart.js
+*.info.json
+*.js
+*.js_
+*.js.deps
+*.js.map
+
+# Compiled WebAssembly (dart compile wasm)
+*.wasm
+*.wasm.map
+
+# Snapshots and kernel binaries
+*.aot
+*.dill
+*.snapshot
