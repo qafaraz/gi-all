@@ -1,0 +1,10 @@
+# Micronaut
+# website: https://micronaut.io
+# docs: https://docs.micronaut.io
+# description: Modern JVM full-stack framework ignoring Micronaut runtime data, test resources, and build output.
+
+# Micronaut Test Resources and temporary runtime
+.micronaut/
+
+# Build output
+build/

@@ -1,0 +1,9 @@
+# BlueJ
+# website: https://www.bluej.org
+# docs: https://www.bluej.org/doc/documentation.html
+# description: Educational Java IDE ignoring context files and project metadata.
+
+# BlueJ context and project metadata
+*.ctxt
+package.bluej
+bluej.pkh

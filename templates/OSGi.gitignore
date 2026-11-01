@@ -1,0 +1,11 @@
+# OSGi
+# website: https://www.osgi.org
+# docs: https://docs.osgi.org
+# description: Java dynamic module system ignoring Bnd build caches, generated bundles, and release repositories.
+
+# Bnd / cnf workspace caches
+cnf/cache/
+
+# Generated bundles and release output
+generated/
+release/

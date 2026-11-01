@@ -1,0 +1,20 @@
+# Java
+# website: https://www.oracle.com/java/
+# docs: https://docs.oracle.com/en/java/
+# description: Core Java programming language ignoring compiled bytecode, package archives, and JVM crash logs.
+
+# Compiled class file
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
