@@ -1,0 +1,16 @@
+# Vagrant
+# website: https://developer.hashicorp.com/vagrant
+# docs: https://developer.hashicorp.com/vagrant/docs
+# description: HashiCorp development environment automation tool ignoring local machine state, packages, and local overrides.
+
+# Local machine environment and state
+.vagrant/
+
+# Custom Vagrant home directory
+.vagrant.d/
+
+# Package outputs
+*.box
+
+# Local configuration overrides
+Vagrantfile.local
