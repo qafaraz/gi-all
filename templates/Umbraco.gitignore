@@ -1,0 +1,42 @@
+# Umbraco
+# website: https://umbraco.com
+# docs: https://docs.umbraco.com
+# description: ASP.NET and .NET Core Umbraco CMS ignore rules for backoffice assets, temporary cache, logs, models, and data.
+
+# Umbraco generated folders
+**/App_Data/Logs/
+**/App_Data/[Pp]review/
+**/App_Data/TEMP/
+**/App_Data/NuGetBackup/
+
+# Umbraco content cache file
+**/App_Data/umbraco.config
+
+# Umbraco packages whitelist
+!**/App_Data/[Pp]ackages/*
+!**/[Uu]mbraco/[Dd]eveloper/[Pp]ackages/*
+!**/[Uu]mbraco/[Vv]iews/[Pp]ackages/*
+
+# ImageProcessor DiskCache
+**/App_Data/cache/
+
+# Models Builder out of date flag
+**/ood.flag
+
+# Umbraco backoffice assets from wwwroot (v9+ .NET Core)
+**/wwwroot/umbraco/
+
+# SQLite files
+*.sqlite.db*
+
+# Umbraco data/views/settings
+**/umbraco/*
+
+# ModelsBuilder output whitelist
+!**/umbraco/models
+
+# Umbraco package data whitelist
+!**/umbraco/Data/
+**/umbraco/Data/*
+!**/umbraco/Data/packages
+!**/umbraco/Data/packages/*
