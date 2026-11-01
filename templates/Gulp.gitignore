@@ -1,0 +1,14 @@
+# Gulp
+# website: https://gulpjs.com
+# docs: https://gulpjs.com/docs/en/getting-started/quick-start/
+# description: Streaming build system and task runner ignoring build outputs, temporary directories, and task caches.
+
+# Build outputs
+dist/
+
+# Temporary working directories
+.tmp/
+
+# Task and compilation caches
+.cache/
+.gulp-cache/
