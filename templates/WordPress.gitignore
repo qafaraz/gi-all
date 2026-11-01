@@ -1,0 +1,32 @@
+# WordPress
+# website: https://wordpress.org
+# docs: https://developer.wordpress.org
+# description: WordPress content management system ignoring configuration secrets, user media uploads, cache, database backups, and debug logs.
+
+# Configuration and security keys
+wp-config.php
+!wp-config-sample.php
+
+# User-uploaded media content
+wp-content/uploads/
+wp-content/blogs.dir/
+
+# Cache, drop-in plugins, and upgrade temporary directories
+wp-content/cache/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# Database backup dumps and archives
+wp-content/backup-db/
+wp-content/backups/
+*.sql
+*.sql.gz
+
+# Debug logs
+wp-content/debug.log
+debug.log
+
+# Generated sitemaps
+sitemap.xml
+sitemap.xml.gz
