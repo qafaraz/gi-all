@@ -123,6 +123,9 @@ pyvenv.cfg
 pip-selfcheck.json
 # .python-version
 
+# Conda environments
+conda-meta/
+
 # IDE & Editor project tools
 .spyderproject
 .spyproject
