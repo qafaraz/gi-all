@@ -1,3 +1,34 @@
-/modules/
-/config/database.php
-/config/cms/
+# LemonStand
+# website: https://github.com/lemonstand
+# docs: https://github.com/lemonstand/ls-docs
+# description: Legacy PHP e-commerce platform ignore rules for core engines, configurations, modules, and uploads.
+
+# Core application and bootstrapping
+boot.php
+index.php
+install.php
+/controllers/*
+/init/*
+/phproad/*
+
+# Configuration
+/config/*
+!/config/config.php
+
+# Core system modules
+/modules/backend/*
+/modules/blog/*
+/modules/cms/*
+/modules/core/*
+/modules/session/*
+/modules/shop/*
+/modules/system/*
+/modules/users/*
+
+# Temporary files and logs
+/logs/*
+/temp/*
+
+# User uploads and installer
+/installer_files/*
+/uploaded/*

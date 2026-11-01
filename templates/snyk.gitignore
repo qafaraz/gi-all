@@ -1,1 +1,15 @@
-.snyk
+# Snyk
+# website: https://snyk.io
+# docs: https://docs.snyk.io
+# description: Developer security platform ignore rules for local scan reports, logs, and CLI caches.
+
+# Local CLI configuration and cache
+snyk.json
+.snyk.d/
+
+# Scan results and exported reports
+snyk-error.log
+snyk-result.json
+snyk_report.html
+snyk_report.css
+*.snyk-report.json

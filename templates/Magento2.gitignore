@@ -4,8 +4,8 @@
 # description: Adobe Commerce and Magento 2 e-commerce platform build, cache, and media ignore rules.
 
 # Environment and application configuration
+# Keep shared app/etc/config.php in version control; ignore environment-specific settings.
 /app/etc/env.php
-/app/etc/config.php
 /app/config_sandbox
 
 # Generated code and dependency cache

@@ -1,4 +1,12 @@
-## for projects that use SCons for building: https://www.scons.org/
+# SCons
+# website: https://scons.org
+# docs: https://scons.org/documentation.html
+# description: SCons software construction tool signature database, configure checks, and build logs.
+
+# SCons signature database
 .sconsign.dblite
+.sconsign.*.dblite
+
+# Configure context outputs and logs
 .sconf_temp/
 config.log
