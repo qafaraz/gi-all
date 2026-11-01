@@ -1,0 +1,35 @@
+# Laravel
+# website: https://laravel.com
+# docs: https://laravel.com/framework/docs
+# description: PHP web application framework ignoring dependencies, build artifacts, runtime caches, and environment keys.
+
+# Dependencies
+/vendor/
+composer.phar
+
+# Build and asset compilation (Vite / Mix)
+/public/build
+/public/hot
+/public/storage
+public_html/storage
+public_html/hot
+
+# Framework caches and storage
+/bootstrap/cache/
+/storage/pail
+storage/*.key
+
+# Local virtual environment (Homestead)
+Homestead.json
+Homestead.yaml
+
+# Testing and code quality tools
+/.phpunit.cache
+.phpunit.result.cache
+.php_cs.cache
+.phpcs.cache
+.phpactor.json
+
+# Legacy Laravel 4 compatibility
+bootstrap/compiled.php
+app/storage/
