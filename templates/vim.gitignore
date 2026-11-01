@@ -1,12 +1,26 @@
+# Vim
+# website: https://www.vim.org
+# docs: https://www.vim.org/docs.php
+# description: Vim text editor swap files, undo history, sessions, netrw history, and tag files.
+
+# Swap files
 [._]*.s[a-v][a-z]
 !*.svg
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
 [._]sw[a-p]
+
+# Session files
 Session.vim
 Sessionx.vim
+
+# Temporary and history files
 .netrwhist
 *~
+
+# Auto-generated tag files
 tags
+
+# Persistent undo
 [._]*.un~

@@ -1,10 +1,14 @@
+# Visual Studio
+# website: https://visualstudio.microsoft.com
+# docs: https://learn.microsoft.com/visualstudio/
+# description: Visual Studio IDE user preferences, build outputs, test results, and SDK tooling caches.
+
 # User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-*.env
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -88,6 +92,7 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*_i.h
 *.ilk
 *.meta
 *.obj
@@ -246,7 +251,6 @@ ClientBin/
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
-*.pfx
 *.publishsettings
 orleans.codegen.cs
 
@@ -283,7 +287,6 @@ FakesAssemblies/
 
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
-node_modules/
 
 # Visual Studio 6 build log
 *.plg
@@ -367,8 +370,14 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
+# Ionide (cross platform F# tools) working folder
+**/.ionide/
+
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Visual Studio extension packages
+*.vsix
 
 # Windows Installer files from build outputs
 *.cab

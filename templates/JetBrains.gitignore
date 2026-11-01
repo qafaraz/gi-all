@@ -1,7 +1,7 @@
-# JetBrains IDEs
+# JetBrains
 # website: https://www.jetbrains.com
 # docs: https://www.jetbrains.com/help/
-# description: JetBrains IDEs (IntelliJ, WebStorm, PyCharm, CLion, Rider, GoLand, RubyMine, Fleet) project settings and caches
+# description: JetBrains IDEs (IntelliJ, WebStorm, PyCharm, CLion, Rider, GoLand, RubyMine, Fleet) project settings and caches.
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -86,6 +86,9 @@ http-client.private.env.json
 
 # Github Copilot persisted session migrations
 .idea/**/copilot.data.migration.*.xml
+
+# Kubernetes Plugin
+.idea/kubernetes/configs/kubeconfig_*
 
 # JetBrains Fleet
 .fleet/

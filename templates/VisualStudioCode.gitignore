@@ -1,15 +1,23 @@
+# Visual Studio Code
+# website: https://code.visualstudio.com
+# docs: https://code.visualstudio.com/docs
+# description: Visual Studio Code editor workspace settings, extensions, tasks, and extension build artifacts.
+
+# User and workspace settings
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+!*.code-workspace
 
-# Local History for Visual Studio Code
+# Local History extension
 .history/
 
-# Built Visual Studio Code Extensions
+# Built extension packages and test binaries
 *.vsix
+.vscode-test/
 
-# Ionide (cross platform F# VS Code tools) working folder
+# Ionide (cross platform F# VS Code tools)
 **/.ionide/

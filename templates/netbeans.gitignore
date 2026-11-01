@@ -1,10 +1,24 @@
-nbproject/private/
-nbproject/Makefile-*.mk
-nbproject/Package-*.bash
+# Apache NetBeans
+# website: https://netbeans.apache.org
+# docs: https://netbeans.apache.org/tutorial/main/kb/
+# description: Apache NetBeans IDE user-specific settings, build artifacts, and project cache files
+
+# User-specific project settings
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+
+# Build outputs
 build/
 nbbuild/
 dist/
 nbdist/
+.ant-targets-build.xml
+
+# Project actions and configurations
 nbactions.xml
 nb-configuration.xml
+
+# NetBeans Gradle and filesystem metadata
 .nb-gradle/
+.nbattrs
