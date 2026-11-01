@@ -1,0 +1,11 @@
+# VVVV
+# website: https://vvvv.org
+# docs: https://thegraybook.vvvv.org
+# description: Visual live-programming environment for .NET ignoring patch backup files and compiled dynamic plugin outputs.
+
+# Patch backup files
+*~.xml
+
+# Dynamic plugins and compilation outputs
+bin/
+obj/
