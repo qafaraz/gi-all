@@ -1,0 +1,38 @@
+# Next.js
+# website: https://nextjs.org
+# docs: https://nextjs.org/docs
+# description: Next.js React framework build outputs, caches, exported bundles, and generated types.
+
+# Next.js build and export outputs
+/.next/
+/out/
+/build
+
+# Vercel deployment metadata
+.vercel
+
+# Compiler, linter, and monorepo caches
+.cache
+.eslintcache
+.turbo
+.swc
+
+# Testing coverage
+/coverage
+
+# TypeScript generated declaration and build cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Yarn Plug'n'Play and dependencies
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Package manager debug logs
+yarn-debug.log*
+.pnpm-debug.log*
