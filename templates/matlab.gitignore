@@ -1,12 +1,37 @@
-*.m~
+# MATLAB
+# website: https://www.mathworks.com/products/matlab.html
+# docs: https://www.mathworks.com/help/matlab/
+# description: MATLAB programming environment, Simulink models, MEX binaries, and build artifacts
+
+# Autosave and backup files
 *.asv
+*.m~
 *.autosave
+*.slx.r*
+*.mdl.r*
+*.bak
+
+# Derived content-obscured files
+*.p
+
+# Compiled MEX binaries
 *.mex*
-octave-workspace
-*.slxc
+
+# Packaged applications and toolboxes
+*.mlappinstall
+*.mltbx
+
+# Deployable archives
+*.ctf
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Code generation and simulation caches
 slprj/
 sccprj/
 codegen/
-R201*/
-R202*/
-R203*/
+*.slxc
+
+# MATLAB Drive cloud sync tag
+.MATLABDriveTag

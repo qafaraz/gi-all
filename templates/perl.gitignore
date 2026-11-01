@@ -4,9 +4,9 @@
 # description: Perl programming language build artifacts, module installations, and test coverage reports.
 
 # Module::Build
-!Build/
 _build/
 Build
+!Build/
 Build.bat
 
 # ExtUtils::MakeMaker
@@ -23,9 +23,11 @@ MANIFEST.bak
 .build/
 inc/
 
-# Dynamic metadata files
+# Metadata files
 MYMETA.json
 MYMETA.yml
+/META.yml
+/META.json
 
 # Test coverage and profiler reports
 cover_db/

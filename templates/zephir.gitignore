@@ -1,6 +1,73 @@
-ext/
+# Zephir
+# website: https://zephir-lang.com
+# docs: https://docs.zephir-lang.com/latest/
+# description: Zephir programming language compiler cache, PHP C-extension build artifacts, IDE stubs, and API documentation outputs.
+
+# Zephir compiler cache
+.zephir/
+.temp/
+.libs/
+
+# Standalone compiler archive
+zephir.phar
+
+# Compilation artifacts and object files
+*.lo
+*.la
 *.o
-*.h
-compile/
-*.c
-build/
+*.loT
+*.dep
+*.gch
+*.so
+*.dSYM/
+
+# Compilation logs
+compile.log
+compile-errors.log
+
+# Extension build and phpize/autotools outputs
+ext/.deps
+ext/autom4te.cache/
+ext/build/
+ext/include/
+ext/modules/
+ext/Makefile
+ext/Makefile.fragments
+ext/Makefile.global
+ext/Makefile.objects
+ext/acinclude.m4
+ext/aclocal.m4
+ext/confdefs.h
+ext/config.cache
+ext/config.guess
+ext/config.h
+ext/config.h.in
+ext/config.h.in~
+ext/config.log
+ext/config.nice
+ext/config.nice.bat
+ext/config.status
+ext/config.sub
+ext/configure
+ext/configure.ac
+ext/configure.in
+ext/configure.bat
+ext/configure.js
+ext/conftest*
+ext/install-sh
+ext/libtool
+ext/ltmain.sh
+ext/missing
+ext/mkinstalldirs
+ext/run-tests*.php
+
+# Windows MSVC extension build outputs
+ext/Release/
+ext/Release_TS/
+ext/Debug/
+ext/Debug_TS/
+ext/x64/
+
+# Generated IDE stubs and HTML API documentation
+ide/
+doc/

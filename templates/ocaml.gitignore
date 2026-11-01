@@ -1,14 +1,40 @@
+# OCaml
+# website: https://ocaml.org
+# docs: https://ocaml.org/docs
+# description: OCaml compiler artifacts, Dune and ocamlbuild outputs, and OPAM switch directories
+
+# Bytecode object files and libraries
 *.cmo
 *.cma
-*.cmi
+*.byte
+
+# Native-code object files and libraries
 *.cmx
 *.cmxa
 *.cmxs
+*.native
+*.o
+*.a
+
+# Compilation inspection, type, and annotation files (Merlin / LSP)
+*.cmi
 *.cmt
 *.cmti
 *.annot
-_build/
-_opam/
 .merlin
-*.byte
-*.native
+
+# Dune and ocamlbuild build targets
+_build/
+*.install
+
+# OASIS build tool
+setup.data
+setup.log
+
+# OPAM package manager
+_opam/
+
+# Interactive REPL history and test coverage
+.ocaml_history
+.utop-history
+bisect*.coverage

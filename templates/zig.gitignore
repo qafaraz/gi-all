@@ -1,6 +1,13 @@
+# Zig
+# website: https://ziglang.org
+# docs: https://ziglang.org/documentation/master/
+# description: Zig programming language build cache, package dependencies, and output artifacts.
+
+# Zig build cache and artifacts
+.zig-cache/
 zig-cache/
 zig-out/
 zig-pkg/
+
+# Compiled object files
 *.o
-/release/
-/debug/
