@@ -1,0 +1,19 @@
+# Obsidian
+# website: https://obsidian.md
+# docs: https://obsidian.md/help/
+# description: Obsidian markdown knowledge base vault ignore rules for workspace layouts, cache, trash, and plugin binaries.
+
+# Application workspace and UI state (prevents device merge conflicts)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Internal vault cache and indexing
+.obsidian/cache/
+
+# Local trash directory (deleted notes)
+.trash/
+
+# Community plugins (ignore downloaded plugin code, retain configs)
+.obsidian/plugins/*/**
+!.obsidian/plugins/*/data.json
