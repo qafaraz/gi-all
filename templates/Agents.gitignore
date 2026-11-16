@@ -1,0 +1,84 @@
+# Agents
+# website: https://github.com/github/gitignore
+# docs: https://docs.github.com/en/get-started/git-basics/ignoring-files
+# description: AI coding agents, developer assistants, local session histories, and runtime logs.
+
+# Some common agent instruction and project configuration files are listed
+# below as commented-out examples. They are often intentionally committed and
+# shared with a team, so only uncomment them if they are local-only in your
+# project.
+
+# Generic plan and instructions
+# PLAN.md
+# WARP.md
+# CRUSH.md
+# QWEN.md
+
+# OpenAI Codex
+# AGENTS.md
+# .codex/
+
+# Aider
+.aider.input.history
+.aider.chat.history.md
+.aider.llm.history
+.aider.tags.cache.v*
+# .aiderignore
+
+# Claude Code
+.claude/*.local.json
+.claude/**/*.log
+.claude/worktrees/
+CLAUDE.local.md
+# .claude/
+
+# Gemini CLI
+# GEMINI.md
+gemini-debug.log
+.gemini-clipboard/
+# .gemini/
+
+# Mistral Vibe
+# .vibe/
+# .vibe/config.toml
+# .vibe/hooks.toml
+
+# Cursor AI
+# .cursorrules
+# .cursor/
+# .cursor.json
+# .cursor-settings.yaml
+
+# Continue
+# .continue/
+# .continuerc.json
+
+# Cline
+# .cline/
+# .clinerules
+# cline.json
+
+# Other agent and editor project configurations
+# .warp/
+# .crush/
+# .codeium/
+# .deepseek/
+# .amazon-codewhisperer/
+# .tabnineignore
+# .tabnine/
+
+# Agent tool output written into the project
+.playwright-mcp/
+.remember/
+.superpowers/
+
+# GitHub Copilot
+# .github/copilot-instructions.md
+
+# Windsurf Editor
+# .windsurfrules
+# .windsurf/
+
+# Replit AI Development
+# .replit
+# replit.nix
