@@ -1,0 +1,23 @@
+# SolidWorks
+# website: https://www.solidworks.com
+# docs: https://help.solidworks.com
+# description: SolidWorks CAD temporary lock files, automatic recovery backups, and simulation result caches.
+
+# SolidWorks temporary files
+~$*.sldprt
+~$*.sldasm
+~$*.slddrw
+~$*.sld
+
+# For systems with case-sensitive (SolidWorks uses both)
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+~$*.SLD
+
+# SolidWorks backups and auto-recovery
+*.bak
+*.swbak
+
+# Cache of simulation results
+/simulation_results/
