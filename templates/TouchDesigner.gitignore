@@ -1,0 +1,25 @@
+# TouchDesigner
+# website: https://derivative.ca/
+# docs: https://docs.derivative.ca/
+# description: Derivative TouchDesigner visual development platform backups, autosaves, cache, and Python runtime artifacts.
+
+# Backups and autosaves
+**/Backup/
+**/CrashAutoSave.*
+*.dmp
+
+# Incremental saves and autosaved files
+**/*.*.toe
+*Autosave*.toe
+
+# TouchDesigner import cache
+**/TDImportCache/
+
+# Logs
+*.log
+**/logs/
+
+# Embedded Python artifacts
+__pycache__/
+*.pyc
+*.pyo
