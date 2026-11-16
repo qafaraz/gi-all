@@ -1,0 +1,30 @@
+# STM32CubeIDE
+# website: https://www.st.com/en/development-tools/stm32cubeide.html
+# docs: https://wiki.st.com/stm32mcu/wiki/Category:STM32CubeIDE
+# description: STMicroelectronics STM32CubeIDE build artifacts, compiler outputs, and TouchGFX generated files.
+
+# IDE logs and temporary files
+*.log
+*.bak
+
+# Build output directories
+Debug/
+Release/
+
+# Compiler and linker artifacts
+*.elf
+*.map
+*.bin
+*.hex
+*.srec
+*.lst
+*.o
+*.d
+*.a
+*.su
+*.crl
+
+# TouchGFX generated files and simulator build artifacts
+TouchGFX/generated/
+TouchGFX/build/
+TouchGFX/simulator/msvs/.vs/
