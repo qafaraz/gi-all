@@ -1,0 +1,32 @@
+# Strapi
+# website: https://strapi.io
+# docs: https://docs.strapi.io
+# description: Strapi headless CMS build artifacts, admin cache, temporary runtime data, and local uploads.
+
+# Strapi admin build and runtime cache
+.cache/
+.strapi/
+build/
+dist/
+.tmp/
+.strapi-updater.json
+.dev
+
+# Local media uploads
+public/uploads/
+
+# Local databases and export archives
+.tmp/data.db
+*.db
+*.sqlite
+export_*.tar.gz
+
+# Logs and runtime dumps
+*.log
+logs/
+pids/
+*.heapsnapshot
+
+# Test outputs
+coverage/
+.nyc_output/
