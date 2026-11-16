@@ -1,0 +1,25 @@
+# Mise
+# website: https://mise.jdx.dev
+# docs: https://mise.jdx.dev/configuration.html
+# description: Polyglot runtime version manager, environment manager, and task runner ignoring local configuration overrides and local lockfiles.
+
+# Local environment and configuration overrides
+# https://mise.jdx.dev/configuration.html
+# https://mise.jdx.dev/configuration/environments.html
+.mise.*.local.toml
+.mise.local.toml
+mise.*.local.toml
+mise.local.toml
+**/.mise/*.local.toml
+**/mise/*.local.toml
+**/mise/conf.d/*.local.toml
+
+# Local and environment-specific lockfiles
+# https://mise.jdx.dev/dev-tools/mise-lock.html#local-lockfiles
+# https://mise.jdx.dev/dev-tools/mise-lock.html#environment-specific-lockfiles
+mise.local.lock
+mise.*.local.lock
+
+# Legacy tool-versions file (optional)
+# https://mise.jdx.dev/configuration.html#tool-versions
+#.tool-versions
