@@ -1,0 +1,21 @@
+# Hardhat
+# website: https://hardhat.org
+# docs: https://hardhat.org/docs/getting-started
+# description: Hardhat Ethereum development environment compilation artifacts, cache, and TypeChain types.
+
+# Compilation artifacts
+/artifacts
+/cache
+
+# TypeChain-generated types
+/types
+/typechain
+/typechain-types
+
+# Hardhat coverage output
+coverage/
+coverage.json
+
+# Hardhat Ignition deployment output
+# Uncomment if you don't wish to track your deployments in version control
+# /ignition/deployments
