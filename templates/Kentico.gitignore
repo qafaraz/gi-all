@@ -1,12 +1,14 @@
 # Kentico
 # website: https://www.kentico.com/
 # docs: https://docs.kentico.com/
-# description: Ignores Kentico CMS and Xperience by Kentico runtime cache, search indexes, temporary files, and local configs.
+# description: Kentico CMS and Xperience by Kentico runtime cache, search indexes, temporary files, and local configuration overrides.
 
 # Continuous Integration & Deployment exceptions (must be tracked in source control)
 !**/CIRepository/
 !**/CIRepository/**
 !**/CDRepository/repository.config
+!**/CMSAdminControls/*/
+!**/CMSModules/System/*/
 
 # Temporary runtime and cache files
 **/App_Data/AzureCache/
