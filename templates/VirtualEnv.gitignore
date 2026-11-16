@@ -1,0 +1,26 @@
+# VirtualEnv
+# website: https://virtualenv.pypa.io
+# docs: https://virtualenv.pypa.io/en/latest/
+# description: Python virtual environment directories, pyenv configuration, and pip runtime caches.
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python version and environment configurations
+pyvenv.cfg
+.python-version
+pip-selfcheck.json
+
+# In-place virtualenv interpreter and libraries
+.Python
+[Bb]in/
+[Ii]nclude/
+[Ll]ib/
+[Ll]ib64/
+[Ll]ocal/
+[Ss]cripts/
