@@ -45,3 +45,6 @@ __recovery/
 
 # Castalia statistics file (distributed with Delphi since XE7)
 *.stat
+
+# DUnitX test results
+dunitx-results.xml
