@@ -1,0 +1,17 @@
+# FreeCAD
+# website: https://www.freecad.org
+# docs: https://wiki.freecad.org
+# description: FreeCAD open-source parametric 3D CAD modeler lock files, incremental backups, and temporary files.
+
+# Lock files
+*.FC.lock
+.*.FC.lock
+
+# Auto-save and incremental backups
+*.FCBak
+*.FCStd[0-9]*
+*.fcstd[0-9]*
+
+# Temporary and backup files
+*.bak
+*.tmp
