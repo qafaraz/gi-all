@@ -1,0 +1,22 @@
+# SQL Server Data Tools (SSDT)
+# website: https://visualstudio.microsoft.com/vs/features/ssdt/
+# docs: https://learn.microsoft.com/sql/ssdt/
+# description: SQL Server Data Tools (SSDT) database project build outputs, schema model caches, DACPAC packages, and local publish configurations.
+
+# Build and deployment outputs
+bin/
+obj/
+*.dacpac
+*.publish.xml
+
+# Schema and model caches
+*.dbmdl
+*.jfm
+*.dbproj.schemaview
+SchemaCompareResult.scmp
+
+# User-specific settings and local variables
+*.sqlsuo
+*.sqlcmdvars
+*.sqlproj.user
+*.user
