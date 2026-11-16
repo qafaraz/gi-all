@@ -6,6 +6,7 @@
 # Nx cache and workspace metadata
 .nx/cache/
 .nx/workspace-data/
+.nx/migrate-runs/
 
 # Legacy Nx cache (Nx < 15)
 .nx-cache/
