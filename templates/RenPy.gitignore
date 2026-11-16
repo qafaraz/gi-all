@@ -1,7 +1,7 @@
 # Ren'Py
 # website: https://www.renpy.org
 # docs: https://www.renpy.org/doc/html/
-# description: Ren'Py visual novel engine ignore rules for compiled scripts, saves, cache, and diagnostic logs.
+# description: Ren'Py visual novel engine compiled scripts, save files, cache, and diagnostic logs.
 
 # Save data and persistent state
 saves/
