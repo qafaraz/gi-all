@@ -10,14 +10,16 @@
 .localdevserver/
 deploy-options.json
 
-# Lightning Web Components (LWC) autocompletion cache
+# Lightning Web Components (LWC) autocompletion, linter, and test coverage
 **/lwc/jsconfig.json
+.eslintcache
+coverage/
 
 # Salesforce Code Analyzer results
+sca-results.csv
 sca_results.csv
 sfca_results.json
 
-# Package archives and metadata bundles
-*.zip
-*.oas
-**/staticresources/**
+# CLI and runtime logs
+logs/
+*.log
