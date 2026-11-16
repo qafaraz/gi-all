@@ -1,0 +1,26 @@
+# Microchip MPLAB X IDE
+# website: https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide
+# docs: https://developerhelp.microchip.com/xwiki/bin/view/software-tools/ides/x/version-control/working-with-version-control/
+# description: Microchip MPLAB X IDE project private files, generated outputs, MCC configurations, and VS Code extension build artifacts.
+
+# MPLAB X (NetBeans) Project files
+**/*.X/nbproject/private/
+**/*.X/nbproject/Makefile-*
+**/*.X/nbproject/Package-*
+!**/*.X/nbproject/*.xml
+
+# MPLAB X Generated Files and Build Output
+**/*.X/.generated_files/
+**/*.X/build/
+**/*.X/dist/
+**/*.X/debug/
+
+# MPLAB Code Configurator (MCC)
+**/*.X/mcc_generated_files/
+**/*.X/mcc-manifest-*.yml
+
+# MPLAB for VS Code specific
+**/*.X/_build/
+**/*.X/cmake/
+**/*.X/out/
+**/*.X/*.log*
