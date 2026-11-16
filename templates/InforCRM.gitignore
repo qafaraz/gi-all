@@ -1,0 +1,15 @@
+# Infor CRM
+# website: https://www.infor.com/products/customer-experience-suite/crm
+# docs: https://docs.infor.com/en-us/inforcrm/
+# description: Infor CRM (formerly SalesLogix) auto-generated model indexes, deployment builds, and portal support files.
+
+# Auto-generated model files
+ModelIndex.xml
+ExportedFiles.xml
+
+# Deployment files
+[Mm]odel/[Dd]eployment/
+
+# Force include portal SupportFiles
+!Model/Portal/*/SupportFiles/[Bb]in/
+!Model/Portal/PortalTemplates/*/SupportFiles/[Bb]in/
