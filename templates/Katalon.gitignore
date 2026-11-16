@@ -1,0 +1,30 @@
+# Katalon
+# website: https://katalon.com
+# docs: https://docs.katalon.com/katalon-studio/
+# description: Katalon Studio test automation suite ignoring compiled test artifacts, execution reports, runtime caches, and generated workspace metadata.
+
+# Compiled Groovy and Java test classes
+*.class
+bin/
+bin/lib/
+bin/lib/TempTestCase*
+Libs/
+Libs/TempTestCase*
+Libs/TempTestSuite*
+
+# Build and output directories
+build/
+output/*
+!output/.gitkeep
+
+# Test execution reports and logs
+Reports/
+*.log
+hs_err_pid*
+
+# Katalon Studio workspace and Gradle cache
+.cache/
+.gradle/
+.classpath
+.project
+.settings/
