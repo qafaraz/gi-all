@@ -19,7 +19,10 @@
 /e2e/test-output/
 __screenshots__/
 
-# Test runner logs and locks
+# Test runner and package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 testem.log
 /libpeerconnection.log
 /connect.lock
