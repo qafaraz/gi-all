@@ -1,9 +1,0 @@
-*.vba
-*.bas~
-*.cls~
-*.frm~
-*.frx~
-# Excel VBA
-*.xlam
-# Access VBA
-*.accda
