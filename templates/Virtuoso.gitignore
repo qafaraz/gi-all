@@ -1,0 +1,21 @@
+# Virtuoso
+# website: https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html
+# docs: https://support.cadence.com
+# description: Cadence Virtuoso Studio IC layout, simulation run directories, log files, and lock files.
+
+# Log and diagnostic files
+*.log
+panic*.log.*
+
+# OpenAccess database lock files
+*.cdslck*
+
+# Simulation and physical verification run directories
+lvsRunDir/*
+drcRunDir/*
+simulation/
+spectre.out
+
+# Abstract generation tool
+abstract.log*
+abstract.record*
