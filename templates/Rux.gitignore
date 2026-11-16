@@ -1,0 +1,10 @@
+# Rux
+# website: https://rux-lang.dev
+# docs: https://rux-lang.dev/docs/
+# description: Rux compiled systems programming language ignore rules for build artifacts and temporary compilation directories.
+
+# Build outputs
+Bin/
+
+# Temporary compilation files
+Temp/
