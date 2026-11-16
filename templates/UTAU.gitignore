@@ -1,0 +1,56 @@
+# UTAU
+# website: https://openutau.com
+# docs: https://www.openutau.com/Getting-Started/
+# description: UTAU and OpenUtau singing synthesizer resampler caches, engine analysis files, and tool temporary logs.
+
+# Audio editor peak cache
+*.pkf
+
+# UTAU resampler and engine analysis caches
+*.ctspec
+*.d4c
+*.dio
+*.frc
+*.frt
+*.frq
+*.harvest
+*.lessaudio
+*.llsm
+*.mrq
+*.pitchtier
+*.platinum
+*.pmk
+*.sc.npz
+*.star
+*.uspec
+*.vs4ufrq
+
+# UTAU tools and editor plugins
+$read
+*.setParam-Scache
+*.lbp
+*.lbp.caches/*
+
+# OpenUtau diagnostics
+errors.txt
+
+# DeepVocal voice models and logs
+*.DVModel
+*-log.txt
+SKC
+SKI
+SKC_1
+SKC_2
+*.sksd
+
+# VocalSharp project and index files
+*.scep
+*.vssf
+*.vsdx
+*.vsdxindex
+
+# Distribution archives and binaries
+*.7z
+*.zip
+*.rar
+*.exe
