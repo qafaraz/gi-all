@@ -1,7 +1,7 @@
 # R
-# website: https://www.r-project.org/
+# website: https://www.r-project.org
 # docs: https://cran.r-project.org/manuals.html
-# description: Gitignore rules for the R programming language, package development, and RStudio workflows.
+# description: R statistical computing language ignoring workspace session data, package build artifacts, and compiled C/C++/Fortran shared libraries.
 
 # History files
 .Rhistory
@@ -52,3 +52,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# compiled code
+src/*.o
+src/*.so
+src/*.dll
