@@ -1,0 +1,25 @@
+# JDeveloper
+# website: https://www.oracle.com/application-development/technologies/jdeveloper.html
+# docs: https://docs.oracle.com/en/middleware/developer-tools/jdeveloper/
+# description: Oracle JDeveloper and ADF build outputs, deployment archives, local cache, and runtime artifacts.
+
+# JDeveloper IDE performance cache
+.data/
+
+# ADF styles and temporary cache
+temp/
+
+# Project and workspace backups
+*.jpr.bak
+*.jws.bak
+
+# Default build and deployment output directories
+classes/
+deploy/
+javadoc/
+
+# Offline database objects cache
+offlinedb/
+
+# Oracle Credential Store Framework lock file
+cwallet.sso.lck
