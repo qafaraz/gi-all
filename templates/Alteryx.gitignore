@@ -1,0 +1,30 @@
+# Alteryx
+# website: https://www.alteryx.com
+# docs: https://help.alteryx.com
+# description: Alteryx Designer workflow backups, high-performance database caches, license keys, and temporary files.
+
+# Alteryx Data Files
+*.yxdb
+*.cydb
+*.cyidx
+*.rptx
+*.vvf
+*.aws
+
+# Alteryx Special Files
+*.yxwv
+*.yxft
+*.yxbe
+*.bak
+*.pcxml
+*.log
+*.bin
+*.yxlang
+CASS.ini
+
+# Alteryx License Files
+*.yxlc
+*.slc
+*.cylc
+*.alc
+*.gzlc
