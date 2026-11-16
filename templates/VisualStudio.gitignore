@@ -1,6 +1,6 @@
 # Visual Studio
 # website: https://visualstudio.microsoft.com
-# docs: https://learn.microsoft.com/visualstudio/
+# docs: https://learn.microsoft.com/en-us/visualstudio/?view=visualstudio
 # description: Visual Studio IDE user preferences, build outputs, test results, and SDK tooling caches.
 
 # User-specific files
@@ -301,10 +301,6 @@ FakesAssemblies/
 *.dsw
 *.dsp
 
-# Visual Studio 6 technical files
-*.ncb
-*.aps
-
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
 **/*.DesktopClient/GeneratedArtifacts
@@ -383,5 +379,6 @@ FodyWeavers.xsd
 *.cab
 *.msi
 *.msix
+*.msixbundle
 *.msm
 *.msp
