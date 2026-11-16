@@ -1,0 +1,59 @@
+# TwinCAT3
+# website: https://www.beckhoff.com/en-en/products/automation/twincat/
+# docs: https://infosys.beckhoff.com/
+# description: Beckhoff TwinCAT 3 PC-based automation software ignoring PLC compile outputs, project backups, and Measurement session files.
+
+# TwinCAT PLC
+*.plcproj.bak
+*.plcproj.orig
+*.tpy
+*.tclrs
+*.library
+*.compiled-library
+*.compileinfo
+*.asm
+*.core
+LineIDs.dbg
+LineIDs.dbg.bak
+
+# TwinCAT C++ and shared types
+# Note: Ignoring TMC files is only useful for plain PLC programming.
+# When shared data types (via TMC), C++ or TcCom-Modules are used, track the TMC file.
+*.tmc
+*.tmcRefac
+
+# TwinCAT project files
+*.tsproj.bak
+*.tsproj.b?k
+*.tsproj.orig
+*.tspproj.bak
+*.xti.bak
+*.xti.bk?
+*.xti.orig
+*.xtv.bak
+*.xtv.bk?
+*.xt?.bk?
+*.xt?.orig
+
+# Multiuser specific
+**/.TcGit/
+
+# Exclude not required folders
+**/_Boot/
+**/_CompileInfo/
+**/_Libraries/
+**/_ModuleInstall/
+**/_Deployment/
+**/_Repository/
+
+# To include a specific library directory (i.e. third party/custom libs),
+# use pattern `!/**/_Libraries/<directory name>/` i.e. `!/**/_Libraries/www.tcunit.org/`
+
+# VS Shell project specific files and folders
+**/.vs/
+*.~u
+*.project.~u
+*.suo
+
+# TwinCAT Measurement
+*.vsm
