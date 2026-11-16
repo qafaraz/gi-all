@@ -1,0 +1,16 @@
+# Solidity
+# website: https://soliditylang.org
+# docs: https://docs.soliditylang.org
+# description: Solidity smart contract and Remix IDE compiler artifacts, plugin states, and debug metadata.
+
+# Remix compiler artifacts
+**/artifacts/
+
+# Remix plugin state and dependency folders
+deps/
+.deps/
+states/
+
+# Debug and build info
+*.dbg.json
+*.tsbuildinfo
