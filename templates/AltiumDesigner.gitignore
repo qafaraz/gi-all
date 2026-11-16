@@ -17,6 +17,9 @@ Project\ Outputs*/
 Status\ Report.txt
 debug.log
 
+# Project structure and compilation files
+*.PrjPcbStructure
+
 # Temporary, lock, and web preview files
 *.PcbDoc.htm
 *.ldb
