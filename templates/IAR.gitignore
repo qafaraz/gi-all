@@ -1,0 +1,46 @@
+# IAR
+# website: https://www.iar.com
+# docs: https://docs.iar.com/
+# description: IAR Embedded Workbench build artifacts, intermediate object files, and workspace settings.
+
+# Compiled binaries and link outputs
+*.o
+*.obj
+*.bin
+*.elf
+*.hex
+*.map
+*.out
+
+# Intermediate build outputs and dependency files
+*.dep
+*.d79
+*.d90
+*.lst
+List/
+Obj/
+**/Obj/*.pbd
+**/Obj/*.pbd.*
+**/Obj/*.pbi
+**/Obj/*.pbi.*
+
+# Build output and simulation directories
+Debug/
+Release/
+**/Exe/*.sim
+
+# Workspace and debugger settings
+settings/
+**/settings/*.crun
+**/settings/*.dbgdt
+**/settings/*.cspy
+**/settings/*.cspy.*
+**/settings/*.xcl
+**/settings/*.dni
+**/settings/*.wsdt
+**/settings/*.wspos
+
+# Backups and temporary files
+*.bak
+*.~*
+Backup*
