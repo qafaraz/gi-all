@@ -1,0 +1,34 @@
+# LibOGC
+# website: https://github.com/devkitPro/libogc
+# docs: https://wiibrew.org/wiki/Libogc
+# description: DevkitPro libogc C library for Nintendo GameCube and Wii homebrew development.
+
+# Build directories and intermediates
+build/
+obj/
+*.o
+*.obj
+*.d
+*.map
+*.su
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Homebrew binaries and executables
+*.elf
+*.dol
+*.bin
+*.hex
+*.out
+
+# Libraries and dependencies
+lib/
+deps/
+*.a
+*.la
+*.lo
+
+# Logs
+*.log
