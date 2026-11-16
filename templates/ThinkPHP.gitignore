@@ -1,0 +1,21 @@
+# ThinkPHP
+# website: https://www.thinkphp.cn
+# docs: https://doc.thinkphp.cn
+# description: ThinkPHP framework runtime cache, logs, session data, dependencies, and application temporary files.
+
+# Runtime cache, logs, and temporary data (ThinkPHP 5.x, 6.x, 8.x)
+/runtime/
+
+# Composer dependencies
+/vendor/
+composer.phar
+
+# Application logs
+*.log
+
+# Public uploads
+/public/uploads/
+
+# Legacy ThinkPHP 3.x runtime and local configuration
+/Application/Runtime/
+/Application/Common/Conf/config.php
